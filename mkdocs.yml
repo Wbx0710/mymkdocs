@@ -6,7 +6,7 @@ nav:
       - "index.md"
   - 课内学习资料:
       - 谢小平大物PPT整理: 
-           - 热力学: "大学物理/热力学/热力学.md"
+           - 热力学: "大学物理/热力学.md"
            - 电磁学: "大学物理/电磁学.md"
       - 微积分考研复习资料:
            - 基础: "微积分考研/微积分考研.md"
@@ -75,7 +75,7 @@ extra_css:
   - stylesheets/rollbeauty.css
   - stylesheets/line.js
 
-# 扩展
+# markdown扩展
 markdown_extensions: # markdown extensions
   - abbr
   - admonition
