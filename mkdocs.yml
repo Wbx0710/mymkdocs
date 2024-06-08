@@ -56,7 +56,6 @@ theme:
 
 extra_css:
   - stylesheets/rollbeauty.css
-  - stylesheets/line.js
 
 # markdown扩展
 markdown_extensions: # markdown extensions
