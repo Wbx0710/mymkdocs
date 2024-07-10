@@ -1,6 +1,6 @@
 document.addEventListener('visibilitychange', function () {
     if (document.visibilityState == 'hidden') {
-        normal_title = "(≧∀≦)♪你回来啦！";
-        document.title = '!!!∑(ﾟДﾟノ)ノ网页未响应...';
+        normal_title = "Bixing's Notes٩(๑òωó๑)۶";
+        document.title = '别走呀！｡･ﾟﾟ･(>д<)･ﾟﾟ･｡';
     } else document.title = normal_title;
 });

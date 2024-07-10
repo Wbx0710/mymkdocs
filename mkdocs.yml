@@ -1,4 +1,4 @@
-site_name: Wbx0710
+site_name: Bixing's Notes
 site_author: 吴必兴
 
 nav: 
@@ -8,25 +8,23 @@ nav:
 theme:
   name: material
 
-  palette:
-    - media: "(prefers-color-scheme)" # 主题颜色
+  palette: 
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: indigo
-    - media: "(prefers-color-scheme: light)" # 浅色
+      accent:  teal
+      toggle:
+        icon: material/brightness-4
+        name: 切换至日间模式
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
-      accent: indigo
+      accent: orange
       toggle:
-        icon: material/weather-sunny
-        name: 打开深色模式
-    - media: "(prefers-color-scheme: dark)" # 深色
-      scheme: slate
-      primary: black
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: 打开浅色模式
+        icon: material/brightness-7
+        name: 切换至夜间模式
 
   features:
     - navigation.tracking # 在url中使用标题定位锚点
@@ -69,6 +67,11 @@ plugins:
         - en
         - ja
       separator: '[\s\u200b\-]'
+  - git-revision-date-localized:
+      enable_creation_date: true
+      locale: 'en'
+      fallback_to_build_date: false
+      type: timeago
 
 extra_css:
   - assets/stylesheets/extra.css
@@ -112,8 +115,8 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
