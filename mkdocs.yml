@@ -4,30 +4,10 @@ site_author: 吴必兴
 nav: 
   - 首页: 
       - "index.md"
-  - 课内学习资料:
-      - 谢小平大物PPT整理: 
-           - 热力学: "大学物理/热学/热学.md"
-           - 电磁学: "大学物理/电磁学.md"
-      - 微积分考研复习资料:
-           - 基础: "微积分考研/微积分考研.md"
-  - 随笔:
-      - 关于高考的碎碎念: "随笔/一些碎碎念.md"
-
 
 theme:
   name: material
-  logo: images/logo.jpg
-  favicon: images/logo.jpg
-  language: zh # 默认语言
-  features:
-    - navigation.tabs
-    - navigation.tracking # 地址栏中的 URL 会随当前位置变化为对应小节的 URL
-    - navigation.indexes # 将 index 页面直接附到小节名上
-    - navigation.top # 回到顶部按钮
-    - toc.follow # toc 跟随
-    #- navigation.sections
-    - toc.follow
-    - navigation.top
+
   palette:
     - media: "(prefers-color-scheme)" # 主题颜色
       scheme: slate
@@ -50,48 +30,101 @@ theme:
       toggle:
         icon: material/weather-night
         name: 打开浅色模式
-  font: # 字体，大概率不需要换
-    text: Roboto
-    code: Roboto Mono
+
+  features:
+    - navigation.tracking # 在url中使用标题定位锚点
+    - navigation.path # 显示当前路径
+    - navigation.prune # 侧边栏自动折叠
+    - navigation.tabs # 顶部显示导航顶层nav（也就是第一个节点）
+    - navigation.indexes # 指定节点index pages ，跟instant不兼容
+    - navigation.top # 一键回顶部
+    - navigation.footer # 底部导航
+    - search.highlight # 搜索高亮
+    - search.suggest # 搜索建议
+    - toc.follow # toc 跟随
+    - content.code.annotate # 代码行号
+    - content.code.copy # 代码复制
+
+  language: 'zh'
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+  logo: images/logo.jpg
+  favicon: images/logo.jpg
+
+plugins:
+  - statistics:
+      words_per_minute: 200
+  - search:
+      lang:
+        - zh
+        - en
+        - ja
+      separator: '[\s\u200b\-]'
 
 extra_css:
-  - stylesheets/rollbeauty.css
+  - assets/stylesheets/extra.css
+  - assets/stylesheets/glightbox.min.css
+  - assets/stylesheets/galaxy.css
+  - assets/stylesheets/charging.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
 
-# markdown扩展
-markdown_extensions: # markdown extensions
+extra_javascript:
+  - assets/javascripts/katex.js 
+  - assets/javascripts/mathjax.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - assets/javascripts/titlechange.js
+  - assets/javascripts/glightbox.min.js
+  - assets/javascripts/click.js
+  - assets/javascripts/galaxy.js
+
+markdown_extensions:
+  # Python Markdown
   - abbr
   - admonition
   - attr_list
   - def_list
+  - tables
   - footnotes
   - md_in_html
   - toc:
       permalink: true
+      toc_depth: 5
+      permalink_title: 点击此处可置顶内容
+  # Python Markdown Extensions
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.betterem:
-      smart_enable: all
+  - pymdownx.betterem
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.magiclink:
-      normalize_issue_symbols: true
-      repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.snippets:
-      auto_append:
-        - includes/mkdocs.md
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -99,10 +132,9 @@ markdown_extensions: # markdown extensions
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-      combine_header_slug: true
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
