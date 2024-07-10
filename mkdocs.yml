@@ -59,8 +59,6 @@ theme:
   favicon: images/logo.jpg
 
 plugins:
-  - statistics:
-      words_per_minute: 200
   - search:
       lang:
         - zh
