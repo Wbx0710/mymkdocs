@@ -13,9 +13,6 @@ theme:
       scheme: slate
       primary: black
       accent: indigo
-      toggle:
-        icon: material/link
-        name: 关闭自动模式
     - media: "(prefers-color-scheme: light)" # 浅色
       scheme: default
       primary: indigo
