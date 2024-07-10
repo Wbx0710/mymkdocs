@@ -65,11 +65,6 @@ plugins:
         - en
         - ja
       separator: '[\s\u200b\-]'
-  - git-revision-date-localized:
-      enable_creation_date: true
-      locale: 'en'
-      fallback_to_build_date: false
-      type: timeago
 
 extra_css:
   - assets/stylesheets/extra.css
