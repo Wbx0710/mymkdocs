@@ -1,9 +1,17 @@
 site_name: Bixing's Notes
 site_author: 吴必兴
 
-nav: 
-  - 首页: 
-      - "index.md"
+nav:
+  - 首页: index.md
+  - 大二秋冬:
+      - 电子电路基础: 
+          - 课程指北: 大二秋冬/电子电路基础/课程指北/index.md
+          - 电路原理整理: 大二秋冬/电子电路基础/电路原理/notes/index.md
+          - 模电整理: 大二秋冬/电子电路基础/模电/notes/index.md
+      - 复变函数与积分变换: 
+          - 课程指北: 大二秋冬/复变函数与积分变换/课程指北/index.md
+          - 杨海涛老师的PPT: 大二秋冬/复变函数与积分变换/PPT/index.md
+  - Code: Code/index.md
 
 theme:
   name: material
@@ -87,47 +95,47 @@ extra_javascript:
   - assets/javascripts/galaxy.js
 
 markdown_extensions:
-  # Python Markdown
-  - abbr
+  - toc:
+      permalink: true # link for each title
+      slugify: !!python/name:pymdownx.slugs.uslugify # enable Unicode link
   - admonition
+  - abbr
   - attr_list
   - def_list
-  - tables
   - footnotes
+  - tables
+  - meta
   - md_in_html
-  - toc:
-      permalink: true
-      toc_depth: 5
-      permalink_title: 点击此处可置顶内容
-  # Python Markdown Extensions
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.betterem
-  - pymdownx.tabbed:
-      alternate_style: true
+  - pymdownx.betterem:
+      # smart_enable: all
   - pymdownx.caret
+  - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
+  - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.snippets: # 允许将其他文件内容插入文件，语法是 --8<-- "filename.ext" 等，参见 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
+      auto_append:
+        - includes/abbreviations.md
+      base_path: ["docs"]
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
-      alternate_style: true
+      alternate_style: true 
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-  - pymdownx.snippets:
-      auto_append:
-        - includes/abbreviations.md
