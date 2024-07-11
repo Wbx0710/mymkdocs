@@ -7,7 +7,10 @@ function clickEffect() {
     let origin;
     let normal;
     let ctx;
-    const colours = ["#ff0000", "#ffff00", "#00ff00", "#4a86e8"];
+    const colours = [
+        "#ff0000", "#ffff00", "#00ff00", "#4a86e8", "#ff00ff", "#00ffff",
+        "#ff6600", "#ff0066", "#66ff00", "#6600ff", "#0066ff", "#00ff66"
+    ]; // 增加更多的颜色
     const canvas = document.createElement("canvas");
     document.body.appendChild(canvas);
     canvas.setAttribute("style", "width: 100%; height: 100%; top: 0; left: 0; z-index: 99999; position: fixed; pointer-events: none;");
@@ -47,7 +50,6 @@ function clickEffect() {
         console.log("canvas or addEventListener is unsupported!");
     }
 
-
     function updateSize() {
         canvas.width = window.innerWidth * 2;
         canvas.height = window.innerHeight * 2;
@@ -65,6 +67,7 @@ function clickEffect() {
             y: height / 2
         };
     }
+
     class Ball {
         constructor(x = origin.x, y = origin.y) {
             this.x = x;
@@ -77,7 +80,7 @@ function clickEffect() {
             }
             this.vx = (this.multiplier + Math.random() * 0.5) * Math.cos(this.angle);
             this.vy = (this.multiplier + Math.random() * 0.5) * Math.sin(this.angle);
-            this.r = randBetween(4, 8) + 3 * Math.random();
+            this.r = randBetween(10, 20); // 修改为更大的星形
             this.color = colours[Math.floor(Math.random() * colours.length)];
         }
         update() {
@@ -89,6 +92,31 @@ function clickEffect() {
             this.vx *= 0.8;
             this.vy *= 0.8;
         }
+
+        drawStar(ctx, cx, cy, spikes, outerRadius, innerRadius) {
+            let rot = Math.PI / 2 * 3;
+            let x = cx;
+            let y = cy;
+            let step = Math.PI / spikes;
+
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - outerRadius)
+            for (let i = 0; i < spikes; i++) {
+                x = cx + Math.cos(rot) * outerRadius;
+                y = cy + Math.sin(rot) * outerRadius;
+                ctx.lineTo(x, y)
+                rot += step
+
+                x = cx + Math.cos(rot) * innerRadius;
+                y = cy + Math.sin(rot) * innerRadius;
+                ctx.lineTo(x, y)
+                rot += step
+            }
+            ctx.lineTo(cx, cy - outerRadius);
+            ctx.closePath();
+            ctx.fillStyle = this.color;
+            ctx.fill();
+        }
     }
 
     function pushBalls(count = 1, x = origin.x, y = origin.y) {
@@ -98,7 +126,7 @@ function clickEffect() {
     }
 
     function randBetween(min, max) {
-        return Math.floor(Math.random() * max) + min;
+        return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
     function loop() {
@@ -107,10 +135,7 @@ function clickEffect() {
         for (let i = 0; i < balls.length; i++) {
             let b = balls[i];
             if (b.r < 0) continue;
-            ctx.fillStyle = b.color;
-            ctx.beginPath();
-            ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2, false);
-            ctx.fill();
+            b.drawStar(ctx, b.x, b.y, 5, b.r, b.r / 2); // 绘制星形
             b.update();
         }
         if (longPressed == true) {
@@ -132,9 +157,3 @@ function clickEffect() {
     }
 }
 clickEffect();
-
-
-// 作者: Night1918
-// 链接: https://blog.jyhao.cn/posts/44305.html#%E6%95%88%E6%9E%9C
-// 来源: Night1918 Blog
-// 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
