@@ -12,7 +12,7 @@ nav:
           - 课程指北: 大二秋冬/复变函数与积分变换/课程指北/index.md
           - 杨海涛老师的PPT: 大二秋冬/复变函数与积分变换/PPT/index.md
   - Code: Code/index.md
-
+  - 收藏的网页: 收藏的网页/index.md
 theme:
   name: material
 
@@ -75,6 +75,13 @@ plugins:
         - en
         - ja
       separator: '[\s\u200b\-]'
+  - git-revision-date-localized:
+      type: datetime
+      timezone: Asia/Shanghai
+      locale: zh
+      enable_creation_date: true
+      exclude:
+        - index.md
 
 extra_css:
   - assets/stylesheets/extra.css
