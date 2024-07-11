@@ -18,6 +18,6 @@ statistics: True
 
 !!! tip ""
 
-    Bixing's Notes共 {{ pages }} 个页面，{{ words }} 个字。
+    Bixing's Notebook共 {{ pages }} 页，{{ words }} 字。
 
 ![background](images\background.jpg)
