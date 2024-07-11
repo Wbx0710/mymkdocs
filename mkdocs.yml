@@ -67,6 +67,8 @@ theme:
   favicon: images/logo.jpg
 
 plugins:
+  - statistics:
+      words_per_minute: 200
   - search:
       lang:
         - zh
@@ -94,48 +96,49 @@ extra_javascript:
   - assets/javascripts/click.js
   - assets/javascripts/galaxy.js
 
+
 markdown_extensions:
-  - toc:
-      permalink: true # link for each title
-      slugify: !!python/name:pymdownx.slugs.uslugify # enable Unicode link
-  - admonition
+  # Python Markdown
   - abbr
+  - admonition
   - attr_list
   - def_list
-  - footnotes
   - tables
-  - meta
+  - footnotes
   - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 5
+      permalink_title: 点击此处可置顶内容
+  # Python Markdown Extensions
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.betterem:
-      # smart_enable: all
+  - pymdownx.betterem
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.caret
-  - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.magiclink:
-      repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.snippets: # 允许将其他文件内容插入文件，语法是 --8<-- "filename.ext" 等，参见 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
-      auto_append:
-        - includes/abbreviations.md
-      base_path: ["docs"]
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
