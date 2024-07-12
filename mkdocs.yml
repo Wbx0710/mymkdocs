@@ -2,7 +2,7 @@ site_name: Bixing's Notebook
 site_author: 吴必兴
 
 nav:
-  - 无限进步！: index.md
+  - 首页: index.md
   - 大二秋冬: 
       - 课程概览: 大二秋冬/index.md
       - 电子电路基础: 
