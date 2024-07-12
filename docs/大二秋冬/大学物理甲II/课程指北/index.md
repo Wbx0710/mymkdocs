@@ -27,7 +27,7 @@
 
 ## Savia学长复习讲义
 !!! note "Savia学长大物甲II讲义"
-    * [Savia学长大物甲II讲义](https://pan.baidu.com/s/1d9gizv6mnR0kQSQGmjnmDg?pwd=hiw1 )
+    * [Savia学长大物甲II讲义_PDF](https://pan.baidu.com/s/1d9gizv6mnR0kQSQGmjnmDg?pwd=hiw1 )
 
 ## 历年卷
 !!! note "大物甲II历年卷"
