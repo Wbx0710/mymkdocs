@@ -29,11 +29,12 @@
 
 ### CS学习
 
-* [CS自学指南 (csdiy.wiki)](https://csdiy.wiki/)
+* [CS自学指南](https://csdiy.wiki/)
 * [CSDN](https://www.csdn.net/)
 * [Linux101](https://101.lug.ustc.edu.cn/)
 * [Road 2 Coding](https://www.r2coding.com/#/)
 * [CppGuide](https://github.com/GrindGold/CppGuide)
+* [XLab CS-Engineering](https://zjuxlab.github.io/cs-engineering/)
 
 ### 数学建模
 
@@ -55,7 +56,9 @@
 
 * [JiePeng](https://note.jiepeng.tech/Zju2-1/)
 * [Slowist](https://slowist-lee.github.io/slowist-notebook/%E6%94%B6%E8%97%8F%E5%A4%B9/)
-* [Jiakang](https://chatter-barber-020.notion.site/40075ca669a9460d9c915b1e564c83c2?v=ea79d5524f6546eba94e3da5efb93f1e)
+* [末荼Mo_Tu](https://chatter-barber-020.notion.site/40075ca669a9460d9c915b1e564c83c2?v=ea79d5524f6546eba94e3da5efb93f1e)
+* [Cirno](https://cirnoware.github.io/)
+* [𝓐𝓒𝓔𝓔-𝓛𝓲𝓫 ](http://lib.jiepeng.tech/)
 
 ### 其他大佬们
 * [Savia](https://savia7582.github.io/Exterior/)
