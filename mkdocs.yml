@@ -33,6 +33,8 @@ nav:
           - 课程指北: 大二秋冬/电设实验I/课程指北/index.md
       - 通识课专栏: 
           - 课程指北: 大二秋冬/通识课/课程指北/index.md
+  - XLab: 
+      - 简介: XLab/简介/index.md
   - Code: Code/index.md
   - 收藏的网页: 收藏的网页/index.md
 theme:
