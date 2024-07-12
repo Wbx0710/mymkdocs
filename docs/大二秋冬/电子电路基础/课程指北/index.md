@@ -1,12 +1,15 @@
 # 电子电路基础
 
-!!! info "电子电路基础"
+!!! danger "电子电路基础"
+    * 学分：4
+    * 任课教师：金浩/骆季奎
+    * **为主修课程**
 
-    * 课程指北
+!!! info "基本信息"
+    * 成绩构成：作业、小测、课堂表现20%；专题研究10%；期中20%（我们好像没有期中考试了）；期末50%
+    * 经验帖：[2022秋冬电基课程感悟+资料](https://www.cc98.org/topic/5510850)
+    * 经验帖：[微电子大二专业课经验分享（电基、数电、半导体物理、数值分析、固体物理）](https://www.cc98.org/topic/5930229)
 
-具体课程信息因为23级课程改革，等正式上课再补上。往年课程感悟可以看98的这个帖子[“2022秋冬电基课程感悟+资料”](https://www.cc98.org/topic/5510850)
-
-分为电路原理与模拟电子技术基础两部分
 
 ## ZJU
 !!! danger "ZJU课程组的网站"
@@ -31,3 +34,5 @@
 !!! note "个人感觉比较好的网课"
     * [THU于歆杰老师的《电路原理》网课](https://www.icourses.cn/web/sword/portal/shareDetails?&cId=2980#/course/chapter)
     * [SJTU郑益慧老师的《模电》B站](https://www.bilibili.com/video/BV1Gt411b7Zq/?spm_id_from=333.999.0.0&vd_source=4bf1953b0a6ee0abff2d699f545186cb)
+
+
