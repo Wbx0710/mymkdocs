@@ -141,7 +141,7 @@
     * 任课教师：孔寒冰/顾征
 
 !!! info "课程基本信息"
-    * 🚀前往课程指北💯
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E5%B7%A5%E7%A8%8B%E5%AF%BC%E8%AE%BA/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/)
 
 ## 信电学院短学期（2学分）
 !!! danger " 认知实践"
