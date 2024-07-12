@@ -93,7 +93,7 @@
     * **为主修课程**
 
 !!! info "课程基本信息"
-    * 🚀前往课程指北💯
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E7%94%B5%E8%AE%BE%E5%AE%9E%E9%AA%8CI/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/)
 
 ## 通识课（4.5学分）
 ### 博弈论基础
@@ -102,7 +102,7 @@
     * 任课教师：蒋文华
 
 !!! info "课程基本信息"
-    * 🚀前往课程指北💯
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E9%80%9A%E8%AF%86%E8%AF%BE/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/)
 
 
 
@@ -113,7 +113,7 @@
     * 任课教师：毛峥伟/郑强
 
 !!! info "课程基本信息"
-    * 🚀前往课程指北💯
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E9%80%9A%E8%AF%86%E8%AF%BE/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/)
 
 
 
@@ -124,7 +124,7 @@
     * 任课教师：张萌
 
 !!! info "课程基本信息"
-    * 🚀前往课程指北💯
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E9%80%9A%E8%AF%86%E8%AF%BE/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/)
 
 ## 工高课程（6.5学分）
 ### 数学建模
@@ -132,7 +132,7 @@
     * 学分：4.5
     * 任课教师：谈之奕
 !!! info "课程基本信息"
-    * 🚀前往课程指北💯
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/)
 
 ### 工程导论
 !!! danger " 工程导论"
