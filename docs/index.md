@@ -3,7 +3,7 @@ statistics: True
 ---
 
 
-# 无限进步！
+# Bixing's Notebook
 
 ## 保持热爱，奔赴星海！愿我们都能“无限进步”！♾️
 
@@ -16,8 +16,8 @@ statistics: True
     - [x] ​    这里有我从大二秋冬学期开始的一些课程笔记
     - [x] ​    这里也有我的一些杂七杂八的收藏资料
 
-!!! tip ""
+!!! note ""
 
-    Bixing's Notebook共 {{ pages }} 页，{{ words }} 字。
+    目前Bixing's Notebook共 {{ pages }} 页，{{ words }} 字。
 
 ![background](images\background.jpg)
