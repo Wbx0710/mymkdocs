@@ -1,7 +1,7 @@
-# XLab
+# 硬件技能提升
 
 !!! info "学习记录"
-    * 记录自己在XLab内训过程中Get的技能！
+    * 记录自己在硬件方面Get的技能！
 
 ## SolidWorks
 !!! note "安装"
