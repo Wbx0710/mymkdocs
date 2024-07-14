@@ -36,6 +36,7 @@ nav:
           - 课程指北: 大二秋冬/通识课/课程指北/index.md
   - 硬件技能: 
       - 简介: 硬件技能/简介/index.md
+      - 机械传动: 硬件技能/机械传动/index.md
   - Coding: Code/index.md
   - 收藏的网页: 收藏的网页/index.md
 theme:
