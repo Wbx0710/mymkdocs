@@ -5,4 +5,7 @@
     * 记录我的机械臂Diy进程！！！冲冲冲！！！
 
 ## 目标效果图！
-![arm_goal](https://gitee.com/wu-bixing/picture/raw/master/202407142107000.png)
+
+
+
+![arm_goal](images\arm_goal.png)

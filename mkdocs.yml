@@ -1,5 +1,7 @@
 site_name: Bixing's Notebook
 site_author: 吴必兴
+site_url: https://wbx0710.github.io/mymkdocs/
+use_directory_urls: false
 
 nav:
   - 首页: index.md
