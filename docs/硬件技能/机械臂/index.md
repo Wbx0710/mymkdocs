@@ -9,3 +9,10 @@
 
 
 ![arm_goal](images\arm_goal.png)
+
+## 2024.7.15
+!!! tip "草图与原理"
+
+    * 通过草图大致明白了机械臂的运行原理，开始设计对应零件
+
+![draft](images\draft.png)
