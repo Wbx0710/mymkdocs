@@ -20,4 +20,4 @@ statistics: True
 
     目前Bixing's Notebook共 {{ pages }} 页，{{ words }} 字。
 
-![background](images\background.jpg)
+![background](https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202407251645358.jpg)
