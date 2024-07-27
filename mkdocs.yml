@@ -40,7 +40,11 @@ nav:
       - 简介: 硬件技能/简介/index.md
       - 机械臂: 硬件技能/机械臂/index.md
   - Coding: Code/index.md
-  - 收藏的网页: 收藏的网页/index.md
+  - Bixing's 收藏页: 
+      - 收藏的网页: Bixing's 收藏页/收藏的网页/index.md
+      - 时间管理: Bixing's 收藏页/时间管理/index.md
+
+
 theme:
   name: material
 
