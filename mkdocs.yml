@@ -6,7 +6,8 @@ use_directory_urls: false
 nav:
   - 首页: index.md
   - 大二秋冬: 
-      - 课程概览: 大二秋冬/index.md
+      - 大二秋学期: 大二秋冬/index.md
+      - 课程概览: 大二秋冬/课程概览/index.md
       - 电子电路基础: 
           - 课程指北: 大二秋冬/电子电路基础/课程指北/index.md
           - 电路原理整理: 大二秋冬/电子电路基础/电路原理/notes/index.md
