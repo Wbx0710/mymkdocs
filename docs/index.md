@@ -11,7 +11,7 @@ statistics: True
     <div id="clock-date"></div>
 </div>
 <div class="center-text-large">
-保持热爱，奔赴星海！愿我们都能“无限进步”！♾️
+保持热爱，奔赴星海！愿我们都能“无限进步”！
 </div>
 
 !!! tip  "关于我"
