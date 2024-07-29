@@ -21,11 +21,11 @@ statistics: True
 
 !!! note ""
 
-    目前Bixing's Notebook共 {{ pages }} 页，{{ words }} 字。
+    目前Bixing's Notebook共 {{ pages }} 页，约{{ words }} 字。
 
 <figure markdown="span">
   ![Homepage Wallpaper Dark Mode](./images/wallpaper_dark.jpg#only-dark){ width="900"  }
   ![Homepage Wallpaper Light Mode](./images/wallpaper_light.jpg#only-light){ width="900"  }
   <figcaption>-- 你在凝视深渊时，深渊也在凝视着你 --</figcaption>
-  <figcaption>~~ 尝试更改一下亮暗吧 ~~</figcaption>
+  <figcaption>~~ 尝试更改一下亮暗模式吧 ~~</figcaption>
 </figure>
