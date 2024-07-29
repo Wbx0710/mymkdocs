@@ -6,7 +6,6 @@ use_directory_urls: false
 nav:
   - 首页: index.md
   - 大二秋冬: 
-      - 大二秋学期: 大二秋冬/index.md
       - 课程概览: 大二秋冬/课程概览/index.md
       - 电子电路基础: 
           - 课程指北: 大二秋冬/电子电路基础/课程指北/index.md
@@ -100,6 +99,10 @@ theme:
   favicon: images/logo.jpg
 
 plugins:
+  - glightbox
+  - tags
+  #- heti:
+      #disable_serve: false
   - statistics:
       words_per_minute: 200
   - search:
@@ -117,15 +120,21 @@ plugins:
         - index.md
 
 extra_css:
+  - assets/stylesheets/clock.css
   - assets/stylesheets/extra.css
   - assets/stylesheets/glightbox.min.css
   - assets/stylesheets/galaxy.css
   - assets/stylesheets/charging.css
+  - assets/stylesheets/card.css
+  - assets/stylesheets/tony.css
+  - assets/stylesheets/flink.css
+  - assets/stylesheets/neoteroi-mkdocs.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
 
 extra_javascript:
   - assets/javascripts/katex.js 
+  - assets/javascripts/clock.js
   - assets/javascripts/mathjax.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
@@ -134,7 +143,6 @@ extra_javascript:
   - assets/javascripts/titlechange.js
   - assets/javascripts/glightbox.min.js
   - assets/javascripts/click.js
-  - assets/javascripts/galaxy.js
 
 
 markdown_extensions:

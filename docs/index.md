@@ -5,13 +5,16 @@ statistics: True
 
 # Bixing's Notebook
 
-## 保持热爱，奔赴星海！愿我们都能“无限进步”！♾️
+<img src="images/me.gif" alt="AboutMe" style="display:block; margin:auto; width:30%;" />
+<div id="clock">
+    <div id="clock-time"></div>
+    <div id="clock-date"></div>
+</div>
+<div class="center-text-large">
+保持热爱，奔赴星海！愿我们都能“无限进步”！♾️
+</div>
 
-!!! danger "无限进步"
-
-    “世界是你们的，也是我们的，但是归根结底是你们的。你们青年人朝气蓬勃，正在兴旺时期，好像早晨八、九点钟的太阳。希望寄托在你们身上。”
-
-!!! tip "关于我"
+!!! tip  "关于我"
     - [x] ​    辅修竺可桢学院工程教育高级班（23级ACEE）
     - [x] ​    这里有我从大二秋冬学期开始的一些课程笔记与指南
     - [x] ​    这里也有我的一些杂七杂八的资料
@@ -20,4 +23,8 @@ statistics: True
 
     目前Bixing's Notebook共 {{ pages }} 页，{{ words }} 字。
 
-![background](https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202407251645358.jpg)
+<figure markdown="span">
+  ![Homepage Wallpaper Dark Mode](./images/wallpaper_dark.jpg#only-dark){ width="900"  }
+  ![Homepage Wallpaper Light Mode](./images/wallpaper_light.jpg#only-light){ width="900"  }
+  <figcaption>-- 改变亮暗模式可以更改图片哦 --</figcaption>
+</figure>
