@@ -26,5 +26,6 @@ statistics: True
 <figure markdown="span">
   ![Homepage Wallpaper Dark Mode](./images/wallpaper_dark.jpg#only-dark){ width="900"  }
   ![Homepage Wallpaper Light Mode](./images/wallpaper_light.jpg#only-light){ width="900"  }
-  <figcaption>-- 改变亮暗模式可以更改图片哦 --</figcaption>
+  <figcaption>-- 你在凝视深渊时，深渊也在凝视着你 --</figcaption>
+  <figcaption>~~ 尝试更改一下亮暗吧 ~~</figcaption>
 </figure>
