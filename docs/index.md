@@ -20,8 +20,9 @@ statistics: True
     - [x] ​    这里也有我的一些杂七杂八的资料
 
 !!! note ""
-
-    目前Bixing's Notebook共 {{ pages }} 页，约{{ words }} 字。
+    <div class="center-text">
+    目前Bixing's Notebook共 {{ pages }} 页，约 {{ words }} 个字
+    </div>
 
 <figure markdown="span">
   ![Homepage Wallpaper Dark Mode](./images/wallpaper_dark.jpg#only-dark){ width="900"  }

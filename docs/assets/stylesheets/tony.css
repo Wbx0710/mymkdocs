@@ -62,6 +62,7 @@ h1,
 
 .center-text {
   text-align: center;
+  font-size: 0.8rem;
 }
 
 /* 居中且定义字体大小的文字 */
