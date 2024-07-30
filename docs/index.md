@@ -19,6 +19,13 @@ statistics: True
     - [x] ​    这里有我从大二秋冬学期开始的一些课程笔记与指南
     - [x] ​    这里也有我的一些杂七杂八的资料
 
+!!! tip ""
+    <div class="center-text">
+    上一次更新时间： {{ git_revision_date_localized }}
+    
+    更新内容：
+    </div>
+
 !!! note ""
     <div class="center-text">
     目前Bixing's Notebook共 {{ pages }} 页，约 {{ words }} 个字

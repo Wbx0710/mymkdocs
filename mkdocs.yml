@@ -43,6 +43,7 @@ nav:
   - Bixing's 收藏页: 
       - 收藏的网页: Bixing's 收藏页/收藏的网页/index.md
       - 时间管理: Bixing's 收藏页/时间管理/index.md
+      - 用随机梯度下降来优化人生: Bixing's 收藏页/李沐大佬/index.md
 
 
 theme:
@@ -115,9 +116,7 @@ plugins:
       type: datetime
       timezone: Asia/Shanghai
       locale: zh
-      enable_creation_date: true
-      exclude:
-        - index.md
+      enable_creation_date: false
 
 extra_css:
   - assets/stylesheets/clock.css
