@@ -23,7 +23,7 @@ statistics: True
     <div class="center-text">
     上一次更新时间： {{ git_revision_date_localized }}
     
-    更新内容：
+    更新内容：[《用随机梯度下降来优化人生》](https://wbx0710.github.io/mymkdocs/Bixing%27s%20%E6%94%B6%E8%97%8F%E9%A1%B5/%E6%9D%8E%E6%B2%90%E5%A4%A7%E4%BD%AC/index.html){ .md-button }
     </div>
 
 !!! note ""
@@ -37,3 +37,4 @@ statistics: True
   <figcaption>-- 你在凝视深渊时，深渊也在凝视着你 --</figcaption>
   <figcaption>~~ 尝试更改一下亮暗模式吧 ~~</figcaption>
 </figure>
+
