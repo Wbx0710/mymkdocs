@@ -5,16 +5,20 @@
   --md-default-fg-color--light: rgba(72, 52, 52, 0.54);
   --md-default-fg-color--lighter: rgba(72, 52, 52, 0.32);
   --md-default-fg-color--lightest: rgba(72, 52, 52, 0.27);
-  --md-default-bg-color: #fffffc;
+  --md-default-bg-color: #f5f5dc;
+  /*大背景颜色*/
   --md-default-bg-color--light: hsla(0, 0%, 100%, 0.7);
   --md-default-bg-color--lighter: hsla(0, 0%, 100%, 0.3);
   --md-default-bg-color--lightest: hsla(0, 0%, 100%, 0.12);
 
   /* primary color */
   --md-primary-fg-color: #3b3ba6;
+  /*上页顶颜色*/
   --md-primary-fg-color--light: #5050ad;
+  /*下页顶颜色*/
   --md-primary-fg-color--dark: #95b1ba;
-  --md-primary-bg-color: #edebe0;
+  --md-primary-bg-color: #d3d3d3;
+  /*页顶字体颜色*/
   --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
   --md-accent-fg-color: #3c5e91;
   --md-accent-fg-color--light: #29202f;
@@ -29,7 +33,8 @@
   /* typeset color */
   --md-typeset-color: var(--md-default-fg-color);
   --md-typeset-a-color: var(--md-accent-fg-color--light);
-  --md-typeset-mark-color: rgba(255, 255, 0, 0.9);
+  --md-typeset-mark-color: #add8e6;
+  /*高亮颜色*/
   --md-typeset-del-color: rgba(245, 80, 61, 0.15);
   --md-typeset-ins-color: rgba(228, 199, 235, 0.15);
   --md-typeset-kbd-color: #fafafa;
