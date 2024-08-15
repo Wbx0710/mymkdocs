@@ -20,11 +20,17 @@
 <img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202408021638815.png" alt="SolidWorks建模" style="zoom: 50%;" />
 
 ## 等待：3D打印以及控制
-这也是我第一次系统地接触嵌入式，实话说，以前对“嵌入式”的理解，仅限于
+这也是我第一次系统地接触嵌入式，买了块ESP32的板子，也算是第一次玩上嵌入式啦
 
-<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202408102224255.jpg" alt="ESP32板" style="zoom:50%;" />
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202408102224255.jpg" alt="ESP32板" style="zoom: 33%;" />
 
-<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202408102224440.jpg" alt="最终成品" style="zoom:50%;" />
+## 最终成品
+
+四个自由度，可实现蓝牙操作控制，还是蛮帅的
+
+有一说一，光固化的3D打印精度也还是不够呀
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202408102224440.jpg" alt="最终成品" style="zoom: 33%;" />
 
 
 
