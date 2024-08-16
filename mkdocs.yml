@@ -1,6 +1,8 @@
 site_name: Bixing's Notebook
 site_author: 吴必兴
 site_url: https://wbx0710.github.io/mymkdocs/
+repo_url: https://github.com/Wbx0710/mymkdocs
+repo_name: Bixing's Notebook
 use_directory_urls: false
 
 nav:
@@ -49,6 +51,9 @@ nav:
 
 theme:
   name: material
+  
+  repo_url: https://github.com/Wbx0710/mymkdocs
+  repo_name: Bixing's Notebook
 
   palette: 
     # Palette toggle for dark mode
@@ -84,6 +89,9 @@ theme:
 
   language: 'zh'
   icon:
+    previous: fontawesome/solid/angle-left # 左下角向前翻页的图标
+    next: fontawesome/solid/angle-right # 右下角向后翻页的图标
+    repo: fontawesome/brands/github # 右上角仓库图标
     admonition:
       note: octicons/tag-16
       abstract: octicons/checklist-16
@@ -148,6 +156,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Wbx0710
       name: Bixing's Notebook
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/442107458/favlist?fid=2473170958&ftype=create
+      name: Bilibili
 
 markdown_extensions:
   # Python Markdown
