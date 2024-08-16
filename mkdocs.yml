@@ -2,7 +2,7 @@ site_name: Bixing's Notebook
 site_author: 吴必兴
 site_url: https://wbx0710.github.io/mymkdocs/
 repo_url: https://github.com/Wbx0710/mymkdocs
-repo_name: Goto Repositories
+repo_name: Go to Repositories
 use_directory_urls: false
 
 nav:
@@ -53,7 +53,7 @@ theme:
   name: material
   
   repo_url: https://github.com/Wbx0710/mymkdocs
-  repo_name: Bixing's Notebook
+  repo_name: Go to Repositories
 
   palette: 
     # Palette toggle for dark mode
