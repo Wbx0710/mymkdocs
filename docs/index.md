@@ -38,7 +38,6 @@ statistics: True
   <figcaption>~~ 尝试更改一下亮暗模式吧 ~~</figcaption>
 </figure>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

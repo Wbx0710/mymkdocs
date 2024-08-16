@@ -140,7 +140,7 @@ extra_css:
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
 
 extra_javascript:
-  - assets/javascripts/katex.js 
+  - assets/javascripts/katex.js
   - assets/javascripts/clock.js
   - assets/javascripts/mathjax.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
