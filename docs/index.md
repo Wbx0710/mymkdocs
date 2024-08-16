@@ -37,3 +37,29 @@ statistics: True
   <figcaption>-- 你在凝视深渊时，深渊也在凝视着你 --</figcaption>
   <figcaption>~~ 尝试更改一下亮暗模式吧 ~~</figcaption>
 </figure>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Chase</title>
+    <style>
+        .img {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-image: url('./images/ac.png');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="experience"></div>
+    <div class="img"></div>
+
+    <!-- 引入 JavaScript 文件 -->
+    <script src="./assets/javascripts/chase.js"></script>
+</body>
+</html>
