@@ -88,7 +88,7 @@
 
 ### Markdown
 
-* [markdown公式符号大全](https://blog.csdn.net/konglongdanfo1/article/details/85204312){ .md-button }
+* [Markdown公式符号大全](https://blog.csdn.net/konglongdanfo1/article/details/85204312){ .md-button }
 * [如何在简书Markdown中输入数学公式 ](https://www.jianshu.com/p/67a27c9effc5/){ .md-button }
 
 ### 数学工具

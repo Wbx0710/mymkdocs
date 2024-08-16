@@ -11,19 +11,19 @@ statistics: True
     <div id="clock-date"></div>
 </div>
 <div class="center-text-large">
-保持热爱，奔赴星海！愿我们都能“无限进步”！
+无限进步
 </div>
 
 !!! quote  "关于我"
     - [x] ​    辅修竺可桢学院工程教育高级班（23级ACEE）
     - [x] ​    这里有我从大二秋冬学期开始的一些课程笔记与指南
-    - [x] ​    这里也有我的一些杂七杂八的资料
+    - [x] ​    这里也有我的一些杂七杂八的收藏以及资料
 
 !!! tip ""
     <div class="center-text">
     上一次更新时间： {{ git_revision_date_localized }}
     
-    更新内容：[《用随机梯度下降来优化人生》](https://wbx0710.github.io/mymkdocs/Bixing%27s%20%E6%94%B6%E8%97%8F%E9%A1%B5/%E6%9D%8E%E6%B2%90%E5%A4%A7%E4%BD%AC/index.html){ .md-button }
+    更新内容：[My CC98 My Home](https://wbx0710.github.io/mymkdocs/Bixing%27s%20%E6%94%B6%E8%97%8F%E9%A1%B5/CC98/index.html){ .md-button }
     </div>
 
 !!! note ""
@@ -37,4 +37,3 @@ statistics: True
   <figcaption>-- 你在凝视深渊时，深渊也在凝视着你 --</figcaption>
   <figcaption>~~ 尝试更改一下亮暗模式吧 ~~</figcaption>
 </figure>
-
