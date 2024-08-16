@@ -143,6 +143,11 @@ extra_javascript:
   - assets/javascripts/glightbox.min.js
   - assets/javascripts/click.js
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Wbx0710
+      name: Bixing's Notebook
 
 markdown_extensions:
   # Python Markdown
