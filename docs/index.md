@@ -18,7 +18,7 @@ statistics: True
             padding: 10px;
             background: none; /* 移除背景 */
         }
-
+    
         /* 设置日期显示区域的样式 */
         .date-display {
             color: #ffffff; /* 白色字体 */
@@ -30,7 +30,7 @@ statistics: True
             text-align: center;
         }
     </style>
-
+    
     <script defer>
         function format(newDate) {
             const day = newDate.getDay();
@@ -41,10 +41,10 @@ statistics: True
             const min = newDate.getMinutes() < 10 ? `0${newDate.getMinutes()}` : newDate.getMinutes();
             const s = newDate.getSeconds() < 10 ? `0${newDate.getSeconds()}` : newDate.getSeconds();
             const dict = {1: "一", 2: "二", 3: "三", 4: "四", 5: "五", 6: "六", 0: "天"};
-
+    
             return `${y}年${m}月${d}日 ${h}:${min}:${s} 星期${dict[day]}`;
         }
-
+    
         const timerId = setInterval(() => {
             const newDate = new Date();
             const p1 = document.querySelector(".p1");
@@ -82,7 +82,7 @@ statistics: True
         });
 </script>
 
-***  
+***
 
 <div class="grid cards" markdown>
 
@@ -144,6 +144,7 @@ statistics: True
 
     <!-- 引入 JavaScript 文件 -->
     <script src="./assets/javascripts/chase.js"></script>
+    <script src="./assets/javascripts/snow.js"></script>
 </body>
 </html>
 

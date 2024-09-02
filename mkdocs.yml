@@ -2,7 +2,7 @@ site_name: Bixing's Notebook
 site_author: 吴必兴
 site_url: https://wbx0710.github.io/mymkdocs/
 repo_url: https://github.com/Wbx0710/mymkdocs
-repo_name: Go to Bixing's Repositories
+repo_name: Bixing's Repositories
 use_directory_urls: false
 
 nav:
@@ -79,7 +79,7 @@ theme:
   name: material
   
   repo_url: https://github.com/Wbx0710/mymkdocs
-  repo_name: Go to Bixing's Repositories
+  repo_name: Bixing's Repositories
 
   palette: 
     # Palette toggle for dark mode
@@ -152,6 +152,8 @@ plugins:
       timezone: Asia/Shanghai
       locale: zh
       enable_creation_date: false
+
+copyright: Copyright &copy; 2024~2027 WuBixing/All Rights Reserved. # 左下角的版权声明
 
 extra_css:
   - assets/stylesheets/clock.css
