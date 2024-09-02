@@ -255,10 +255,6 @@ p {
   background-color: #e6ad5bb0;
 }
 
-.toc-tag-classnotes::before {
-  content: "课程笔记";
-}
-
 .reference ol {
   counter-reset: li;
 }
@@ -272,4 +268,18 @@ p {
 .reference li::marker {
   content: "[" counter(li) "]";
   font-size: 0.8em;
+}
+
+/* 给 <object> 元素添加圆角效果 */
+object {
+  border-radius: 8px;
+  overflow: hidden;
+  /* 确保内容也被裁剪以适应圆角 */
+}
+
+/* 给 <embed> 元素添加圆角效果 */
+embed {
+  border-radius: 8px;
+  overflow: hidden;
+  /* 确保内容也被裁剪以适应圆角 */
 }
