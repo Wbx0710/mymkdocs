@@ -1,3 +1,48 @@
+/* 确保点击时移除所有链接的下划线 */
+a,
+a:active,
+a:focus {
+  text-decoration: none !important;
+  /* 强制去除下划线 */
+}
+
+/* 模拟 iOS 系统的悬停效果 */
+a:hover {
+  font-size: 1.02em;
+  /* 字体轻微变大 */
+  color: #f5f5dc;
+  /* 改为 iOS 系统常用的蓝色 */
+  text-shadow: 0 0 10px rgba(0, 122, 255, 0.5);
+  /* 添加淡淡的蓝色阴影 */
+  transition: all 0.3s ease;
+  /* 添加平滑的过渡效果 */
+}
+
+/* 针对导航栏中的链接悬停效果 */
+.navbar-nav>li>a:hover {
+  font-size: 1.02em;
+  color: #f5f5dc;
+  text-shadow: 0 0 10px rgba(0, 122, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* 针对 Material 主题导航栏中的链接悬停效果 */
+.md-nav__link:hover {
+  font-size: 1.02em;
+  color: #f5f5dc;
+  text-shadow: 0 0 10px rgba(0, 122, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* 侧边栏链接悬停效果 */
+.md-sidebar__link:hover {
+  font-size: 1.02em;
+  color: #f5f5dc;
+  text-shadow: 0 0 10px rgba(0, 122, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+
 :root,
 [data-md-color-scheme="default"] {
   /* default color */

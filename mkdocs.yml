@@ -2,7 +2,7 @@ site_name: Bixing's Notebook
 site_author: 吴必兴
 site_url: https://wbx0710.github.io/mymkdocs/
 repo_url: https://github.com/Wbx0710/mymkdocs
-repo_name: Go to Repositories
+repo_name: Go to Bixing's Repositories
 use_directory_urls: false
 
 nav:
@@ -16,12 +16,38 @@ nav:
           - 电子电路基础习题集萃: 大二秋冬/电子电路基础/电基习题集萃/index.md
       - 大学物理甲II: 
           - 课程指北: 大二秋冬/大学物理甲II/课程指北/index.md
+          - Savia学长的大物II讲义: 
+            - PDF版汇总下载: 大二秋冬/大学物理甲II/Savia大物讲义/index.md
+            - Chapter9: 大二秋冬/大学物理甲II/Savia大物讲义/chapter9/index.md
+            - Chapter10: 大二秋冬/大学物理甲II/Savia大物讲义/chapter10/index.md
+            - Chapter11: 大二秋冬/大学物理甲II/Savia大物讲义/chapter11/index.md
+            - Chapter12: 大二秋冬/大学物理甲II/Savia大物讲义/chapter12/index.md
+            - Chapter13: 大二秋冬/大学物理甲II/Savia大物讲义/chapter13/index.md
+            - Chapter14: 大二秋冬/大学物理甲II/Savia大物讲义/chapter14/index.md
+            - Chapter15: 大二秋冬/大学物理甲II/Savia大物讲义/chapter15/index.md
+            - Chapter16: 大二秋冬/大学物理甲II/Savia大物讲义/chapter16/index.md
+            - Chapter17: 大二秋冬/大学物理甲II/Savia大物讲义/chapter17/index.md
+            - Chapter18: 大二秋冬/大学物理甲II/Savia大物讲义/chapter18/index.md
+            - Chapter19: 大二秋冬/大学物理甲II/Savia大物讲义/chapter19/index.md
+            - Chapter20: 大二秋冬/大学物理甲II/Savia大物讲义/chapter20/index.md
+            - Chapter21: 大二秋冬/大学物理甲II/Savia大物讲义/chapter21/index.md
+            - Chapter22: 大二秋冬/大学物理甲II/Savia大物讲义/chapter22/index.md
+            - Chapter23: 大二秋冬/大学物理甲II/Savia大物讲义/chapter23/index.md
       - 数学建模:
           - 课程指北: 大二秋冬/数学建模/课程指北/index.md
       - 固体物理基础:
           - 课程指北: 大二秋冬/固体物理基础/课程指北/index.md
       - 概率论与数理统计:
           - 课程指北: 大二秋冬/概率论与数理统计/课程指北/index.md
+          - 概统PPT: 
+            - 概统PPT: 大二秋冬/概率论与数理统计/概统PPT/index.md
+            - Chapter1: 大二秋冬/概率论与数理统计/概统PPT/chapter1/index.md
+            - Chapter2: 大二秋冬/概率论与数理统计/概统PPT/chapter2/index.md
+            - Chapter3: 大二秋冬/概率论与数理统计/概统PPT/chapter3/index.md
+            - Chapter4: 大二秋冬/概率论与数理统计/概统PPT/chapter4/index.md
+            - Chapter5: 大二秋冬/概率论与数理统计/概统PPT/chapter5/index.md
+            - Chapter6: 大二秋冬/概率论与数理统计/概统PPT/chapter6/index.md
+            - Chapter7: 大二秋冬/概率论与数理统计/概统PPT/chapter7/index.md
       - 数值分析方法: 
           - 课程指北: 大二秋冬/数值分析方法/课程指北/index.md
       - 复变函数与积分变换: 
@@ -53,7 +79,7 @@ theme:
   name: material
   
   repo_url: https://github.com/Wbx0710/mymkdocs
-  repo_name: Go to Repositories
+  repo_name: Go to Bixing's Repositories
 
   palette: 
     # Palette toggle for dark mode
