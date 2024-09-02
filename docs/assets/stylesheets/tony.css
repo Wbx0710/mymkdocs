@@ -11,7 +11,7 @@ a:hover {
   /* 字体轻微变大 */
   color: #f5f5dc;
   /* 改为 iOS 系统常用的蓝色 */
-  text-shadow: 0 0 10px rgba(0, 122, 255, 0.5);
+  text-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
   /* 添加淡淡的蓝色阴影 */
   transition: all 0.3s ease;
   /* 添加平滑的过渡效果 */
@@ -21,7 +21,7 @@ a:hover {
 .navbar-nav>li>a:hover {
   font-size: 1.02em;
   color: #f5f5dc;
-  text-shadow: 0 0 10px rgba(0, 122, 255, 0.5);
+  text-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
   transition: all 0.3s ease;
 }
 
@@ -29,7 +29,7 @@ a:hover {
 .md-nav__link:hover {
   font-size: 1.02em;
   color: #f5f5dc;
-  text-shadow: 0 0 10px rgba(0, 122, 255, 0.5);
+  text-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
   transition: all 0.3s ease;
 }
 
@@ -37,7 +37,7 @@ a:hover {
 .md-sidebar__link:hover {
   font-size: 1.02em;
   color: #f5f5dc;
-  text-shadow: 0 0 10px rgba(0, 122, 255, 0.5);
+  text-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
   transition: all 0.3s ease;
 }
 
