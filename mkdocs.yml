@@ -37,6 +37,7 @@ nav:
           - 课程指北: 大二秋冬/数学建模/课程指北/index.md
       - 固体物理基础:
           - 课程指北: 大二秋冬/固体物理基础/课程指北/index.md
+          - 回忆卷: 大二秋冬/固体物理基础/回忆卷/index.md
       - 概率论与数理统计:
           - 课程指北: 大二秋冬/概率论与数理统计/课程指北/index.md
           - 概统PPT: 
@@ -48,6 +49,7 @@ nav:
             - Chapter5: 大二秋冬/概率论与数理统计/概统PPT/chapter5/index.md
             - Chapter6: 大二秋冬/概率论与数理统计/概统PPT/chapter6/index.md
             - Chapter7: 大二秋冬/概率论与数理统计/概统PPT/chapter7/index.md
+          - 知识点整理: 大二秋冬/概率论与数理统计/知识点整理/index.md
       - 数值分析方法: 
           - 课程指北: 大二秋冬/数值分析方法/课程指北/index.md
       - 复变函数与积分变换: 
@@ -153,7 +155,7 @@ plugins:
       locale: zh
       enable_creation_date: false
 
-copyright: Copyright &copy; 2024~2027 WuBixing/All Rights Reserved. # 左下角的版权声明
+copyright: Copyright &copy; 2023~2024 WuBixing/All Rights Reserved. # 左下角的版权声明
 
 extra_css:
   - assets/stylesheets/clock.css
