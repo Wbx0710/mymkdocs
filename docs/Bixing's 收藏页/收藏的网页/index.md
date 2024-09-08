@@ -58,7 +58,7 @@
 
 * [名校公开课程评价网](https://conanhujinming.github.io/comments-for-awesome-courses/index.html){ .md-button }
 
-* [浙江大学课程攻略计划](https://github.com/QSCTech/zju-icicles){ .md-button }
+* [浙江大学课程攻略计划](https://qsctech.github.io/zju-icicles/){ .md-button }
 
 * [华清大学课程攻略共享计划](https://in.closed.social:9443/pastExam/login/){ .md-button }
 

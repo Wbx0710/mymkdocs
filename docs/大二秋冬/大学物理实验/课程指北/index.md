@@ -14,9 +14,6 @@
         * 还要看老师，如果老师很烂，那实验再好也不能选。
         * 实验报告“天下文章一大抄”，除了数据处理我是自己写的，别的要么抄书要么抄以往的报告，抄的过程中结合一点自己的思考，不要千篇一律会更好。
 
-## 实验报告
-!!! note "大物实验报告"
-    * [咸鱼暄学长的大物实验报告](https://xuan-insr.github.io/other_courses/big_physics_exp/)
 
 ## 大物实验期末复习
 <object data="大物实验期末复习.pdf" type="application/pdf" width="100%" height="800">
