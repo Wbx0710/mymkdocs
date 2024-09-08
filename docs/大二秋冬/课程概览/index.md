@@ -7,7 +7,12 @@
         * **主修课程加粗标明**
         * 课程基本信息来自往年98，后续正式上课会更新
 
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202409081619456.png" alt="秋学期课表" style="zoom: 33%;" />
+
+
+
 ## 基本课程（21.5学分）
+
 ### 大学物理甲II
 
 ??? danger "大学物理甲II"
