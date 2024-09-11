@@ -14,7 +14,7 @@
         * 4.误差分析10分
         * 5.实验心得与思考题10分
         * 期末考试范围：绪论内容、必做实验、实验设计
-    * 选课网址：[物理实验选课网址](http://10.203.16.55:86/lab-course/login)
+        * 选课网址：[物理实验选课网址](http://10.203.16.55:86/lab-course/login)
 
 !!! tip "选择实验"
     * **选实验非常重要！** 
@@ -25,10 +25,13 @@
         * 实验报告“天下文章一大抄”，除了数据处理我是自己写的，别的要么抄书要么抄以往的报告，抄的过程中结合一点自己的思考，不要千篇一律会更好。
 
 
+## 我的大物实验课表
+
+![labclass](https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202409111253484.png)
+
 ## 大物实验期末复习
 <object data="大物实验期末复习.pdf" type="application/pdf" width="100%" height="800">
     <embed src="大物实验期末复习.pdf" type="application/pdf" />
 </object>
-
 
 
