@@ -1,11 +1,11 @@
-# 大二秋冬（34.5学分）
+# Bixing's 大二秋冬课程
 !!! tip ""
     * 点击前往Bixing's [大二秋学期学习规划](https://thorn-octopus-dd7.notion.site/e751881c67c64dfbb8986b2a0982eb05?v=d8b3f6c6cf384f748245ab25f3cb3072&pvs=4)
 
 ??? info "来自大二秋冬的课程"
     * 按学分由高到低排
-        * **主修课程加粗标明**
-        * 课程基本信息来自往年98，后续正式上课会更新
+    * **主修课程加粗标明**
+
 
 <img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202409081619456.png" alt="秋学期课表" style="zoom: 33%;" />
 
@@ -102,22 +102,11 @@
 !!! info "课程基本信息"
     * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E7%94%B5%E8%AE%BE%E5%AE%9E%E9%AA%8CI/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
 
-## 通识课（4.5学分）
+## 通识课（3学分）
 ### 博弈论基础
 ??? danger " 博弈论基础"
     * 学分：1.5
     * 任课教师：蒋文华
-
-!!! info "课程基本信息"
-    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E9%80%9A%E8%AF%86%E8%AF%BE/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
-
-
-
-### 材料科学与人类文明
-
-??? danger " 材料科学与人类文明"
-    * 学分：1.5
-    * 任课教师：毛峥伟/郑强
 
 !!! info "课程基本信息"
     * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E9%80%9A%E8%AF%86%E8%AF%BE/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
