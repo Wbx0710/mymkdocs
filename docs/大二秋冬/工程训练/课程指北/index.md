@@ -15,7 +15,7 @@
 
 !!! tip "课程网站"
     * [工程训练中心官网](http://etc.zju.edu.cn/cy-zju-home/home)
-    * [作业管理系统](http://10.71.32.157/?AspxAutoDetectCookieSupport=1)
+    * [作业管理系统](http://10.71.32.157)
 
 
 
@@ -23,7 +23,6 @@
 <object data="工程训练课程内容梳理.pdf" type="application/pdf" width="100%" height="800">
     <embed src="工程训练课程内容梳理.pdf" type="application/pdf" />
 </object>
-
 
 
 

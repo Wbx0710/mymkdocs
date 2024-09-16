@@ -1,14 +1,8 @@
 # Bixing's 大二秋冬课程
-!!! tip ""
-    * 点击前往Bixing's [大二秋学期学习规划](https://thorn-octopus-dd7.notion.site/e751881c67c64dfbb8986b2a0982eb05?v=d8b3f6c6cf384f748245ab25f3cb3072&pvs=4)
 
 ??? info "来自大二秋冬的课程"
     * 按学分由高到低排
     * **主修课程加粗标明**
-
-
-<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202409081619456.png" alt="秋学期课表" style="zoom: 33%;" />
-
 
 
 ## 基本课程（21.5学分）
