@@ -40,6 +40,9 @@ nav:
           - 回忆卷: 大二秋冬/固体物理基础/回忆卷/index.md
       - 概率论与数理统计:
           - 课程指北: 大二秋冬/概率论与数理统计/课程指北/index.md
+          - MyNotes: 
+            - MyNotes: 大二秋冬/概率论与数理统计/MyNotes/index.md
+            - Chapter1: 大二秋冬/概率论与数理统计/MyNotes/Chapter1/index.md
           - 概统PPT: 
             - 概统PPT: 大二秋冬/概率论与数理统计/概统PPT/index.md
             - Chapter1: 大二秋冬/概率论与数理统计/概统PPT/chapter1/index.md
@@ -56,7 +59,7 @@ nav:
           - 知识整理: 大二秋冬/数值分析方法/知识整理/index.md
       - 复变函数与积分变换: 
           - 课程指北: 大二秋冬/复变函数与积分变换/课程指北/index.md
-          - 我的复习笔记: 
+          - MyNotes: 
             - MyNotes: 大二秋冬/复变函数与积分变换/MyNotes/index.md
             - Chapter1: 大二秋冬/复变函数与积分变换/MyNotes/Chapter1/index.md
             - Chapter2: 大二秋冬/复变函数与积分变换/MyNotes/Chapter2/index.md
