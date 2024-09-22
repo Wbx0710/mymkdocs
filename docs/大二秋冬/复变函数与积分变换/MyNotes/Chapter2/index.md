@@ -4,13 +4,18 @@
 
 **复变函数**：$w=f(z)=f(x+iy)=u(x,y)+iv(x,y)$
 
-**极限**：$\lim\limits_{z\rightarrow z_0}f(z)=A\ \Leftrightarrow$ $\lim\limits_{x\rightarrow x_0,y\rightarrow y_0}u(x,y)=u_0,\lim\limits_{x\rightarrow x_0,y\rightarrow y_0}v(x,y)=v_0$
+**极限**：
 
-**连续**：$\lim\limits_{z\rightarrow z_0}f(z)=f(z_0)\ $  $\Leftrightarrow \forall \epsilon > 0 $,$~\exists~δ(ε)>0$，当$0<|z-z_0|<δ时，|f(z)-f(z_0)|<ε$
+$\lim\limits_{z\rightarrow z_0}f(z)=A\ \Leftrightarrow$ $\lim\limits_{x\rightarrow x_0,y\rightarrow y_0}u(x,y)=u_0,\lim\limits_{x\rightarrow x_0,y\rightarrow y_0}v(x,y)=v_0$
 
-$\Leftrightarrow $对应的实函数u,v分别连续（左极限=右极限=$f(z_0)$）
+**连续**：
 
-> 在闭区域$\overline G$中连续的函数有两个重要性质：
+$\lim\limits_{z\rightarrow z_0}f(z)=f(z_0) \Leftrightarrow \forall \epsilon > 0 ~\exists~δ(ε)>0$，当$0<|z-z_0|<δ时，|f(z)-f(z_0)|<ε$
+
+$\Leftrightarrow $ 对应的实函数u,v分别连续（左极限=右极限=$f(z_0)$）
+
+
+在闭区域$\overline G$中连续的函数有两个重要性质：
 >
 > 1. **$|f(z)|$在$\overline G$中有界，并达到它的上下界。**
 >
@@ -41,13 +46,13 @@ $\Leftrightarrow $对应的实函数u,v分别连续（左极限=右极限=$f(z_0
 定义：
 
 > 	$f(z)$在$z_0$的某个邻域内的**每一点可导** $\Leftrightarrow$ $f(z)$在$z_0$点解析/正则
-> 								
+> 									
 > 	$f(z)$在区域D内的每一点可导 $\Leftrightarrow$ $f(z)$在区域D内解析/正则 
-> 								
+> 									
 > 	$\Leftrightarrow$ $f(z)$在D内的任意点$z_0$（存在$z_0$的一个邻域）处均可展开为收敛的幂级数
-> 								
+> 									
 > 	奇点：不解析的点。
-> 								
+> 									
 > 	孤立奇点：$D(z_0,\delta)$内的唯一奇点。
 
 判别法：
@@ -57,6 +62,7 @@ $\Leftrightarrow $对应的实函数u,v分别连续（左极限=右极限=$f(z_0
 	①$u(x,y),v(x,y)$在$(x,y)$点的邻域内（或D内）可微 
 
 	②Cauchy-Riemann条件（**C-R条件**）
+
 $$
 \left \{
 \begin{array}{}
@@ -102,8 +108,14 @@ $$
 ---
 
 **调和函数**
-定义：如果**实函数**$U\left ( x,y \right ) $在区域$D$内有二阶连续偏导数并满足拉普拉斯方程$\Delta U=\frac{\partial^{2}  U}{\partial x^{2}  }+ \frac{\partial^{2}  U}{\partial y^{2}  }=0,inD$,则称$U\left (x,y \right )$为D内的调和函数
-定理：$f(z)=u(x,y)+iv(x,y)$是区域$D$内的解析函数则$u(x,y)，v(x,y)$在$D$内均为调和函数
+
+定义：
+
+如果**实函数** $U\left ( x,y \right ) $ 在区域$D$内有二阶连续偏导数并满足拉普拉斯方程 $\Delta U=\frac{\partial^{2}  U}{\partial x^{2}  }+ \frac{\partial^{2}  U}{\partial y^{2}  }=0,inD$ ,则称 $U\left (x,y \right )$ 为D内的调和函数
+
+定理：
+
+$f(z)=u(x,y)+iv(x,y)$ 是区域 $D$ 内的解析函数则 $u(x,y)，v(x,y)$ 在 $D$ 内均为调和函数
 
 
 ---
@@ -119,24 +131,34 @@ $$
 在整个复平面上处处解析。
 
 $e^{z} $为指数函数，则
-1.$e^{z+w}=e^{z}\cdot e^{w}$对所有$z,w\in \mathfrak{C} $成立，所以$\left (  e^{z} \right ) ^{n} =e^{zn} $
+
+1.$e^{z+w}=e^{z}\cdot e^{w}$对所有 $z,w\in \mathfrak{C} $ 成立，所以 $\left (  e^{z} \right ) ^{n} =e^{zn} $ 
+
 2.$e^{z}\ne  0$如果z=x为实数，当$x> 0，e^{z}>1 ,x< 0，e^{z}<1 $
+
 3.$e^{z}$是周期函数，其周期$T = 2n\pi i$(n为整数，$n \ne  0$)
+
 4.$e^{\frac{\pi}{2}i} =i,e^{\pi i} =-1,e^{\frac{3\pi}{2}i} =-i,e^{2\pi i} =1$
+
 5.$e^{z}=1$的充分必要条件是$z = 2n\pi i$(n为整数)
 
 ---
 
 **对数函数**：$w=Ln z=lnz+i2k\pi=ln|z| + i Arg z=(ln|z|+iargz) +2ki\pi=ln|z|+i(argz +2k\pi)$
 
-对数函数$Ln z$是多值函数，有无穷多个分支，k=0时的分支称为对数函数的主支，记：
+对数函数 $Ln z$ 是多值函数，有无穷多个分支，k=0时的分支称为对数函数的主支，记：
 $Lnz=ln|z|+iargz$ ——对数函数主支
+
 显然，$Lnz=lnz+i2k\pi$
 
 **基本性质**：
+
 $Ln(z_1z_2)=Lnz_1+Lnz_2$
+
 $Ln(\frac{z_1}{z_2})=Lnz_1-Lnz_2(z_2\neq0)$
+
 在原点和负实轴上不解析。
+
 $Ln(z)^{\prime}=\frac{1}{z}$
 
 ![](https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/2024/09/19/17267069024904.jpg)
@@ -161,6 +183,7 @@ $w=z^a$ 的多值性：
 ---
 
 **三角函数和双曲函数**：
+
 $$
 \sin z =\frac{e^{iz}-e^{-iz}}{2i}\\
 \cos z =\frac{e^{iz}+e^{-iz}}{2}\\
@@ -177,6 +200,7 @@ $sh(a+b)=sha\ chb+cha\ shb$
 
 
 性质：
+
 1.$\sin z,\cos z$是以$2\pi$为周期的周期函数；$sh z,ch z$是以$2\pi i$为周期的周期函数
 
 2.$\sin z,sh z$为奇函数；$\cos z,ch z$为偶函数
