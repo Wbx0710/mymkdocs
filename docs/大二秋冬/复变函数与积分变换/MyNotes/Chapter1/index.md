@@ -58,7 +58,7 @@ $\left ( \cos\theta + i\sin \theta   \right ) ^{n} \ = \ \cos n\theta + i\sin n 
 
 **乘方**：
 
-$z^n=r^n(\cos n\theta+i\sin n\theta)\ =\ r^{n}e^{in\theta }  $
+$z^n=r^n (\cos n\theta+i\sin n\theta)\ =\ r^{n}e^{in\theta }  $
 
 **开方**：
 

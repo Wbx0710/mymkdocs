@@ -70,7 +70,7 @@
 
 * [Cirno](https://cirnoware.github.io/){ .md-button }
 
-* [Soleil](https://xw-soleil.github.io/) { .md-button }
+* [Soleil](https://xw-soleil.github.io/){ .md-button }
 
 * [Slowist](https://slowist-lee.github.io/slowist-notebook/%E6%94%B6%E8%97%8F%E5%A4%B9/){ .md-button }
 
