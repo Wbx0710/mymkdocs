@@ -2,20 +2,22 @@
 
 ## 样本空间与随机事件
 
-**随机试验(random experiment)** 的特点：
+### **随机试验(random experiment)** 的特点：
+* 可以在相同条件下重复进行；
+* 事先知道所有可能的结果；
+* 进行实验时并不知道哪个结果会发生
 
-1. 可以在相同条件下重复进行；
-2. 事先知道所有可能的结果；
-3. 进行实验时并不知道哪个结果会发生
+而随机试验的所有可能结果构成的集合为**样本空间(sample space)**，记为$S$
 
-而随机试验的所有可能结果构成的集合为**样本空间(sample space)**，记为$S$，其中的每一个元素$e$为**样本点(sample point)**。<br />而样本空间的任一子集$A$成为**随机事件(random event)**，简称事件。
+其中的每一个元素$e$为**样本点(sample point)**。<br />而样本空间的任一子集$A$成为**随机事件(random event)**，简称事件。
 
-* 特别的，只含有一个样本的子集称为**基本事件**。
-* 每次事件$S$总是发生，称为必然事件
+!!! note "特别的"
+	* 只含有一个样本的子集称为**基本事件**。
+	* 每次事件$S$总是发生，称为必然事件
 
 ---
 
-**事件的相互关系**
+### **事件的相互关系**
 
 * 两互逆事件又称**对立事件**。
 * 若$AB=\varnothing$，则称两事件**不相容**（或**互斥**）
@@ -28,7 +30,7 @@
 * **分配律：**$A(B\cup C)=(AB)\cup(AC)\;,\;(AB)\cup C=(A\cup C)(B\cup C)$**；**
 * **对偶律** / **德摩根定律(De Morgan's law)：**$\overline{\bigcup\limits^n_{j=1}A_j}=\bigcap\limits^n_{j=1}\overline{A_j}=\overline{A_1}\cup\overline{A_2}\cup…\overline{A_n}\;,\;\overline{\bigcap\limits^n_{j=1}A_j}=\bigcup\limits^n_{j=1}\overline{A_j}=\overline{A_1}\overline{A_2}…\overline{A_n}$**；**
 
-串联系统与并联系统：
+### 串联系统与并联系统：
 
 * 串联系统：$A=\bigcap\limits_{i=1}^nA_i$
 * 并联系统：$A=\bigcup\limits_{i=1}^nA_i$
@@ -39,7 +41,8 @@
 
 频率 = 频数 / 试验总次数
 
-定义：记$f_n(A)=\frac{n_A}{n}$
+定义：
+记$f_n(A)=\frac{n_A}{n}$
 * $n_A$：A发生的次数（频数）
 * $n$：总试验次数
 * $f_n(A)$为事件A的频率
