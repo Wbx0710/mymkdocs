@@ -31,11 +31,10 @@
 
 ## 课后习题答案
 !!! note "大物习题答案"
-    * [大物习题答案](https://pan.baidu.com/s/19rxn7uS4LOQrdzzgJJKwuw?pwd=gwqf)  
+    * [大物习题答案](https://pan.baidu.com/s/1W7_KjFtPeC4xmbFAVK2sjg?pwd=qk57)  
 
 ## 大物甲I（针对大物竞赛）
 !!! note "大物甲I复习资料"
     * [大物甲I复习资料](https://pan.baidu.com/s/1l6bOmppFixvMF7_6Xtn_sA?pwd=64d7) 
-
 
 
