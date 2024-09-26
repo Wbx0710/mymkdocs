@@ -28,6 +28,81 @@ $f'(z_0)=\lim\limits_{\Delta z\rightarrow 0}\frac{f(z_0+\Delta z)-f(z_0)}{\Delta
 
 ---
 
+??? tip "导数的可视化"
+	**可导**的定义是：函数f(z)在 $z=z_0$ 这一点可导，则 $f'(z_0)=\lim_{\Delta z\to0}\frac{f(z_0+\Delta z)-f(z_0)}{\Delta z}$ 存在
+
+	导数如何进行可视化呢？我们画一个例子来看看：
+	
+	![](https://pic4.zhimg.com/80/v2-02f9f7fd87a815a430fcd81b5d1703e9_1440w.webp)
+	
+	如图所示，我们观察f(z)的一个点 $z=z_0$ 及其映射之后的状况。蓝线和绿线分别是通过该点 $z_0$ 的直线，经过映射之后可能会变成曲线
+	
+	让这个邻域足够小，则经过这一点的光滑曲线可以近似为直线。自变量的微分 $\Delta z$就是从点 $z_0$ 往任意方向走一个微小距离对应的复数，相应地，应变量的微分 $\Delta f=f(z_0+\Delta z)-f(z_0)$ 是从点 $f(z_0)$ 往相应方向走一个相应距离对应的复数，如图所示：
+	
+	![](https://pica.zhimg.com/80/v2-d99e7b67758b3dffd83a4b209c0a26a0_1440w.webp)
+	
+	f(z)在 $z_0$ 可导，即 $f'(z_0)=\lim_{\Delta z\to0}\frac{\Delta f}{\Delta z}$ 存在。根据极限的唯一性，我们知道 $\Delta z$ 不论往任何方向走， $f'(z_0)$ 的值都是唯一的
+	
+	复数的除法有运算法则 $\frac{z_2}{z_1}=\frac{r_2}{r_1}\angle(\theta_2-\theta_1)$ ，即模长相除，辐角相减。因此
+	
+	$\frac{\Delta f}{\Delta z}=\frac{|\Delta f|}{|\Delta z|}\angle(\mathrm{Arg}\Delta f-\mathrm{Arg}\Delta z)$
+	
+	如果 $f'(z_0)\neq0$ ，则 $\mathrm{Arg}f'(z_0)=\lim_{\Delta z\to0}(\mathrm{Arg}\Delta f-\mathrm{Arg}\Delta z)$和 $|f'(z_0)|=\lim_{\Delta z\to0}\frac{|\Delta f|}{|\Delta z|}$ 都是定值，我们称这两个量分别为**转动角**和**伸缩率**，如下图所示：
+	
+	![](https://picx.zhimg.com/80/v2-7d074ec7d9fbbdc011540f3098252a99_1440w.webp)
+	
+	也就是说，如果一个函数f(z)在z处可导且导数不为0，那么z附近的微小邻域在经过映射f之后，大约会整体旋转 $\mathrm{Arg}f'(z_0)$ 的角度，并放缩为原来的 $|f'(z_0)|$ 倍。这就是复变函数导数的几何意义
+	
+	根据上述结论，如果函数f(z)在某个区域解析，则这个区域中的任意两条直线（例如图2中的蓝线和绿线）在经过映射f之后会保持夹角不变（除导数为0的情况），我们称此时f(z)具有**保角性**。保角性加伸缩率不变性称为**保形性**。因此，复变函数在某个区域解析，则可推出其在这个区域具有保形性
+	
+	如图是个展现函数 $f(z)=z^2$ 具有保角性的直观的动图：
+	
+	![动图封面](https://pic2.zhimg.com/v2-abb436ea5760adf83477e4038ec54f31_b.jpg)
+
+
+??? example "复变函数的实部函数与虚部函数"
+	复变函数不仅可以记为f(z). 因为自变量和应变量都是复数，我们可以用复数的坐标形式（即x+yi这种形式）来表示它们，并研究它们的性质
+
+	我们记自变量z=x+yi，函数值f(z)=u+vi，其中x, y, u, v均是实数。用x与y的值可以决定z的值，继而决定f(z)的值，继而决定u与v的值，因此在确定复变函数f(z)的情况下，u和v都是关于x和y的实二元函数，那么f(z)就可以记为f(z)=u(x, y)+v(x, y)i. 我们称u(x, y)和v(x, y)分别是f(z)的实部函数和虚部函数
+	
+	如图是实部函数与虚部函数的几何意义：
+	
+	![](https://picx.zhimg.com/80/v2-370f3e230a045c15194038ada43b4af1_1440w.webp)
+	
+	如果f(z)可导，二元函数u和v会有什么性质呢？
+	
+	**可微性**
+	
+	![](https://pic4.zhimg.com/80/v2-109936b0b130d7626e8e949fdc005da5_1440w.webp)
+	
+	如图所示，自变量z有增量 $\Delta z=\Delta x+i\Delta y$，应变量f也有相应的增量 $\Delta f$ . 如果f'(z)存在，有
+	
+	$\begin{align} \Delta f&=f'(z)\Delta z+o(\Delta z)\\ &=\Delta f_x+\Delta f_y+o(\Delta z)\\ &=\Delta u_x+i\Delta v_x+\Delta u_y+i\Delta v_y+o(\Delta z)\\ &=\Delta u+i\Delta v\\ \end{align}$
+	
+	其中 $\Delta f_x$ 是由 $\Delta x$ 带来的增量， $\Delta f_y$ 是由 $\Delta y$ 带来的增量
+	
+	记 $f'(z)=k\angle\theta$ ，即k为伸缩率， $\theta$ 为转动角，根据保形性，可得
+	
+	$\Delta f_x=\Delta x\times k\angle\theta=k\Delta x\angle\theta=\Delta x f'(z)$
+	
+	$\Delta f_y=i\Delta y\times k\angle \theta=k\Delta  y\angle\left(\theta+\frac\pi2\right)=i\Delta yf'(z)$
+	
+	记 $\rho=|\Delta z|=\sqrt{(\Delta x)^2+(\Delta y)^2}$ ，可得
+	
+	$$
+	\begin{align} \Delta u&=\Delta u_x+\Delta u_y+\Re o(\Delta z)\\ &=\Re(\Delta f_x+\Delta f_y+o(\Delta z))\\ &=k\Delta x\cos\theta-k\Delta y\sin\theta+o(\rho)\\ &=\Delta x\Re f'(z)-\Delta y\Im f'(z)+o(\rho)\\ \end{align}\tag{1}
+	$$
+	
+	$$
+	\begin{align} \Delta v&=\Delta v_x+\Delta v_y+\Im o(\Delta z)\\ &=\Im(\Delta f_x+\Delta f_y+o(\Delta z))\\ &=k\Delta x\sin\theta+k\Delta y\cos\theta+o(\rho)\\ &=\Delta x\Im f'(z)+\Delta y\Re f'(z)+o(\rho)\\ \end{align}\tag{2}
+	$$
+	
+	其中符号 $\Re$ 表示取实部（相当于Re），符号 $\Im$ 表示取虚部（相当于Im）
+	
+	因此，根据二元函数可微的定义，u和v都具有可微性
+
+
+
 ## 微积分回忆内容
 
 ### **连续、可导和可微**
@@ -71,6 +146,37 @@ $$
 
 ---
 
+
+??? example "柯西-黎曼方程"
+	根据二元函数微分的性质，可得
+
+	$\Re f'(z)=\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},~\Im f'(z)=\frac{\partial v}{\partial x}=-\frac{\partial u}{\partial y}$
+	
+	于是我们称 $\begin{cases} \frac{\partial u}{\partial x}=\frac{\partial v}{\partial y}\\ \frac{\partial v}{\partial x}=-\frac{\partial u}{\partial y}\\ \end{cases}$ 为**柯西-黎曼方程**（Cauchy-Riemann Equations），简称为**C-R方程**
+	
+	实际上，可以证明：两个可微二元实函数u(x, y)和v(x, y)构成的复变函数f=u+vi在区域D内解析的充要条件是u和v在D内满足C-R方程
+	
+	C-R方程可以更轻松地导出，便于记忆
+
+	![v2-5f6eb6bd3b2c4c5ece95a4bbc7c33e42_r](https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202409261714215.jpg)
+
+	如图所示，指定 $\Delta z$ 为沿着x轴（图8左）和沿着y轴（图8右）的两个特殊方向。当 $\Delta x=\Delta y$ 时，根据保形性，两个紫色直角三角形近似全等，于是
+	
+	$\Delta u_x\approx\Delta v_y,~\frac{\Delta u_x}{\Delta x}\approx\frac{\Delta v_y}{\Delta y}$
+	
+	取 $\Delta x=\Delta y\to0$ 的极限即可得到 $\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y}$ . 同理可得 $\frac{\partial v}{\partial x}=-\frac{\partial u}{\partial y}$ 
+	
+	注意，本例中 $\Delta u_y$ 是负的，故计算三角形边长的时候要加个负号。当 $\Delta f$ 取其他方向的时候可以类似讨论
+
+
+??? tip "为什么C-R方程里面有个负号？为什么函数u和v不是对称的？"
+	直观上来说，C-R方程的基础是复变函数的保形性，其中包括旋转不变性。而旋转对称本身就不是关于x和y坐标对称的。旋转在复数中可用乘法来表示，任何一个复数乘以实数单位元1会停留在原处，而乘以虚数单位元i则会绕原点正向旋转 $90^\circ$ ，这就是旋转关于坐标轴的不对称性的一个体现
+
+	对于解析的复变函数而言，u是实部函数，而v是虚部函数，因为x和y坐标旋转不对称，它们自然也不对称
+	
+	相对地，关于x和y坐标对称的变换，是关于直线y=x轴对称的这种形式
+
+
 !!! warning "注意"
     * 如果满足条件的是孤立的点，那么只能说$f(z)$在该点上可导，而不解析
 	* 解析函数的复合函数（加、减、乘、除等解析函数）仍为解析函数
@@ -90,6 +196,7 @@ $$
 
 !!! tip "小结"
 	函数 f(x) 在区域D解析的等价条件有：
+	
 	* 函数 f(x) 在区域 D内可导
 	* Re(f),Im(f)在区域D内可微且满足Cauchy-Riemann条件
 	* 函数 f(x) 在区域 D内连续且积分与路径无关
