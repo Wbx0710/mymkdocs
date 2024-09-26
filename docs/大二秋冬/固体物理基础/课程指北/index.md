@@ -11,15 +11,14 @@
         * 4次作业1次点名（会提前通知）20%
         * 1次Project（2-3人一组）。就一些固体物理的前沿研究和应用课题进行调研，包括调研报告10%和课堂展示10% 
 
-
 !!! note "课程资源"
     * [信电固体物理基础资源总结](https://www.cc98.org/topic/5227827)
     * [固体物理基础|信电 学习感触](https://www.cc98.org/topic/5789111)
+    * [Haku的固体物理笔记](https://www.scigeek.cn/tags/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/)
+
 
 ## 推荐的书籍
-!!! tip "固体物理教程(王矜奉)"
-    * 另一本固体物理概念题和习题指导(王矜奉)无电子版
+* 固体物理教程(王矜奉)
 
-<object data="固体物理教程王矜奉.pdf" type="application/pdf" width="100%" height="800">
-    <embed src="固体物理教程王矜奉.pdf" type="application/pdf" />
-</object>
+
+
