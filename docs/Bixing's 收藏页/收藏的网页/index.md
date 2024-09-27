@@ -72,9 +72,9 @@
 
 * [Soleil](https://xw-soleil.github.io/){ .md-button }
 
-* [Slowist](https://slowist-lee.github.io/slowist-notebook/%E6%94%B6%E8%97%8F%E5%A4%B9/){ .md-button }
+* [Slowist](https://slowist-lee.github.io/slowist-notebook/){ .md-button }
 
-* [JiePeng](https://note.jiepeng.tech/Zju2-1/){ .md-button }
+* [JiePeng](https://note.jiepeng.tech/){ .md-button }
 
 * [末荼Mo_Tu](https://chatter-barber-020.notion.site/40075ca669a9460d9c915b1e564c83c2?v=ea79d5524f6546eba94e3da5efb93f1e){ .md-button }
 
