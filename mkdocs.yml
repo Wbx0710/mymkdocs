@@ -16,23 +16,23 @@ nav:
           - 电子电路基础习题集萃: 大二秋冬/电子电路基础/电基习题集萃/index.md
       - 大学物理甲II: 
           - 课程指北: 大二秋冬/大学物理甲II/课程指北/index.md
-          - Savia学长的大物II讲义: 
-            - PDF版汇总下载: 大二秋冬/大学物理甲II/Savia大物讲义/index.md
-            - Chapter9: 大二秋冬/大学物理甲II/Savia大物讲义/chapter9/index.md
-            - Chapter10: 大二秋冬/大学物理甲II/Savia大物讲义/chapter10/index.md
-            - Chapter11: 大二秋冬/大学物理甲II/Savia大物讲义/chapter11/index.md
-            - Chapter12: 大二秋冬/大学物理甲II/Savia大物讲义/chapter12/index.md
-            - Chapter13: 大二秋冬/大学物理甲II/Savia大物讲义/chapter13/index.md
-            - Chapter14: 大二秋冬/大学物理甲II/Savia大物讲义/chapter14/index.md
-            - Chapter15: 大二秋冬/大学物理甲II/Savia大物讲义/chapter15/index.md
-            - Chapter16: 大二秋冬/大学物理甲II/Savia大物讲义/chapter16/index.md
-            - Chapter17: 大二秋冬/大学物理甲II/Savia大物讲义/chapter17/index.md
-            - Chapter18: 大二秋冬/大学物理甲II/Savia大物讲义/chapter18/index.md
-            - Chapter19: 大二秋冬/大学物理甲II/Savia大物讲义/chapter19/index.md
-            - Chapter20: 大二秋冬/大学物理甲II/Savia大物讲义/chapter20/index.md
-            - Chapter21: 大二秋冬/大学物理甲II/Savia大物讲义/chapter21/index.md
-            - Chapter22: 大二秋冬/大学物理甲II/Savia大物讲义/chapter22/index.md
-            - Chapter23: 大二秋冬/大学物理甲II/Savia大物讲义/chapter23/index.md
+          - MyNotes: 
+            - PDF版汇总下载: 大二秋冬/大学物理甲II/MyNotes/index.md
+            - Chapter9: 大二秋冬/大学物理甲II/MyNotes/chapter9/index.md
+            - Chapter10: 大二秋冬/大学物理甲II/MyNotes/chapter10/index.md
+            - Chapter11: 大二秋冬/大学物理甲II/MyNotes/chapter11/index.md
+            - Chapter12: 大二秋冬/大学物理甲II/MyNotes/chapter12/index.md
+            - Chapter13: 大二秋冬/大学物理甲II/MyNotes/chapter13/index.md
+            - Chapter14: 大二秋冬/大学物理甲II/MyNotes/chapter14/index.md
+            - Chapter15: 大二秋冬/大学物理甲II/MyNotes/chapter15/index.md
+            - Chapter16: 大二秋冬/大学物理甲II/MyNotes/chapter16/index.md
+            - Chapter17: 大二秋冬/大学物理甲II/MyNotes/chapter17/index.md
+            - Chapter18: 大二秋冬/大学物理甲II/MyNotes/chapter18/index.md
+            - Chapter19: 大二秋冬/大学物理甲II/MyNotes/chapter19/index.md
+            - Chapter20: 大二秋冬/大学物理甲II/MyNotes/chapter20/index.md
+            - Chapter21: 大二秋冬/大学物理甲II/MyNotes/chapter21/index.md
+            - Chapter22: 大二秋冬/大学物理甲II/MyNotes/chapter22/index.md
+            - Chapter23: 大二秋冬/大学物理甲II/MyNotes/chapter23/index.md
       - 数学建模:
           - 课程指北: 大二秋冬/数学建模/课程指北/index.md
       - 固体物理基础:
@@ -43,6 +43,7 @@ nav:
           - MyNotes: 
             - MyNotes: 大二秋冬/概率论与数理统计/MyNotes/index.md
             - Chapter1: 大二秋冬/概率论与数理统计/MyNotes/Chapter1/index.md
+            - Chapter2: 大二秋冬/概率论与数理统计/MyNotes/Chapter2/index.md
           - 概统PPT: 
             - 概统PPT: 大二秋冬/概率论与数理统计/概统PPT/index.md
             - Chapter1: 大二秋冬/概率论与数理统计/概统PPT/chapter1/index.md
