@@ -5,6 +5,8 @@
     * 任课教师：刘才明
     * **为主修课程**
 
+## 课程基本信息
+
 !!! info "课程基本信息"
      * 成绩构成：平时40%；期中25%；期末35%
      * 智云：[王从健老师的智云](https://classroom.zju.edu.cn/coursedetail?course_id=31733&tenant_code=112)
@@ -37,4 +39,8 @@
 !!! note "大物甲I复习资料"
     * [大物甲I复习资料](https://pan.baidu.com/s/1l6bOmppFixvMF7_6Xtn_sA?pwd=64d7) 
 
-
+## 前置知识回顾
+后续学习需要用到一些曲线曲面积分的知识，回顾一下~
+<object data="多元函数积分整理Wbx.pdf" type="application/pdf" width="100%" height="800">
+    <embed src="多元函数积分整理Wbx.pdf" type="application/pdf" />
+</object>

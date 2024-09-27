@@ -5,6 +5,8 @@
     * 任课教师：金浩/骆季奎
     * **为主修课程**
 
+## 课程基本信息
+
 !!! info "基本信息"
     * 成绩构成：作业、小测10%；课堂表现5%；专题研究5%；期中30%；期末50%
     * 期中考试：电基课程大纲第5章；10月27日8:30-10:30
@@ -36,4 +38,11 @@
 !!! note "个人感觉比较好的网课"
     * [THU于歆杰老师的《电路原理》网课](https://www.icourses.cn/web/sword/portal/shareDetails?&cId=2980#/course/chapter)
     * [SJTU郑益慧老师的《模电》B站](https://www.bilibili.com/video/BV1Gt411b7Zq/?spm_id_from=333.999.0.0&vd_source=4bf1953b0a6ee0abff2d699f545186cb)
+
+## 前置知识回顾
+后续学习需要用到一些常微分方程的知识，回顾一下~
+<object data="常微分方程整理Wbx.pdf" type="application/pdf" width="100%" height="800">
+    <embed src="常微分方程整理Wbx.pdf" type="application/pdf" />
+</object>
+
 

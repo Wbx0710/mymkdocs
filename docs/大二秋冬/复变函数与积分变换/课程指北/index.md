@@ -5,9 +5,13 @@
     * 任课教师：杨勋年
     * **为主修课程**
 
+## 课程基本信息
+
 !!! info "课程基本信息"
     * 成绩构成：作业、平时30%；小测20%；期末50%
     * 智云：[杨海涛老师的智云](https://classroom.zju.edu.cn/coursedetail?course_id=57619&tenant_code=112)
+
+## 资源汇总
 
 !!! tip "Savia学长的复变笔记"
     * [Savia学长的复变笔记_PDF](https://pan.baidu.com/s/1bGPQEoc9adP_ycvXZbyWDA?pwd=lyva) 
@@ -26,7 +30,10 @@
         * [22复变杨勋年小测](https://pan.baidu.com/s/1w2MndHe4DkH7gwxb7Lf0hw?pwd=tnxo) 
         * [22复变杨海涛小测](https://pan.baidu.com/s/1a0b3IWYO8bCfXRI2TcDTJw?pwd=gqtd) 
 
-
-
+## 前置知识回顾
+后续学习需要用到一些曲线积分的知识，回顾一下~
+<object data="多元函数积分整理Wbx.pdf" type="application/pdf" width="100%" height="800">
+    <embed src="多元函数积分整理Wbx.pdf" type="application/pdf" />
+</object>
 
 

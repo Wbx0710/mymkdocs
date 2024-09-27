@@ -16,3 +16,10 @@
 <object data="第3章复变函数的积分.pdf" type="application/pdf" width="100%" height="800">
     <embed src="第3章复变函数的积分.pdf" type="application/pdf" />
 </object>
+
+## 第四章
+<object data="第4章级数.pdf" type="application/pdf" width="100%" height="800">
+    <embed src="第4章级数.pdf" type="application/pdf" />
+</object>
+
+
