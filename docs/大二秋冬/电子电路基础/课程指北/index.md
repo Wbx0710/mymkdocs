@@ -18,7 +18,7 @@
 ## ZJU
 !!! danger "ZJU课程组的网站"
     * [浙大的电基课程网站](http://10.105.5.75/CourseMaterials/WebHome)
-    * [浙大的电基习题网站](https://bc0403.github.io/EC2022/)
+    * [浙大的电基习题网站](https://bc0403.github.io/EC2024/)
 
 ## 电子版教材
 
