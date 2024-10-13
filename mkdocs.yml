@@ -79,10 +79,10 @@ nav:
           - 课程指北: 大二秋冬/电设实验I/课程指北/index.md
       - 通识课专栏: 
           - 课程指北: 大二秋冬/通识课/课程指北/index.md
-  - 硬件技能: 
-      - 简介: 硬件技能/简介/index.md
-      - 机械臂: 硬件技能/机械臂/index.md
-  - Coding: Code/index.md
+  - 无限进步: 
+      - 简介: 无限进步/简介/index.md
+      - Jetson Nano: 无限进步/Jetson/index.md
+      - 机械臂: 无限进步/机械臂/index.md
   - Bixing's 收藏页: 
       - 收藏的网页: Bixing's 收藏页/收藏的网页/index.md
       - MyCC98: Bixing's 收藏页/CC98/index.md
