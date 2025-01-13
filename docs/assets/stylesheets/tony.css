@@ -77,7 +77,7 @@ a:hover {
   /* typeset color */
   --md-typeset-color: var(--md-default-fg-color);
   --md-typeset-a-color: var(--md-accent-fg-color--light);
-  --md-typeset-mark-color: #add8e6;
+  --md-typeset-mark-color: #ffffb5;
   /*高亮颜色*/
   --md-typeset-del-color: rgba(245, 80, 61, 0.15);
   --md-typeset-ins-color: rgba(228, 199, 235, 0.15);
@@ -106,6 +106,7 @@ a:hover {
 .md-ellipsis,
 h1,
 .headerlink {
+  text-align: center;
   font-size: larger;
 }
 
