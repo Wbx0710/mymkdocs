@@ -18,7 +18,7 @@
 
 ## 学习网页
 !!! note "我的bilibili"
-	* 欢迎访问我的B站收藏夹（用户名：0w0b0x0——>收藏夹：“无限进步！”）
+	* 欢迎访问我的B站收藏夹（用户名：毕的泰勒展开——>收藏夹：“无限进步！”）
 
 * [ZChat](https://zchat.tech/login){ .md-button }
 
@@ -139,6 +139,3 @@
 ### 微信小程序开发
 
 * [微信小程序官方开发文档](https://developers.weixin.qq.com/miniprogram/dev/framework/){ .md-button }
-
-!!! warning "收藏的网页"
-	* 还会实时更新的
