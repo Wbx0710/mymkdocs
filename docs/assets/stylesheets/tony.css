@@ -284,3 +284,43 @@ embed {
   overflow: hidden;
   /* 确保内容也被裁剪以适应圆角 */
 }
+
+/* 右侧滚动条样式 */
+/* 针对基于 WebKit 内核的浏览器（Chrome、Safari、Edge等） */
+
+/* 整体滚动条尺寸及透明背景 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: transparent;
+}
+
+/* 滚动条轨道 - 使用米黄色背景并添加圆角和内阴影 */
+::-webkit-scrollbar-track {
+  background: #f5f5dc;
+  /* 米黄色背景 */
+  border-radius: 4px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  /* 添加轻微内阴影，增加立体感 */
+}
+
+/* 滚动条滑块 - 使用 iOS 蓝色及圆角效果 */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* 悬停时的滚动条滑块变化 */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* 针对 Firefox 浏览器的基本样式 */
+* {
+  scrollbar-width: thin;
+  /* 细型滚动条 */
+  scrollbar-color: rgba(0, 0, 0, 0.1) #f5f5dc;
+  /* 滑块为蓝色，轨道为米黄色 */
+}
