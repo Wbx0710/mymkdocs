@@ -90,8 +90,8 @@ statistics: True
 
     ---
 
-    - [我的课程概览](大二秋冬/课程概览/index.md)
-    - [MyCC98](Bixing's 收藏页/CC98/index.md)
+    - [我的大二春夏课程概览](大二春夏/课程概览/index.md)
+    - [我收藏的网页](Bixing's 收藏页/收藏的网页/index.md)
 
 
 -   :simple-aboutdotme:{ .lg .middle } __关于我__
