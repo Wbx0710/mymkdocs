@@ -134,19 +134,19 @@ li {
 
 @media screen and (min-width: 960px) {
   html {
-    font-size: 137.5%;
+    font-size: 150%;
   }
 }
 
 @media screen and (min-width: 100em) {
   html {
-    font-size: 137.5%;
+    font-size: 150%;
   }
 }
 
 @media screen and (min-width: 125em) {
   html {
-    font-size: 137.5%;
+    font-size: 150%;
   }
 }
 
@@ -323,4 +323,14 @@ embed {
   /* 细型滚动条 */
   scrollbar-color: rgba(0, 0, 0, 0.1) #f5f5dc;
   /* 滑块为蓝色，轨道为米黄色 */
+}
+
+/* 放到你的 CSS 末尾，保证优先级 */
+.md-typeset p,
+.md-typeset li,
+.md-typeset blockquote,
+.md-typeset table,
+.md-typeset pre {
+  font-size: 0.75rem !important;
+  /* 或者别的想要的值 */
 }

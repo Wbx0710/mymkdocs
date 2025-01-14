@@ -190,7 +190,7 @@ plugins:
       locale: zh
       enable_creation_date: false
 
-copyright: Copyright &copy; 2023~2024 WuBixing/All Rights Reserved. # 左下角的版权声明
+copyright: Copyright &copy; 2023~2025 WuBixing/All Rights Reserved. # 左下角的版权声明
 
 extra_css:
   - assets/stylesheets/clock.css
