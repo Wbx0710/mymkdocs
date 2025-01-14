@@ -13,6 +13,9 @@ nav:
           - 课程指北: 大二春夏/信号与系统/课程指北/index.md
       - 数字系统设计: 
           - 课程指北: 大二春夏/数字系统设计/课程指北/index.md
+          - MyNotes:
+            - 课程概述: 大二春夏/数字系统设计/MyNotes/index.md  
+            - Chapter1逻辑代数基础: 大二春夏/数字系统设计/MyNotes/Chapter1/index.md
       - 半导体物理: 
           - 课程指北: 大二春夏/半导体物理/课程指北/index.md
       - 马克思主义基本原理: 

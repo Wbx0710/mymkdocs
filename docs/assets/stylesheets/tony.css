@@ -169,6 +169,7 @@ li {
 
 .md-typeset {
   font-size: 0.7rem;
+  line-height: 1.25;
 }
 
 .md-typeset code:not(pre code) {
@@ -331,6 +332,39 @@ embed {
 .md-typeset blockquote,
 .md-typeset table,
 .md-typeset pre {
-  font-size: 0.75rem !important;
+  font-size: 0.8rem !important;
   /* 或者别的想要的值 */
+}
+
+/* 在 .md-typeset 内部，对 h1~h6 设置字体大小 */
+.md-typeset h1 {
+  font-size: 1.6rem !important;
+  /* 如果你想让这一规则一定生效，可以加上 !important */
+  font-weight: 600;
+  /* 如果仍想保持较粗字体，可保留原先的数值 */
+}
+
+.md-typeset h2 {
+  font-size: 1.2rem !important;
+  font-weight: 600;
+}
+
+.md-typeset h3 {
+  font-size: 1rem !important;
+  font-weight: 500;
+}
+
+.md-typeset h4 {
+  font-size: 0.95rem !important;
+  font-weight: 500;
+}
+
+.md-typeset h5 {
+  font-size: 0.9rem !important;
+  font-weight: 500;
+}
+
+.md-typeset h6 {
+  font-size: 0.85rem !important;
+  font-weight: 500;
 }
