@@ -24,6 +24,9 @@ nav:
           - MyNotes: 大二春夏/马克思主义基本原理/MyNotes/index.md
       - 数据结构基础: 
           - 课程指北: 大二春夏/数据结构基础/课程指北/index.md
+          - MyNotes:
+            - 课程概述: 大二春夏/数据结构基础/MyNotes/index.md  
+            - Pointer: 大二春夏/数据结构基础/MyNotes/Pointer/index.md
       - 信息理论: 
           - 课程指北: 大二春夏/信息理论/课程指北/index.md
       - 人工智能前沿: 
@@ -60,11 +63,13 @@ nav:
             - Chapter21: 大二秋冬/大学物理甲II/MyNotes/chapter21/index.md
             - Chapter22: 大二秋冬/大学物理甲II/MyNotes/chapter22/index.md
             - Chapter23: 大二秋冬/大学物理甲II/MyNotes/chapter23/index.md
+          - 期中试卷: 大二秋冬/大学物理甲II/期中试卷/index.md
+          - 期末试卷: 大二秋冬/大学物理甲II/期末试卷/index.md
       - 数学建模:
           - 课程指北: 大二秋冬/数学建模/课程指北/index.md
       - 固体物理基础:
           - 课程指北: 大二秋冬/固体物理基础/课程指北/index.md
-          - 回忆卷: 大二秋冬/固体物理基础/回忆卷/index.md
+          - 复习资料: 大二秋冬/固体物理基础/复习资料/index.md
       - 概率论与数理统计:
           - 课程指北: 大二秋冬/概率论与数理统计/课程指北/index.md
           - MyNotes: 
@@ -99,6 +104,7 @@ nav:
           - 实验报告: 大二秋冬/大学物理实验/实验报告/index.md
       - 工程训练: 
           - 课程指北: 大二秋冬/工程训练/课程指北/index.md
+          - MyNotes: 大二秋冬/工程训练/MyNotes/index.md
           - 工训题库: 大二秋冬/工程训练/工训题库/index.md
       - 工程导论: 
           - 课程指北: 大二秋冬/工程导论/课程指北/index.md

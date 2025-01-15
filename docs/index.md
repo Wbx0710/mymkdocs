@@ -56,7 +56,7 @@ statistics: True
 </div>
 
 <center>
-    <font color="#3b3ba6" size="6" class="ml3">“保持热爱，奔赴星海！愿我们都能无限进步！”</font>
+    <font color="#3b3ba6" size="6" class="ml3">我时常万念俱灰，也时常死灰复燃。生活给了我多少积雪，我就能遇到多少个春天。</font>
 </center>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
