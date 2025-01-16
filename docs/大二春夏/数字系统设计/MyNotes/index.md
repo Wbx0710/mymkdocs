@@ -1,10 +1,5 @@
 # 数字电子技术笔记
 
-!!! info "参考教程"
-	* [《数字电子技术/数字逻辑电路》上集-- 零基础、保姆级](https://www.bilibili.com/video/BV1A3411z7Mf?spm_id_from=333.788.videopod.episodes&vd_source=4bf1953b0a6ee0abff2d699f545186cb)
-
-
-
 ## 课程主要内容
 
 ### Chapter 1 逻辑代数基础

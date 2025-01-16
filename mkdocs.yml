@@ -17,6 +17,7 @@ nav:
             - 课程概述: 大二春夏/数字系统设计/MyNotes/index.md  
             - Chapter1_1数制与码制: 大二春夏/数字系统设计/MyNotes/Chapter1_1/index.md
             - Chapter1_2逻辑运算: 大二春夏/数字系统设计/MyNotes/Chapter1_2/index.md
+            - Chapter1_3逻辑函数: 大二春夏/数字系统设计/MyNotes/Chapter1_3/index.md
       - 半导体物理: 
           - 课程指北: 大二春夏/半导体物理/课程指北/index.md
       - 马克思主义基本原理: 
@@ -187,7 +188,7 @@ plugins:
   #- heti:
       #disable_serve: false
   - statistics:
-      words_per_minute: 300
+      words_per_minute: 200
   - search:
       lang:
         - zh
