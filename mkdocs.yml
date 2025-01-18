@@ -19,7 +19,8 @@ nav:
             - Chapter1_2逻辑运算: 大二春夏/数字系统设计/MyNotes/Chapter1_2/index.md
             - Chapter1_3逻辑函数: 大二春夏/数字系统设计/MyNotes/Chapter1_3/index.md
             - Chapter2_1基本逻辑门电路: 大二春夏/数字系统设计/MyNotes/Chapter2_1/index.md
-            - Chapter2_2TTL&CMOS: 大二春夏/数字系统设计/MyNotes/Chapter2_2/index.md
+            - Chapter2_2TTL: 大二春夏/数字系统设计/MyNotes/Chapter2_2/index.md
+            - Chapter2_3CMOS: 大二春夏/数字系统设计/MyNotes/Chapter2_3/index.md
       - 半导体物理: 
           - 课程指北: 大二春夏/半导体物理/课程指北/index.md
       - 马克思主义基本原理: 
@@ -29,7 +30,7 @@ nav:
           - 课程指北: 大二春夏/数据结构基础/课程指北/index.md
           - MyNotes:
             - 课程概述: 大二春夏/数据结构基础/MyNotes/index.md  
-            - Chapter1: 大二春夏/数据结构基础/MyNotes/Chapter1/index.md
+            - Chapter1基本认识&复习: 大二春夏/数据结构基础/MyNotes/Chapter1/index.md
       - 信息理论: 
           - 课程指北: 大二春夏/信息理论/课程指北/index.md
       - 人工智能前沿: 
