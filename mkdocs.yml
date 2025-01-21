@@ -21,7 +21,8 @@ nav:
             - Chapter2_1基本逻辑门电路: 大二春夏/数字系统设计/MyNotes/Chapter2_1/index.md
             - Chapter2_2TTL: 大二春夏/数字系统设计/MyNotes/Chapter2_2/index.md
             - Chapter2_3CMOS&接口: 大二春夏/数字系统设计/MyNotes/Chapter2_3/index.md
-            - Chapter3_1组合逻辑电路: 大二春夏/数字系统设计/MyNotes/Chapter3_1/index.md
+            - Chapter3_1加法器: 大二春夏/数字系统设计/MyNotes/Chapter3_1/index.md
+            - Chapter3_2编码器&译码器: 大二春夏/数字系统设计/MyNotes/Chapter3_2/index.md
       - 半导体物理: 
           - 课程指北: 大二春夏/半导体物理/课程指北/index.md
       - 马克思主义基本原理: 
@@ -42,6 +43,8 @@ nav:
           - 课程指北: 大二春夏/电子电路设计实验/课程指北/index.md
       - 数字系统设计实验: 
           - 课程指北: 大二春夏/数字系统设计实验/课程指北/index.md
+          - Verilog:
+            - Verilog基础知识: 大二春夏/数字系统设计实验/Verilog/index.md
       - 通识课专栏: 
           - 课程指北: 大二春夏/通识课专栏/课程指北/index.md
   - 大二秋冬: 
