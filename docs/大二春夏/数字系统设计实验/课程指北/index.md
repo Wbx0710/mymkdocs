@@ -6,3 +6,9 @@
 
 !!! info "课程基本信息"
     * 成绩构成：
+
+!!! note "课程资源"
+	* [Chipverify](https://www.chipverify.com/)里面有一些Verilog的基础教程
+	* [HDLBits](https://hdlbits.01xz.net/wiki/Main_Page)大名鼎鼎的Verilog刷题网站
+
+

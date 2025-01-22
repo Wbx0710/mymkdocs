@@ -41,3 +41,17 @@
 ### 优先编码器（Priority Encoder）
 
 允许同时输入多个编码信号，并只对其中优先级最高的信号进行编码输出的电路
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501212008979.png" alt="屏幕截图 2025-01-21 200812" style="zoom:67%;" />
+
+### 8线-3线优先编码器74LS148
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501212026790.png" alt="屏幕截图 2025-01-21 202643" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501212030196.png" alt="屏幕截图 2025-01-21 203003" style="zoom:67%;" />
+
+#### 两片74LS148组成16线-4线优先编码器
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501212102728.png" alt="屏幕截图 2025-01-21 210226" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501212104531.png" alt="屏幕截图 2025-01-21 210433" style="zoom:67%;" />
