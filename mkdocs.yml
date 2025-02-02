@@ -1,5 +1,5 @@
 site_name: Bixing's Notebook
-site_author: 吴必兴
+site_author: Wu Bixing
 site_url: https://wbx0710.github.io/mymkdocs/
 repo_url: https://github.com/Wbx0710/mymkdocs
 repo_name: Bixing's Repositories
@@ -23,6 +23,7 @@ nav:
             - Chapter2_3CMOS&接口: 大二春夏/数字系统设计/MyNotes/Chapter2_3/index.md
             - Chapter3_1加法器: 大二春夏/数字系统设计/MyNotes/Chapter3_1/index.md
             - Chapter3_2编码器&译码器: 大二春夏/数字系统设计/MyNotes/Chapter3_2/index.md
+            - Chapter4_1触发器: 大二春夏/数字系统设计/MyNotes/Chapter4_1/index.md
       - 半导体物理: 
           - 课程指北: 大二春夏/半导体物理/课程指北/index.md
       - 马克思主义基本原理: 

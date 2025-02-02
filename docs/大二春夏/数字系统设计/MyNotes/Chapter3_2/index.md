@@ -162,3 +162,158 @@
 
 ## 数据选择器与分配器
 
+数据选择器：根据地址信号的要求，从多路输入数据中选择其中一路输出的逻辑电路。又称多路选择器（Multiplexer，简称MUX）或多路开关
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021125245.png" style="zoom:67%;" />
+
+数据选择器的输入信号个数N与地址码个数n的关系为$N=2^n$常用2 选 1、4 选 1、8 选 1 和16 选 1 等数据选择器
+
+### 4 选 1 数据选择器
+
+使用与或门设计一个4 选 1数据选择器。具有使能控制端，控制信号为 1 时，不工作，控制信号为 0 时，处于工作状态
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021136413.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021137197.png" style="zoom:67%;" />
+
+### 双 4 选 1 数据选择器74LS153
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021140032.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021141545.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021143084.png" style="zoom:67%;" />
+
+### 8 选 1 数据选择器74LS151
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021145834.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021148555.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021150745.png" style="zoom:67%;" />
+
+### 数据选择器的扩展
+
+#### 将双 4 选 1 数据选择器74LS153连接成 8 选 1 数据选择器
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021158705.png" style="zoom:67%;" />
+
+#### 将双 8 选 1 数据选择器74LS151连接成 16 选 1 数据选择器
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021201962.png" style="zoom:67%;" />
+
+---
+
+## 数据分配器
+
+根据地址信号的要求，将一路输入数据分配到多路输出中的其中一路作为输出的逻辑电路，称为数据分配器（Demultiplexer，简称DMUX）
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021204067.png" style="zoom:67%;" />
+
+### 译码器构成数据分配器
+
+用 3 线 - 8 线译码器74LS138可以构成 1 路 - 8 路数据分配器。$A_2$、$A_1$、$A_0$为地址信号输入端，$\bar Y_0$~$\bar Y_7$为数据输出端，三个使能$\bar {ST_A}$、$\bar {ST_B}$、$ST_C$中的任一个都可作为数据D输入端
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021317793.png" style="zoom:67%;" />
+
+---
+
+## 用中规模集成电路实现组合逻辑函数
+
+### 组合逻辑函数的电路实现
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021555360.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021557992.png" style="zoom:67%;" />
+
+说明同样的逻辑函数可以有不同的电路实现
+
+实现电路如果要选用**“二进制译码器”**或**“数据选择器”**，其实就是要确定“二进制译码器”或“数据选择器”输入端与待求函数输入信号A、B、C，输出端与输入信号Y的连接关系，即**待求逻辑**
+
+### 二进制译码器实现组合逻辑函数
+
+由于n位二进制译码器可提供$2^n$个最小项的输出，而任一个逻辑函数都可变换为最小项之和的标准与或式，因此利用译码器和门电路可实现单输出及多输出组合逻辑电路
+
+当译码器输出**低电平有效**时，选用**与非门**（因为低电平有效为$\bar Y$，用与非门才可以用摩根定律二次展开为最小项和的形式）；译码器输出**高电平有效**时，选用**或门**
+
+#### 基本步骤
+
+* 选择集成二进制译码器
+* 写出待求函数的标准与非-与非式（两次取反）
+* 确定待求函数变量和译码器输入端的关系
+* 选择合适的门电路，画连线图
+
+#### 典例分析
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021619183.png" style="zoom:67%;" />
+
+注：右下角相当于是用卡诺图化简的“逆过程”去找最小项，对于变量数少的情况会比较方便
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021622646.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021625112.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021628814.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021630521.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021634245.png" style="zoom:67%;" />
+
+---
+
+### 数据选择器实现组合逻辑函数
+
+原理：选择器输出为标准与或式，含地址变量的全部最小项
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021701018.png" style="zoom:67%;" />
+
+任何组合逻辑函数都可以表示成为最小项之和的形式，故可用数据选择器实现
+
+#### 基本步骤
+
+* 根据$n=k-1$或$n=k$确定数据选择器的型号（n—选择器地址码，k—函数的变量个数）
+* 写出函数的标准与或式和选择器输出信号表达式
+* 对照比较，确定选择器各个输入变量的表达式
+* 根据采用的数据选择器和求出的表达式画出连线图
+
+#### 典例分析
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021710231.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021712452.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021714699.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021718491.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021736737.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021737113.png" style="zoom:67%;" />
+
+方法二：图形法（降维法）
+
+先画出待求函数的**降维卡诺图**，再画出相应数据选择器输出信号的卡诺图，利用两者相等的关系，求出数据选择器输入变量的表达式
+
+一般将卡诺图的变量数称为该图的维数，如果把某些变量也作为卡诺图中小方格的值，则会减少卡诺图的维数，这种卡诺图称为“降维卡诺图”
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021748423.png" style="zoom:67%;" />
+
+其实就是看当我AB定下来后，C分别取0或者 1 ，去看F的卡诺图中取值是为0还是为 1
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502021750294.png" style="zoom:67%;" />
+
+注：如果变量数较多，比如有4个，上述卡诺图降维的过程也比较复杂，并且也容易出错，可采用**“降维真值表”**来进行快速转换
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502022013204.png" style="zoom:67%;" />
+
+变量数多的情况下，用拼凑法很难做出来，所以要用降维法
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502022020448.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502022020704.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502022022765.png" style="zoom:67%;" />
+
+---
+
+The End of Chapter 3
