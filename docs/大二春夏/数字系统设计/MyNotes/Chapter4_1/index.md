@@ -4,6 +4,7 @@
 	* 基本触发器
 	* 同步触发器
 	* 边沿触发器
+	* 主从触发器
 
 ---
 
@@ -193,9 +194,413 @@ $\bar {S_D}$和$\bar {R_D}$是不能同时为0的，但有时候难免操作失�
 * **硬件消抖**：在按键较少可用硬件方法消除键抖动
 * **软件消抖**：检测出键闭合后执行一个$5ms\sim 20ms$的延时，让前沿抖动消失后再一次检测键的状态，如果仍保持闭合状态电平，则确认为真正有键按下；按键释放也要做同样的延时处理（单片机、嵌入式会用到）
 
-<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502022301018.png" style="zoom:67%;" />---
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502022301018.png" style="zoom:67%;" />
 
 ---
 
 ## 同步触发器
 
+同步触发器（Synchronous Flip-Flop）：在数字系统中，为了协调各部分有节拍地工作，通常要求一些触发器在同一时刻工作。为此，必须采用同步脉冲，使这些触发器在同步脉冲作用下根据输入信号同时改变状态，而在没有同步脉冲输入时，触发器保持原状态不变，这个同步脉冲称为**时钟脉冲CP（Clock Pulse）**
+
+具有时钟脉冲控制的触发器称为时钟触发器，又称钟控触发器
+
+### 同步RS触发器
+
+#### 电路组成
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031120792.png" style="zoom:67%;" />
+
+#### 逻辑功能
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031123890.png" style="zoom:67%;" />
+
+发现和由或非门组成的基本RS触发器特性表是一样的，**R、S信号都是高电平有效**
+
+#### 包含了异步端的同步RS触发器
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031128007.png" style="zoom:67%;" />
+
+R、S称为**同步输入端**，因为加在R、S端的输入信号能否进入触发器而被吸收，是==受时钟脉冲CP同步控制的==
+
+$\bar S_D$、$\bar R_D$称为**异步输入端**，也称直接置位和复位端
+
+* 当$\bar S_D=0$时，触发器被置位到 1 状态
+* 当$\bar R_D=0$时，触发器被复位到0状态
+* 其作用与CP无关
+
+异步输入端是用来**预置触发器的初始状态**，或**在工作中强行置位和复位触发器**，平时不工作时，$\bar S_D=\bar R_D=1$
+
+#### 特性表&特性方程
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031137034.png" style="zoom:67%;" />
+
+注：上面是$CP=1$期间有效，若$CP=0$则$Q^{n+1}=Q^n$
+
+#### 状态转换图
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031140232.png" style="zoom:67%;" />
+
+#### 典例分析
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031147198.png" style="zoom:67%;" />
+
+注：最后一个区间$CP$撤销，**状态不定**，因为$CP$撤销和$RS$撤销效果一样的
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031150887.png" style="zoom:67%;" />
+
+### 同步RS触发器的优缺点
+
+#### 优点
+
+时钟电平控制：在$CP=1$期间触发器接受输入信号，$CP=0$时保持状态不变，多个触发器可以在同一时钟脉冲控制下同步工作，给用户的使用带来了方便，其**抗干扰能力**也比基本RS触发器强得多
+
+#### 缺点
+
+* 存在不定状态，R、S之间仍有约束
+* 存在空翻现象：在$CP=1$期间，输入信号的多次变化，使触发器的状态也随之多次变化，只能用于数据锁存，而不能用于计数器、寄存器和存储器中
+
+---
+
+### 同步D触发器
+
+就是在原先的同步RS触发器的R和S之间增加了一个非门
+
+#### 电路组成
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031159707.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031200500.png" style="zoom:67%;" />
+
+#### 逻辑功能
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031203213.png" style="zoom:67%;" />
+
+#### 特性表&特性方程
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031205183.png" style="zoom:67%;" />
+
+没有约束条件，那么画输出图像的时候就不需要$Q$和$\bar Q$同时画了，可以直接画完$Q$之后取反
+
+#### 状态转移图
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031206498.png" style="zoom:67%;" />
+
+#### 典例分析
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031209592.png" style="zoom:67%;" />
+
+注：空翻现象就是中间标注0和 1 的那一段，输入信号的多次变化，使触发器的状态也随之多次变化
+
+#### 同步D触发器的特点
+
+* 时钟电平控制，输入无约束问题，优于同步RS触发器
+* $CP=1$时跟随，下降沿到来时才锁存
+* 仍然存在空翻现象，限制了同步触发器的应用
+
+#### 集成同步D触发器：74LS375
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031213863.png" style="zoom:67%;" />
+
+内部结构也和我们上面学过的略有不同（因为上面$G_1$、$G_2$用的是或非门$G_3$、$G_4$用的是与门）
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031217442.png" style="zoom:67%;" />
+
+---
+
+## 边沿触发器
+
+边沿触发器（Edge-Triggered Flip Flop）：只在时钟脉冲CP的**上升沿或下降沿**接收输入信号，而在$CP=1$及$CP=0$期间以及CP非约定边沿，触发器不接收数据，保持状态不变
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031225508.png" style="zoom:67%;" />
+
+相对于同步（电平）触发器在$CP=1$期间接收输入信号，边沿触发器提高了工作的可靠性和抗干扰能力，且没有空翻现象
+
+### 边沿D触发器
+
+#### 电路组成
+
+把两个同步D触发器放到一起，再通过一个非门把两个$CP$端连到一起，就得到了边沿D触发器
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031232845.png" style="zoom:67%;" />
+
+可以把主触发器和从触发器的CP想象成两个阀门的开关，就好理解了
+
+下图所示电路图为**下降沿有效**的边沿D触发器
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031235176.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031237238.png" style="zoom:67%;" />
+
+#### 特性表&特性方程
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031238304.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031241477.png" style="zoom:67%;" />
+
+**边沿D触发器已无“空翻现象”**
+
+#### 集成边沿D触发器：74LS74
+
+这块芯片是**上升沿有效**
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031246749.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031249189.png" style="zoom:67%;" />
+
+#### 典例分析
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031253792.png" style="zoom:67%;" />
+
+#### 边沿D触发器的特点
+
+* CP的**上升沿（正边沿）**或**下降沿（负边沿）**触发
+* **抗干扰能力极强**，解决了同步触发器的“空翻现象”
+* 功能太少，只有置 1 、置0功能
+
+---
+
+### 边沿JK触发器
+
+#### 电路组成
+
+边沿JK触发器可以有多种结构，为了更好的延续性（由上述边沿D触发器扩展而来），所以呈现该下降沿边沿JK触发器 
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031258989.png" style="zoom:67%;" />
+
+#### 工作原理
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031302961.png" style="zoom:67%;" />
+
+#### 特性表
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031306205.png" style="zoom:67%;" />
+
+可见功能更为丰富了
+
+#### 典例分析
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031308498.png" style="zoom:67%;" />
+
+#### 集成边沿JK触发器：74LS112
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031311593.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031416493.png" style="zoom:67%;" />
+
+#### 典例分析
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031421493.png" style="zoom:67%;" />
+
+#### 边沿JK触发器的特点
+
+* CP的**上升沿**或**下降沿**触发
+* 抗干扰能力极强，工作速度很高，在触发沿瞬间，按$Q^{n+1}=J\bar {Q^n}+\bar KQ^n$的规定更新状态
+* 功能齐全，有保持、置0、置 1 、翻转功能，使用方便
+
+---
+
+### $T$触发器和${T}'$触发器
+
+由JK触发器或D触发器构成，主要是用来简化集成计数器的逻辑电路
+
+### T触发器
+
+T触发器是根据T端输入信号的不同，在时钟脉冲CP作用下具有**翻转**和**保持**功能的电路
+
+#### 逻辑符号
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031427189.png" style="zoom:67%;" />
+
+#### 特性表&特性方程
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031429694.png" style="zoom:67%;" />
+
+#### 典例分析
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031431461.png" style="zoom:67%;" />
+
+### ${T}'$触发器
+
+${T}'$触发器是指每输入一个时钟脉冲CP时，状态变化一次的电路。它**实际上是T触发器的翻转功能**，即**令$T=1$**
+
+#### 逻辑符号&特性表&特性方程
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031434021.png" style="zoom:67%;" />
+
+#### 典型例题
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031436937.png" style="zoom:67%;" />
+
+---
+
+### 触发器之间的转换
+
+由于实际生产的集成边沿触发器只有D型和JK型，只介绍如何将这两种触发器转换成$T$和${T}'$触发器，及它们之间的转换
+
+#### 转换步骤
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031439744.png" style="zoom:67%;" />
+
+* 写出已有触发器和待求触发器的特性方程
+* 变换待求触发器的特性方程，使之形式与已有触发器的特性方程一致
+* 比较两特性方程，求出转换逻辑
+* 画电路图
+
+#### JK触发器$\longrightarrow$D触发器
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031444624.png" style="zoom:67%;" />
+
+方法二：使用驱动表（只作介绍，感觉求解过程更为复杂了）
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031447252.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031449341.png" style="zoom:67%;" />
+
+#### JK触发器$\longrightarrow$T触发器
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031451608.png" style="zoom:67%;" />
+
+####  JK触发器$\longrightarrow$${T}'$触发器
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031453731.png" style="zoom:67%;" />
+
+---
+
+#### D触发器$\longrightarrow$JK触发器
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031455602.png" style="zoom:67%;" />
+
+####  D触发器$\longrightarrow$T触发器
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031457787.png" style="zoom:67%;" />
+
+#### D触发器$\longrightarrow$${T}'$触发器
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031458042.png" style="zoom:67%;" />
+
+---
+
+## 主从触发器（脉冲触发器）
+
+### 主从RS触发器
+
+#### 电路组成
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031606119.png" style="zoom:67%;" />
+
+#### 工作原理
+
+##### $CP=0$或$CP=1$时
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031608549.png" style="zoom:67%;" />
+
+##### 上升沿
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031611294.png" style="zoom:67%;" />
+
+##### 下降沿
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031612710.png" style="zoom:67%;" />
+
+**$Q=Q_M$（跟随）**，主从触发器状态改变的时刻只在下降沿，但是注意主从触发器和D触发器的区别，S、R与$Q_M$是不跟随的
+
+##### S和R的四种情况
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031622484.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031622890.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031623464.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031623489.png" style="zoom:67%;" />
+
+#### 特性表和特性方程
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031626820.png" style="zoom:67%;" />
+
+#### 逻辑符号
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031627528.png" style="zoom:67%;" />
+
+#### 主从触发器的翻转问题
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031632276.png" style="zoom:67%;" />
+
+所以在主从触发器的题目中，可以同时画出$Q_M$的波形图，通过对比$Q_M$与CP下降沿画出Q的波形
+
+#### 典例分析
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031640902.png" style="zoom:67%;" />
+
+#### 主从RS触发器的特点
+
+优点
+
+* 主从RS触发器状态的翻转发生在CP脉冲的下降沿，状态最多改变一次，而在$CP=1$期间触发器的状态保持不变，从而解决了空翻现象
+* 将主从RS触发器用于时序电路中，不会因不稳定而产生震荡
+
+缺点
+
+* 在$CP=1$期间，主触发器的状态仍然会随着R和S的变化而多次改变。将会导致在CP下降沿到来时，触发器状态的变化与特性表不符
+* 信号输入端R和S之间仍然有约束，限制了使用
+
+---
+
+### 主从JK触发器
+
+#### 电路组成
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031647251.png" style="zoom:67%;" />
+
+把S端看作J端，把R端看作K端即得主从JK触发器
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031650021.png" style="zoom:67%;" />
+
+#### 工作原理
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031655418.png" style="zoom:67%;" />
+
+**特性方程**：$Q^{n+1}=J\bar Q^n+\bar KQ^n$（和边沿JK触发器一样的）
+
+#### 逻辑符号
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031659422.png" style="zoom:67%;" />
+
+#### 一次变化问题
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031703496.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031705772.png" style="zoom:67%;" />
+
+如果在高电平期间J和K的值发生变化，则需要考虑一次变化问题
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031711762.png" style="zoom:67%;" />
+
+${Q}'$为没有尖峰干扰信号的情况
+
+#### 主从JK触发器的特点
+
+* 功能齐全，有保持、置0、置 1 、翻转功能，使用方便
+* 信号输入端无约束
+* 在$CP=1$期间，触发器J、K端接收输入信号，并且要求输入状态保持稳定。若在$CP=1$期间输入端出现干扰信号，可能会使触发器的状态出错
+
+所以其实在后续的使用中都是以边沿触发器为主
+
+---
+
+## 触发器例题
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031725957.png" style="zoom:67%;" />
+
+分析：触发器$FF_0$、$FF_1$的脉冲端接在同一个CP，属同步时序逻辑电路（后面会讲）
+
+* 触发器$FF_0$：$J=K=1$，是将JK触发器转换为${T}'$触发器
+* 触发器$FF_1$：$J=K=T= Q_0$，是将JK触发器转换为$T$触发器
+
+在下降沿同时也变化，到底是看作0还是看作 1 ？从工作原理出发，由于是锁存前一时刻的值送到输出，所以是看下降沿前一时刻的值来决定$Q_1$的变化
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031731557.png" style="zoom:67%;" />
+
+分析：触发器$FF_0$接到CP、$FF_1$接到$\bar Q_0$，属异步时序逻辑电路（后面会讲）
+
+触发器$FF_0$、$FF_1$都是将触发器的$\bar Q_0$端引回输入端D，即$Q^{n+1}=D=\bar Q^n$，是将JK触发器转换为${T}'$触发器，但触发脉冲不一样
