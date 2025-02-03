@@ -218,7 +218,7 @@ $\bar {S_D}$和$\bar {R_D}$是不能同时为0的，但有时候难免操作失�
 
 #### 包含了异步端的同步RS触发器
 
-<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031128007.png" style="zoom:67%;" />
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502040102474.png" style="zoom:67%;" />
 
 R、S称为**同步输入端**，因为加在R、S端的输入信号能否进入触发器而被吸收，是==受时钟脉冲CP同步控制的==
 
@@ -338,6 +338,10 @@ $\bar S_D$、$\bar R_D$称为**异步输入端**，也称直接置位和复位�
 <img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031241477.png" style="zoom:67%;" />
 
 **边沿D触发器已无“空翻现象”**
+
+#### 包含了异步端的边沿D触发器
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502040108428.png" style="zoom:67%;" />
 
 #### 集成边沿D触发器：74LS74
 
@@ -599,8 +603,26 @@ ${Q}'$为没有尖峰干扰信号的情况
 
 在下降沿同时也变化，到底是看作0还是看作 1 ？从工作原理出发，由于是锁存前一时刻的值送到输出，所以是看下降沿前一时刻的值来决定$Q_1$的变化
 
+---
+
 <img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502031731557.png" style="zoom:67%;" />
 
 分析：触发器$FF_0$接到CP、$FF_1$接到$\bar Q_0$，属异步时序逻辑电路（后面会讲）
 
 触发器$FF_0$、$FF_1$都是将触发器的$\bar Q_0$端引回输入端D，即$Q^{n+1}=D=\bar Q^n$，是将JK触发器转换为${T}'$触发器，但触发脉冲不一样
+
+---
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502040046667.png" style="zoom:67%;" />
+
+---
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502040051000.png" style="zoom:67%;" />
+
+---
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502040056586.png" style="zoom:67%;" />
+
+---
+
+The End of Chapter 4

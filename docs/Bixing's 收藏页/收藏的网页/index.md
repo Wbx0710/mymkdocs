@@ -72,7 +72,7 @@
 
 * [Soleil](https://xw-soleil.github.io/){ .md-button }
 
-* [Slowist](https://slowist-lee.github.io/slowist-notebook/){ .md-button }
+* [Slowist](https://slowist-lee.github.io/notebook/){ .md-button }
 
 * [JiePeng](https://note.jiepeng.tech/){ .md-button }
 
