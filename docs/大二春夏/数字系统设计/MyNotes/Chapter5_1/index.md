@@ -1,10 +1,7 @@
-# 时序逻辑电路
+# 时序逻辑电路_分析和设计
 
 !!! note "内容总览"
 	* 时序逻辑电路的分析和设计
-	* 计数器
-	* 寄存器
-	* 顺序脉冲发生器
 
 ---
 
@@ -316,6 +313,48 @@ Moore型电路的分析和设计相对于Mealy型会简单很多
 <img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502061701633.png" style="zoom:67%;" />
 
 <img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502061702850.png" style="zoom:67%;" />
+
+---
+
+### 异步时序电路的设计
+
+采用异步方案，为了直观清除，需根据状态转换图画出对应的时序图，然后从翻转要求出发，为每个触发器选择合适的时钟信号
+
+选择时钟脉冲的基本原则：凡是**要翻转的触发器都能够获得相应的时钟触发沿**，且**触发沿越少越好**
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502061729446.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502061730239.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502061734809.png" style="zoom:50%;" />
+
+则**$CP_0=CP(CP\uparrow)$**、**$CP_1=CP_2=\bar Q_0(\bar Q_0 \uparrow)$**
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502061759915.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502061801748.png" style="zoom:67%;" />
+
+ <img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502061803357.png" style="zoom:67%;" />
+
+其实意思就是没用到的时钟信号对应的方框中的0或 1 标记为“X”
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502061805781.png" style="zoom:67%;" />
+
+然后再画卡诺圈
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502061806472.png" style="zoom:67%;" />
+
+因为$Q_1$也受$Q_0$控制，同样的方式去处理$Q_1$
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502061807878.png" style="zoom:67%;" />
+
+但是$Q_0$是受时钟信号CP控制的，所以按之前的方式处理即可
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502061810611.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502061812684.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502062114115.png" style="zoom:67%;" />
 
 ---
 

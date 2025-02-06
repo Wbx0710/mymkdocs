@@ -24,7 +24,8 @@ nav:
             - Chapter3_1加法器: 大二春夏/数字系统设计/MyNotes/Chapter3_1/index.md
             - Chapter3_2编码器&译码器: 大二春夏/数字系统设计/MyNotes/Chapter3_2/index.md
             - Chapter4_1触发器: 大二春夏/数字系统设计/MyNotes/Chapter4_1/index.md
-            - Chapter5_1时序逻辑: 大二春夏/数字系统设计/MyNotes/Chapter5_1/index.md
+            - Chapter5_1分析&设计: 大二春夏/数字系统设计/MyNotes/Chapter5_1/index.md
+            - Chapter5_2计数器&寄存器: 大二春夏/数字系统设计/MyNotes/Chapter5_2/index.md
       - 半导体物理: 
           - 课程指北: 大二春夏/半导体物理/课程指北/index.md
       - 马克思主义基本原理: 
@@ -49,6 +50,7 @@ nav:
             - Verilog基础知识: 大二春夏/数字系统设计实验/Verilog/index.md
       - 通识课专栏: 
           - 课程指北: 大二春夏/通识课专栏/课程指北/index.md
+          - 法知历年题: 大二春夏/通识课专栏/法知历年题/index.md
   - 大二秋冬: 
       - 课程概览: 大二秋冬/课程概览/index.md
       - 电子电路基础: 
