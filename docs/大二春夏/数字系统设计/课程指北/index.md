@@ -19,5 +19,28 @@
 	* 期末考试
 		* [2022数字系统设计期末试卷](https://www.cc98.org/topic/5630729)
 
+## Homework & Quiz From lp
 
+### Hw1-3&Quiz1_lp
 
+<object data="Hw1-3&Quiz1_lp.pdf" type="application/pdf" width="100%" height="800">
+    <embed src="Hw1-3&Quiz1_lp.pdf" type="application/pdf" />
+</object>
+
+### Hw4-7&Quiz2-3_lp
+
+<object data="Hw4-7&Quiz2-3_lp.pdf" type="application/pdf" width="100%" height="800">
+    <embed src="Hw4-7&Quiz2-3_lp.pdf" type="application/pdf" />
+</object>
+
+### 期中&控制器_lp
+
+<object data="期中&控制器_lp.pdf" type="application/pdf" width="100%" height="800">
+    <embed src="期中&控制器_lp.pdf" type="application/pdf" />
+</object>
+
+### Hw8-12&Quiz4-5_lp
+
+<object data="Hw8-12&Quiz4-5_lp.pdf" type="application/pdf" width="100%" height="800">
+    <embed src="Hw8-12&Quiz4-5_lp.pdf" type="application/pdf" />
+</object>
