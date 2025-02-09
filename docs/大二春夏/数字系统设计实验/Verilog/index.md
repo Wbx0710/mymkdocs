@@ -2,7 +2,6 @@
 
 !!! info "参考资料"
 	* [Verilog 基础知识(一) Verilog 基础语法与注意事项](https://blog.csdn.net/jac_chao/article/details/123744724?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522dbc6980947da7b5b736c6d5f5ad9bada%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=dbc6980947da7b5b736c6d5f5ad9bada&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-123744724-null-null.142^v101^control&utm_term=verilog&spm=1018.2226.3001.4187)
-	* [HDLBits中文导学 - 知乎](https://zhuanlan.zhihu.com/c_1131528588117385216 "HDLBits 中文导学 - 知乎 (zhihu.com)") 
 	* [野火《FPGA Verilog开发实战指南》](https://i-blog.csdnimg.cn/blog_migrate/73accd1c446486d72a65d1862797ba52.png)
 
 ## 基础知识

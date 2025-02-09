@@ -26,7 +26,7 @@ statistics: True
             font-weight: bold;
             padding: 20px 60px;
             border-radius: 15px;
-            background: linear-gradient(to right, #4A90E2, #8E44AD); /* 渐变 */
+            background: linear-gradient(to right, #a1c2e7, #788bb8); /* 渐变 */
             text-align: center;
         }
     </style>
@@ -56,8 +56,9 @@ statistics: True
 </div>
 
 <center>
-    <font color="#3b3ba6" size="6" class="ml3">无限进步！</font>
+    <font color="#788bb8" size="6" class="ml3">无限进步！</font>
 </center>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <script>
@@ -94,7 +95,7 @@ statistics: True
     - [我收藏的网页](Bixing's 收藏页/收藏的网页/index.md)
 
 
--   :simple-aboutdotme:{ .lg .middle } __关于我__
+-   :simple-github:{ .lg .middle } __关于我__
 
     ---
 

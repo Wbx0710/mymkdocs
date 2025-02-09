@@ -56,12 +56,12 @@ a:hover {
   --md-default-bg-color--lightest: hsla(0, 0%, 100%, 0.12);
 
   /* primary color */
-  --md-primary-fg-color: #3b3ba6;
+  --md-primary-fg-color: #788bb8;
   /*上页顶颜色*/
-  --md-primary-fg-color--light: #5050ad;
+  --md-primary-fg-color--light: #7a8dbf;
   /*下页顶颜色*/
   --md-primary-fg-color--dark: #95b1ba;
-  --md-primary-bg-color: #d3d3d3;
+  --md-primary-bg-color: #f1f1f1;
   /*页顶字体颜色*/
   --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
   --md-accent-fg-color: #3c5e91;
@@ -72,7 +72,7 @@ a:hover {
 
   /* code color */
   --md-code-fg-color: #1c113f;
-  --md-code-bg-color: #fbfaf5;
+  --md-code-bg-color: hsla(0, 0%, 100%, 0.7);
 
   /* typeset color */
   --md-typeset-color: var(--md-default-fg-color);
