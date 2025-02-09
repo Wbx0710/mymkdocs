@@ -12,6 +12,7 @@
 !!! note "课程资源"
     * 经验帖：
 		* [数据结构基础课程总结](https://wintermelonc.github.io/WintermelonC_Docs/zju/basic_courses/data_structure/)
+	* [Jiepeng's Notes](https://note.jiepeng.tech/CS/FDS/)
 
 
 

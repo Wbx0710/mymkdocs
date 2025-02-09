@@ -56,6 +56,8 @@
 
 ### 课程
 
+* [电科课程仓库](https://github.com/zju-isee/zju-isee){ .md-button }
+
 * [名校公开课程评价网](https://conanhujinming.github.io/comments-for-awesome-courses/index.html){ .md-button }
 
 * [浙江大学课程攻略计划](https://qsctech.github.io/zju-icicles/){ .md-button }

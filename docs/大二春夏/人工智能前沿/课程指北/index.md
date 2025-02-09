@@ -6,3 +6,7 @@
 
 !!! info "课程基本信息"
     * 成绩构成：
+
+!!! info "课程资源"
+	* [Jiepeng's Notes](https://note.jiepeng.tech/CS/AI/)
+
