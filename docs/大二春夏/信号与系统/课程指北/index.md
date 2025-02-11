@@ -15,6 +15,7 @@
     * 经验帖：
     	* [信号与系统中文班学习资料](https://www.cc98.org/topic/5643411)
     	* [信电微电子大二专业课经验分享](https://www.cc98.org/topic/5930229)
+    * [浙江大学信电学院2022信号与系统课程资料](https://github.com/VipaiLab/Signals-and-Systems-course)
     * 大作业：
     	* [关于信号与系统大作业的一点心得](http://www-cc98-org-s.webvpn.zju.edu.cn:8001/topic/5646989)
     * 小测试卷（胡老师班历年卷重合度较大）：
@@ -26,5 +27,4 @@
     	* [2023信号与系统中文班回忆卷](https://www.cc98.org/topic/5638862)
     	* [若干信号与系统历年卷及参考答案](https://www.cc98.org/topic/5980366)
     	* [信号与系统中文班期末复习资料](http://www-cc98-org-s.webvpn.zju.edu.cn:8001/topic/5622668)
-
 

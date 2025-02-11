@@ -9,72 +9,72 @@ nav:
   - 首页: index.md
   - 大二春夏:
       - 课程概览: 大二春夏/课程概览/index.md
-      - 信号与系统: 
+      - 信号与系统:
           - 课程指北: 大二春夏/信号与系统/课程指北/index.md
-      - 数字系统设计: 
+      - 数字系统设计:
           - 课程指北: 大二春夏/数字系统设计/课程指北/index.md
           - MyNotes:
-            - 课程概述: 大二春夏/数字系统设计/MyNotes/index.md  
-            - Chapter1_1数制与码制: 大二春夏/数字系统设计/MyNotes/Chapter1_1/index.md
-            - Chapter1_2逻辑运算: 大二春夏/数字系统设计/MyNotes/Chapter1_2/index.md
-            - Chapter1_3逻辑函数: 大二春夏/数字系统设计/MyNotes/Chapter1_3/index.md
-            - Chapter2_1基本逻辑门电路: 大二春夏/数字系统设计/MyNotes/Chapter2_1/index.md
-            - Chapter2_2TTL: 大二春夏/数字系统设计/MyNotes/Chapter2_2/index.md
-            - Chapter2_3CMOS&接口: 大二春夏/数字系统设计/MyNotes/Chapter2_3/index.md
-            - Chapter3_1加法器: 大二春夏/数字系统设计/MyNotes/Chapter3_1/index.md
-            - Chapter3_2编码器&译码器: 大二春夏/数字系统设计/MyNotes/Chapter3_2/index.md
-            - Chapter4_1触发器: 大二春夏/数字系统设计/MyNotes/Chapter4_1/index.md
-            - Chapter5_1分析&设计: 大二春夏/数字系统设计/MyNotes/Chapter5_1/index.md
-            - Chapter5_2计数器&寄存器: 大二春夏/数字系统设计/MyNotes/Chapter5_2/index.md
-      - 半导体物理: 
+              - 课程概述: 大二春夏/数字系统设计/MyNotes/index.md
+              - Chapter1_1数制与码制: 大二春夏/数字系统设计/MyNotes/Chapter1_1/index.md
+              - Chapter1_2逻辑运算: 大二春夏/数字系统设计/MyNotes/Chapter1_2/index.md
+              - Chapter1_3逻辑函数: 大二春夏/数字系统设计/MyNotes/Chapter1_3/index.md
+              - Chapter2_1基本逻辑门电路: 大二春夏/数字系统设计/MyNotes/Chapter2_1/index.md
+              - Chapter2_2TTL: 大二春夏/数字系统设计/MyNotes/Chapter2_2/index.md
+              - Chapter2_3CMOS&接口: 大二春夏/数字系统设计/MyNotes/Chapter2_3/index.md
+              - Chapter3_1加法器: 大二春夏/数字系统设计/MyNotes/Chapter3_1/index.md
+              - Chapter3_2编码器&译码器: 大二春夏/数字系统设计/MyNotes/Chapter3_2/index.md
+              - Chapter4_1触发器: 大二春夏/数字系统设计/MyNotes/Chapter4_1/index.md
+              - Chapter5_1分析&设计: 大二春夏/数字系统设计/MyNotes/Chapter5_1/index.md
+              - Chapter5_2计数器&寄存器: 大二春夏/数字系统设计/MyNotes/Chapter5_2/index.md
+      - 半导体物理:
           - 课程指北: 大二春夏/半导体物理/课程指北/index.md
-      - 马克思主义基本原理: 
+      - 马克思主义基本原理:
           - 课程指北: 大二春夏/马克思主义基本原理/课程指北/index.md
           - MyNotes: 大二春夏/马克思主义基本原理/MyNotes/index.md
-      - 数据结构基础: 
+      - 数据结构基础:
           - 课程指北: 大二春夏/数据结构基础/课程指北/index.md
           - MyNotes:
-            - 课程概述: 大二春夏/数据结构基础/MyNotes/index.md  
-            - Chapter1基本认识&复习: 大二春夏/数据结构基础/MyNotes/Chapter1/index.md
-      - 信息理论: 
+              - 课程概述: 大二春夏/数据结构基础/MyNotes/index.md
+              - Chapter1基本认识&复习: 大二春夏/数据结构基础/MyNotes/Chapter1/index.md
+      - 信息理论:
           - 课程指北: 大二春夏/信息理论/课程指北/index.md
-      - 人工智能前沿: 
+      - 人工智能前沿:
           - 课程指北: 大二春夏/人工智能前沿/课程指北/index.md
-      - 控制的哲学与方法: 
+      - 控制的哲学与方法:
           - 课程指北: 大二春夏/控制的哲学与方法/课程指北/index.md
-      - 电子电路设计实验II: 
+      - 电子电路设计实验II:
           - 课程指北: 大二春夏/电子电路设计实验/课程指北/index.md
-      - 数字系统设计实验: 
+      - 数字系统设计实验:
           - 课程指北: 大二春夏/数字系统设计实验/课程指北/index.md
           - Verilog:
-            - Verilog基础知识: 大二春夏/数字系统设计实验/Verilog/index.md
-      - 通识课专栏: 
+              - Verilog基础知识: 大二春夏/数字系统设计实验/Verilog/index.md
+      - 通识课专栏:
           - 课程指北: 大二春夏/通识课专栏/课程指北/index.md
           - 法知历年题: 大二春夏/通识课专栏/法知历年题/index.md
-  - 大二秋冬: 
+  - 大二秋冬:
       - 课程概览: 大二秋冬/课程概览/index.md
-      - 电子电路基础: 
+      - 电子电路基础:
           - 课程指北: 大二秋冬/电子电路基础/课程指北/index.md
           - 电子电路基础习题集萃: 大二秋冬/电子电路基础/电基习题集萃/index.md
-      - 大学物理甲II: 
+      - 大学物理甲II:
           - 课程指北: 大二秋冬/大学物理甲II/课程指北/index.md
-          - MyNotes: 
-            - PDF版汇总下载: 大二秋冬/大学物理甲II/MyNotes/index.md
-            - Chapter9: 大二秋冬/大学物理甲II/MyNotes/chapter9/index.md
-            - Chapter10: 大二秋冬/大学物理甲II/MyNotes/chapter10/index.md
-            - Chapter11: 大二秋冬/大学物理甲II/MyNotes/chapter11/index.md
-            - Chapter12: 大二秋冬/大学物理甲II/MyNotes/chapter12/index.md
-            - Chapter13: 大二秋冬/大学物理甲II/MyNotes/chapter13/index.md
-            - Chapter14: 大二秋冬/大学物理甲II/MyNotes/chapter14/index.md
-            - Chapter15: 大二秋冬/大学物理甲II/MyNotes/chapter15/index.md
-            - Chapter16: 大二秋冬/大学物理甲II/MyNotes/chapter16/index.md
-            - Chapter17: 大二秋冬/大学物理甲II/MyNotes/chapter17/index.md
-            - Chapter18: 大二秋冬/大学物理甲II/MyNotes/chapter18/index.md
-            - Chapter19: 大二秋冬/大学物理甲II/MyNotes/chapter19/index.md
-            - Chapter20: 大二秋冬/大学物理甲II/MyNotes/chapter20/index.md
-            - Chapter21: 大二秋冬/大学物理甲II/MyNotes/chapter21/index.md
-            - Chapter22: 大二秋冬/大学物理甲II/MyNotes/chapter22/index.md
-            - Chapter23: 大二秋冬/大学物理甲II/MyNotes/chapter23/index.md
+          - MyNotes:
+              - PDF版汇总下载: 大二秋冬/大学物理甲II/MyNotes/index.md
+              - Chapter9: 大二秋冬/大学物理甲II/MyNotes/chapter9/index.md
+              - Chapter10: 大二秋冬/大学物理甲II/MyNotes/chapter10/index.md
+              - Chapter11: 大二秋冬/大学物理甲II/MyNotes/chapter11/index.md
+              - Chapter12: 大二秋冬/大学物理甲II/MyNotes/chapter12/index.md
+              - Chapter13: 大二秋冬/大学物理甲II/MyNotes/chapter13/index.md
+              - Chapter14: 大二秋冬/大学物理甲II/MyNotes/chapter14/index.md
+              - Chapter15: 大二秋冬/大学物理甲II/MyNotes/chapter15/index.md
+              - Chapter16: 大二秋冬/大学物理甲II/MyNotes/chapter16/index.md
+              - Chapter17: 大二秋冬/大学物理甲II/MyNotes/chapter17/index.md
+              - Chapter18: 大二秋冬/大学物理甲II/MyNotes/chapter18/index.md
+              - Chapter19: 大二秋冬/大学物理甲II/MyNotes/chapter19/index.md
+              - Chapter20: 大二秋冬/大学物理甲II/MyNotes/chapter20/index.md
+              - Chapter21: 大二秋冬/大学物理甲II/MyNotes/chapter21/index.md
+              - Chapter22: 大二秋冬/大学物理甲II/MyNotes/chapter22/index.md
+              - Chapter23: 大二秋冬/大学物理甲II/MyNotes/chapter23/index.md
           - 期中试卷: 大二秋冬/大学物理甲II/期中试卷/index.md
           - 期末试卷: 大二秋冬/大学物理甲II/期末试卷/index.md
       - 数学建模:
@@ -84,69 +84,68 @@ nav:
           - 复习资料: 大二秋冬/固体物理基础/复习资料/index.md
       - 概率论与数理统计:
           - 课程指北: 大二秋冬/概率论与数理统计/课程指北/index.md
-          - MyNotes: 
-            - MyNotes: 大二秋冬/概率论与数理统计/MyNotes/index.md
-            - Chapter1: 大二秋冬/概率论与数理统计/MyNotes/Chapter1/index.md
-            - Chapter2: 大二秋冬/概率论与数理统计/MyNotes/Chapter2/index.md
-          - 概统PPT: 
-            - 概统PPT: 大二秋冬/概率论与数理统计/概统PPT/index.md
-            - Chapter1: 大二秋冬/概率论与数理统计/概统PPT/chapter1/index.md
-            - Chapter2: 大二秋冬/概率论与数理统计/概统PPT/chapter2/index.md
-            - Chapter3: 大二秋冬/概率论与数理统计/概统PPT/chapter3/index.md
-            - Chapter4: 大二秋冬/概率论与数理统计/概统PPT/chapter4/index.md
-            - Chapter5: 大二秋冬/概率论与数理统计/概统PPT/chapter5/index.md
-            - Chapter6: 大二秋冬/概率论与数理统计/概统PPT/chapter6/index.md
-            - Chapter7: 大二秋冬/概率论与数理统计/概统PPT/chapter7/index.md
+          - MyNotes:
+              - MyNotes: 大二秋冬/概率论与数理统计/MyNotes/index.md
+              - Chapter1: 大二秋冬/概率论与数理统计/MyNotes/Chapter1/index.md
+              - Chapter2: 大二秋冬/概率论与数理统计/MyNotes/Chapter2/index.md
+          - 概统PPT:
+              - 概统PPT: 大二秋冬/概率论与数理统计/概统PPT/index.md
+              - Chapter1: 大二秋冬/概率论与数理统计/概统PPT/chapter1/index.md
+              - Chapter2: 大二秋冬/概率论与数理统计/概统PPT/chapter2/index.md
+              - Chapter3: 大二秋冬/概率论与数理统计/概统PPT/chapter3/index.md
+              - Chapter4: 大二秋冬/概率论与数理统计/概统PPT/chapter4/index.md
+              - Chapter5: 大二秋冬/概率论与数理统计/概统PPT/chapter5/index.md
+              - Chapter6: 大二秋冬/概率论与数理统计/概统PPT/chapter6/index.md
+              - Chapter7: 大二秋冬/概率论与数理统计/概统PPT/chapter7/index.md
           - 知识点整理: 大二秋冬/概率论与数理统计/知识点整理/index.md
-      - 数值分析方法: 
+      - 数值分析方法:
           - 课程指北: 大二秋冬/数值分析方法/课程指北/index.md
           - 知识图谱: 大二秋冬/数值分析方法/知识图谱/index.md
           - 知识整理: 大二秋冬/数值分析方法/知识整理/index.md
-      - 复变函数与积分变换: 
+      - 复变函数与积分变换:
           - 课程指北: 大二秋冬/复变函数与积分变换/课程指北/index.md
-          - MyNotes: 
-            - MyNotes: 大二秋冬/复变函数与积分变换/MyNotes/index.md
-            - Chapter1: 大二秋冬/复变函数与积分变换/MyNotes/Chapter1/index.md
-            - Chapter2: 大二秋冬/复变函数与积分变换/MyNotes/Chapter2/index.md
-            - Chapter3: 大二秋冬/复变函数与积分变换/MyNotes/Chapter3/index.md
-            - Chapter4: 大二秋冬/复变函数与积分变换/MyNotes/Chapter4/index.md
+          - MyNotes:
+              - MyNotes: 大二秋冬/复变函数与积分变换/MyNotes/index.md
+              - Chapter1: 大二秋冬/复变函数与积分变换/MyNotes/Chapter1/index.md
+              - Chapter2: 大二秋冬/复变函数与积分变换/MyNotes/Chapter2/index.md
+              - Chapter3: 大二秋冬/复变函数与积分变换/MyNotes/Chapter3/index.md
+              - Chapter4: 大二秋冬/复变函数与积分变换/MyNotes/Chapter4/index.md
           - 杨海涛老师的PPT: 大二秋冬/复变函数与积分变换/PPT/index.md
-      - 大学物理实验: 
+      - 大学物理实验:
           - 课程指北: 大二秋冬/大学物理实验/课程指北/index.md
           - 实验报告: 大二秋冬/大学物理实验/实验报告/index.md
-      - 工程训练: 
+      - 工程训练:
           - 课程指北: 大二秋冬/工程训练/课程指北/index.md
           - MyNotes: 大二秋冬/工程训练/MyNotes/index.md
           - 工训题库: 大二秋冬/工程训练/工训题库/index.md
-      - 工程导论: 
+      - 工程导论:
           - 课程指北: 大二秋冬/工程导论/课程指北/index.md
-      - 电子电路设计实验I: 
+      - 电子电路设计实验I:
           - 课程指北: 大二秋冬/电设实验I/课程指北/index.md
-      - 通识课专栏: 
+      - 通识课专栏:
           - 课程指北: 大二秋冬/通识课/课程指北/index.md
-  - 无限进步: 
+  - 无限进步:
       - 简介: 无限进步/简介/index.md
       - Jetson Nano: 无限进步/Jetson/index.md
       - 美赛: 无限进步/美赛/index.md
-  - Bixing's 收藏页: 
+  - Bixing's 收藏页:
       - 收藏的网页: Bixing's 收藏页/收藏的网页/index.md
       - MyCC98: Bixing's 收藏页/CC98/index.md
       - 时间管理: Bixing's 收藏页/时间管理/index.md
       - 用随机梯度下降来优化人生: Bixing's 收藏页/李沐大佬/index.md
 
-
 theme:
   name: material
-  
+
   repo_url: https://github.com/Wbx0710/mymkdocs
   repo_name: Bixing's Repositories
 
-  palette: 
+  palette:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent:  teal
+      accent: teal
       toggle:
         icon: material/brightness-4
         name: 切换至日间模式
@@ -173,7 +172,7 @@ theme:
     - content.code.annotate # 代码行号
     - content.code.copy # 代码复制
 
-  language: 'zh'
+  language: "zh"
   icon:
     previous: fontawesome/solid/angle-left # 左下角向前翻页的图标
     next: fontawesome/solid/angle-right # 右下角向后翻页的图标
@@ -198,7 +197,7 @@ plugins:
   - glightbox
   - tags
   #- heti:
-      #disable_serve: false
+  #disable_serve: false
   - statistics:
       words_per_minute: 200
   - search:
@@ -232,7 +231,7 @@ extra_javascript:
   - assets/javascripts/clock.js
   - assets/javascripts/mathjax.js
   - assets/javascripts/document.js
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

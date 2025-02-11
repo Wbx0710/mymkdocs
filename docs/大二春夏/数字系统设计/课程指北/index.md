@@ -44,3 +44,10 @@
 <object data="Hw8-12&Quiz4-5_lp.pdf" type="application/pdf" width="100%" height="800">
     <embed src="Hw8-12&Quiz4-5_lp.pdf" type="application/pdf" />
 </object>
+
+### 杂七杂八的Quiz汇总_lp
+
+<object data="数电杂七杂八的Quiz汇总_lp.pdf" type="application/pdf" width="100%" height="800">
+    <embed src="数电杂七杂八的Quiz汇总_lp.pdf" type="application/pdf" />
+</object>
+

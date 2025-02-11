@@ -268,7 +268,132 @@ TTL的逻辑电平与电压值的关系（正逻辑）
 八进制和十六进制之间**没有直接的快速转换方式**，只得通过二进制作为桥梁
 
 ---
+## 二进制数的算术运算
+
+###  二进制数的加减乘除
+
+二进制数的加、减、乘、除等算数运算的规则与十进制数类似，加法运算规则为“逢二进一”，减法运算规则为“借一当二”
+
+二进制的加减乘除运算和十进制基本上是一致的
+
+#### 二进制加法
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101429380.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101430598.png" style="zoom:67%;" />
+
+#### 二进制减法
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101432616.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101433605.png" style="zoom:67%;" />
+
+注：在无符号减法运算中无法表示负数，所以被减数必须大于或等于减数
+
+#### 二进制乘法
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101434467.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101436994.png" style="zoom:67%;" />
+
+多位二进制数的乘法运算可以通过被乘数（或0）**左移和加法**来实现
+
+#### 二进制除法
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101440437.png" style="zoom:67%;" />
+
+多位二进制数的除法运算可以通过乘数**右移和减法**来实现
+
+当然也会有除不尽的情况
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101444528.png" style="zoom:67%;" />
+
+---
+
+### 原码、反码和补码
+
+在C尖里是提到过的
+
+在计算机中用二进制来表示一个数，这个数称为“机器数”。机器数通常是带符号的，即有正、负之分，计算机**用最高位存放符号**，**正数符号位为“0”，负数符号位为“ 1 ”**
+
+#### 原码
+
+原码由二进制数的原数值部分和符号位组成
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101506640.png" style="zoom: 67%;" />
+
+==但是原码在负数计算中存在问题==
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101508715.png" style="zoom:67%;" />
+
+解决方法：引入“反码”
+
+#### 反码
+
+正数的反码与原码相同，负数的反码为**符号位加上原数值按位取反**
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101511197.png" style="zoom:67%;" />
+
+<img src="C:\Users\WuBixing\Pictures\Screenshots\屏幕截图 2025-02-10 151211.png" style="zoom:67%;" />
+
+反码虽然解决了负数计算的问题，==但还是存在“跨零”计算问题==
+
+原因就是在反码的体系中，“0”有两种表示方式（符号位为0的“$+0$”与符号位为 1 的“$-0$”）
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101516937.png" style="zoom:67%;" />
+
+解决方法：引入“补码”
+
+#### 补码
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101521387.png" style="zoom:67%;" />
+
+真值指计算机中实际代表的值
+
+左右两边对称的二进制数相加都为$10000$，由于只能存4位，高位的**进位**舍弃，所以就得到了$0000$，即真值0
+
+一个数加上它的相反数结果为0 
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101527461.png" style="zoom:67%;" />
+
+由于两个二进制数对应一个真值0，所以按照补码的顺序将-0改为-8
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101529701.png" style="zoom:67%;" />
+
+“反码+1”就可以得到原码对应的补码了
+
+在上图所示例子中，补码中右半部分的**正数不变**，左半部分的**负数通过水平线反转得到**
+
+故定义为：
+
+正数的补码与原码相同，负数的补码为反码加 1 
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101533722.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101535389.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101537128.png" style="zoom:67%;" />
+
+计算都是用补码来计算了，不再用反码和原码
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101539684.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101541695.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101542535.png" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202502101544708.png" style="zoom:67%;" />
+
+把减去一个正数当作加上一个负数，将负数用补码表示，就可以将减法运算变为加法运算来实现
+
+当两个同符号数相加时，它们的绝对值之和不能超过有效数字位所能表示的最大值，否则将出错
+
+在计算机系统中，数值一律使用“补码”来表示和存储
+
+---
+
 ## 码制
+
 ### 二进制代码
 若干个二进制数码0和1按一定规律排列起来表示某种特定含义的代码称为二进制代码，简称二进制码
 ### 编码
