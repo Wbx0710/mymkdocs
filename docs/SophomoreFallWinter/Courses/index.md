@@ -9,7 +9,7 @@
     * 任课教师：刘才明
 
 !!! info "课程基本信息"
-    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%94%B2II/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/SophomoreFallWinter/Physics/CourseOverview/index.html){ .md-button }
 
 ### 电子电路基础
 ??? danger "电子电路基础"
@@ -17,7 +17,7 @@
     * 任课教师：金浩
 
 !!! info "课程基本信息"
-    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/SophomoreFallWinter/BasicElectronicCircuits/CourseOverview/index.html){ .md-button }
 
 ### 固体物理基础
 ??? danger "固体物理基础"
@@ -25,7 +25,7 @@
     * 任课教师：曹臻/李宇波
 
 !!! info "课程基本信息"
-    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86%E5%9F%BA%E7%A1%80/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/SophomoreFallWinter/SolidStatePhysics/CourseOverview/index.html){ .md-button }
 
 ### 概率论与数理统计
 ??? danger "概率论与数理统计"
@@ -33,7 +33,7 @@
     * 任课教师：赵敏智
 
 !!! info "课程基本信息"
-    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/SophomoreFallWinter/Probability/CourseOverview/index.html){ .md-button }
 
 ### 数值分析方法
 ??? danger "数值分析方法"
@@ -41,7 +41,7 @@
     * 任课教师：詹启伟
 
 !!! info "课程基本信息"
-    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/SophomoreFallWinter/NumericalAnalysis/CourseOverview/index.html){ .md-button }
 
 ### 复变函数与积分变换
 ??? danger "复变函数与积分变换"
@@ -49,7 +49,7 @@
     * 任课教师：杨勋年
 
 !!! info "课程基本信息"
-    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E7%A7%AF%E5%88%86%E5%8F%98%E6%8D%A2/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/SophomoreFallWinter/ComplexFunctions/CourseOverview/index.html){ .md-button }
 
 ### 大学物理实验
 ??? danger "大学物理实验"
@@ -57,7 +57,7 @@
     * 任课教师：无固定教师
 
 !!! info "课程基本信息"
-    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/SophomoreFallWinter/PhysicalExperiment/CourseOverview/index.html){ .md-button }
 
 ### 工程训练
 ??? danger "工程训练"
@@ -65,7 +65,7 @@
     * 任课教师：无固定教师
 
 !!! info "课程基本信息"
-    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E5%B7%A5%E7%A8%8B%E8%AE%AD%E7%BB%83/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/SophomoreFallWinter/EngineeringTraining/CourseOverview/index.html){ .md-button }
 
 ### 羽毛球（初级班）
 ??? danger " 羽毛球（初级班）"
@@ -81,7 +81,7 @@
     * 任课教师：施红军/叶险峰/邓靖靖
 
 !!! info "课程基本信息"
-    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E7%94%B5%E8%AE%BE%E5%AE%9E%E9%AA%8CI/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/SophomoreFallWinter/ElectronicCircuitDesign/CourseOverview/index.html){ .md-button }
 
 ## 通识课（4.5学分）
 ### 博弈论基础
@@ -90,7 +90,7 @@
     * 任课教师：蒋文华
 
 !!! info "课程基本信息"
-    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E9%80%9A%E8%AF%86%E8%AF%BE/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/SophomoreFallWinter/GeneralEducation/CourseOverview/index.html){ .md-button }
 
 
 
@@ -101,7 +101,7 @@
     * 任课教师：张萌
 
 !!! info "课程基本信息"
-    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E9%80%9A%E8%AF%86%E8%AF%BE/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/SophomoreFallWinter/GeneralEducation/CourseOverview/index.html){ .md-button }
 
 
 ### 生命教育概论
@@ -110,7 +110,7 @@
     * 任课教师：吴根福
 
 !!! info "课程基本信息"
-    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E9%80%9A%E8%AF%86%E8%AF%BE/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/SophomoreFallWinter/GeneralEducation/CourseOverview/index.html){ .md-button }
 
 
 ## 工高课程（6.5学分）
@@ -120,7 +120,7 @@
     * 任课教师：谈之奕
 
 !!! info "课程基本信息"
-    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/SophomoreFallWinter/MathematicalModeling/CourseOverview/index.html){ .md-button }
 
 ### 工程导论
 ??? danger " 工程导论"
@@ -128,7 +128,7 @@
     * 任课教师：顾征
 
 !!! info "课程基本信息"
-    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/%E5%A4%A7%E4%BA%8C%E7%A7%8B%E5%86%AC/%E5%B7%A5%E7%A8%8B%E5%AF%BC%E8%AE%BA/%E8%AF%BE%E7%A8%8B%E6%8C%87%E5%8C%97/){ .md-button }
+    * [🚀前往课程指北💯](https://wbx0710.github.io/mymkdocs/SophomoreFallWinter/IntroductiontoEngineering/CourseOverview/index.html){ .md-button }
 
 
 
