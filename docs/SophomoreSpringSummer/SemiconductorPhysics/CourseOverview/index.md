@@ -16,11 +16,11 @@
 
 !!! note "课程资源"
     * 经验帖：
-    	* [程然半导体物理课程感想](http://www-cc98-org-s.webvpn.zju.edu.cn:8001/topic/5940045)
+    	* [程然半导体物理课程感想](http://www.cc98.org/topic/5940045)
     	* [信电微电子大二专业课经验分享](https://www.cc98.org/topic/5930229)
     * 期末考试：
-    	* [22春夏半导体物理回忆卷yjy中文班](http://www-cc98-org-s.webvpn.zju.edu.cn:8001/topic/5354918)
-    	* [20春夏半导体物理回忆卷yjy中文班](http://www-cc98-org-s.webvpn.zju.edu.cn:8001/topic/4939315)
+    	* [22春夏半导体物理回忆卷yjy中文班](http://www.cc98.org/topic/5354918)
+    	* [20春夏半导体物理回忆卷yjy中文班](http://www.cc98.org/topic/4939315)
 
 
 
