@@ -11,12 +11,15 @@ nav:
       - 课程概览: SophomoreSpringSummer/Courses/index.md
       - 信号与系统:
           - 课程指北: SophomoreSpringSummer/SignalsSystems/CourseOverview/index.md
+          - Notes:
+              - 概述: SophomoreSpringSummer/SignalsSystems/Notes/index.md
+              - 信号与系统基础: SophomoreSpringSummer/SignalsSystems/Notes/Chapter1/index.md
       - 数字系统设计:
           - 课程指北: SophomoreSpringSummer/DigitalSystem/CourseOverview/index.md
           - Notes:
               - 概述: SophomoreSpringSummer/DigitalSystem/DigitalSystemNotes/index.md
               - 逻辑代数与化简: SophomoreSpringSummer/DigitalSystem/DigitalSystemNotes/Chapter1/index.md
-          - Notes(自学笔记):
+          - 自学笔记:
               - 课程概述: SophomoreSpringSummer/DigitalSystem/MySLNotes/index.md
               - 数制与码制: SophomoreSpringSummer/DigitalSystem/MySLNotes/Chapter1_1/index.md
               - 逻辑运算: SophomoreSpringSummer/DigitalSystem/MySLNotes/Chapter1_2/index.md
@@ -126,7 +129,7 @@ nav:
           - 课程指北: SophomoreFallWinter/ElectronicCircuitDesign/CourseOverview/index.md
       - 通识课专栏:
           - 课程指北: SophomoreFallWinter/GeneralEducation/CourseOverview/index.md
-  - Bixing's 收藏页:
+  - 收藏页:
       - 收藏的网页: Favorites/FavoritePages/index.md
 
 theme:
