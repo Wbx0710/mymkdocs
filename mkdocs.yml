@@ -36,13 +36,15 @@ nav:
           - 课程指北: SophomoreSpringSummer/SemiconductorPhysics/CourseOverview/index.md
       - 马克思主义基本原理:
           - 课程指北: SophomoreSpringSummer/Marxism/CourseOverview/index.md
-          - MyNotes: SophomoreSpringSummer/Marxism/MyNotes/index.md
+          - Notes: SophomoreSpringSummer/Marxism/MyNotes/index.md
       - 数据结构基础:
           - 课程指北: SophomoreSpringSummer/FDS/CourseOverview/index.md
-          - MyNotes:
+          - Notes:
               - 课程概述: SophomoreSpringSummer/FDS/MyNotes/index.md
       - 信息理论:
           - 课程指北: SophomoreSpringSummer/InformationTheory/CourseOverview/index.md
+          - Notes:
+              - 信息论基础: SophomoreSpringSummer/InformationTheory/Notes/Chapter1/index.md
       - 人工智能前沿:
           - 课程指北: SophomoreSpringSummer/AIFrontiers/CourseOverview/index.md
       - 控制的哲学与方法:
