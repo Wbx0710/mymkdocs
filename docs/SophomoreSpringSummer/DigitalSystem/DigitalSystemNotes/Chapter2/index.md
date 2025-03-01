@@ -57,6 +57,8 @@ $u_{BE}$约等于$0.7V$，$U_{CES}$约等于0，很多情况下就相当于一�
 
 TTL电路是晶体管-晶体管逻辑电路（Transistor-Transistor-Logic），TTL电路是数字集成电路的一大门类。它采用双极型工艺制造，具有高速度低功耗和品种多等特点
 
+课内讲的是反相器，但是与非门会了反相器肯定没问题
+
 ### TTL与非门
 
 #### TTL与非门的结构
@@ -286,17 +288,17 @@ TTL与非门有时需要驱动其他种类门电路，而不同种类门电路�
 
 注：写了“1”而没有用“&”符号说明三态门只有一个输出
 
-$\bar{EN}=0$时，$G_1$使能，$G_2$禁止，$Y=\bar {A_1}$
+$\overline{EN}=0$时，$G_1$使能，$G_2$禁止，$Y=\overline {A_1}$
 
-$\bar{EN}=1$时，$G_2$使能，$G_1$禁止，$Y=\bar {A_2}$
+$\overline{EN}=1$时，$G_2$使能，$G_1$禁止，$Y=\overline {A_2}$
 
 * 用于信号双向传输
 
 <img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181149623.png" alt="屏幕截图 2025-01-18 114904" style="zoom:67%;" />
 
-$\bar{EN}=0$时，$G_1$使能，$G_2$禁止，则信号从$A_1$取反后传递到$A_2$
+$\overline{EN}=0$时，$G_1$使能，$G_2$禁止，则信号从$A_1$取反后传递到$A_2$
 
-$\bar{EN}=1$时，$G_2$使能，$G_1$禁止，则信号从$A_2$取反后传递到$A_1$
+$\overline{EN}=1$时，$G_2$使能，$G_1$禁止，则信号从$A_2$取反后传递到$A_1$
 
 * 构成数据总线（Data Bus）
 
@@ -308,3 +310,217 @@ $\bar{EN}=1$时，$G_2$使能，$G_1$禁止，则信号从$A_2$取反后传递�
 
 ---
 
+## MOS管的开关特性
+
+复习一下模电
+
+### MOS管的结构
+
+绝缘栅型场效应管中，有N沟道和P沟道两类，而每一类又分为增强型和耗尽型两种。增强型就是$U_{GS}=0$时，漏源（D和S）之间没有导电沟道，即使在漏源之间加上一定范围的电压，也没有漏极电流；反之，在$U_{GS}=0$时，漏源（D和S）之间有导电沟道的称为耗尽型
+
+#### N沟道增强型MOS管
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501171129292.png" alt="屏幕截图 2025-01-17 112926" style="zoom:67%;" />
+
+栅极电流很小（因为输入电阻很大，基本就是绝缘嘛），所以MOS管的抗干扰性很高
+
+### MOS管的工作原理
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501171137665.png" alt="屏幕截图 2025-01-17 113436" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501171137214.png" alt="屏幕截图 2025-01-17 113653" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501171140818.png" alt="屏幕截图 2025-01-17 114039" style="zoom:67%;" />
+
+### MOS管的符号
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501171141115.png" alt="屏幕截图 2025-01-17 114142" style="zoom:67%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501171143965.png" alt="屏幕截图 2025-01-17 114324" style="zoom:67%;" />
+
+### MOS管的静态开关特性
+
+#### N沟道增强型MOS管
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501171146057.png" alt="屏幕截图 2025-01-17 114617" style="zoom:67%;" />
+
+#### P沟道增强型MOS管
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501171148439.png" alt="屏幕截图 2025-01-17 114757" style="zoom:67%;" />
+
+## CMOS集成门电路
+
+### CMOS反相器
+
+#### 电路组成
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181457517.png" alt="屏幕截图 2025-01-18 145730" style="zoom:67%;" />
+
+NMOS管的衬底接电路最低电位，PMOS管的衬底接最高电位，从而保证衬底与漏源间的PN结始终反偏
+
+输入低电平：$U_{IL}=0V$；输入高电平$U_{IH}=V_{DD}$
+
+要求$V_{DD}>U_{GS(th)N}+|U_{GS(th)P}|$且$U_{GS(th)N}=|U_{GS(th)P}|$
+
+#### 工作原理
+
+输入为低电平，$U_{IL}=0V$时
+
+* $u_{GSN}<U_{GS(th)N}$，$V_N$截止
+* $|u_{GSP}|=|u_{GP}-u_{SP}|=|0V-V_{DD}|>|U_{GS(th)P}|$，$V_P$导通
+* $u_O \approx V_{DD}$，为高电平
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181509038.png" alt="屏幕截图 2025-01-18 150930" style="zoom:67%;" />
+
+输入为高电平，$U_{IH}=V_{DD}$时
+
+* $u_{GSN}=V_{DD}>U_{GS(th)N}$，$V_N$导通
+* $|u_{GSP}|=|V_{DD}-V_{DD}|=0V<|U_{GS(th)P}|$，$V_P$截止
+* $u_O \approx 0V$，为低电平
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181513744.png" alt="屏幕截图 2025-01-18 151320" style="zoom:67%;" />
+
+故电路**构成了CMOS非门**，又称CMOS反相器
+
+无论输入电平高低，$V_N$、$V_P$中总有一管截止，使静态漏极电流$i_D \approx 0$。因此CMOS反相器静态功耗极微小
+
+---
+
+### 其他CMOS门电路
+
+#### 漏极开路的CMOS门（OD门）
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181535364.png" alt="屏幕截图 2025-01-18 153438" style="zoom:67%;" />
+
+常用作驱动器、电平转换器和实现“线与“等
+
+#### CMOS传输门
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181541429.png" alt="屏幕截图 2025-01-18 153750" style="zoom:67%;" />
+
+上方$\overline C$代表低电平有效，下方C代表高电平有效
+
+工作原理
+
+* 当$C=V_{DD}$，$u_{I}=0\sim V_{DD}$时，$V_N$、$V_P$中至少有一管导通，输出与输入之间呈现低电阻，相当于开关闭合
+
+即$u_O=u_I$，称传输门开通
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181544319.png" alt="屏幕截图 2025-01-18 154358" style="zoom:80%;" />
+
+* 反过来，当$C=0$，$\overline C=V_{DD}$，$u_{I}=0\sim V_{DD}$时，$V_N$、$V_P$均截止，输出与输入之间呈现高电阻，相当于开关断开
+
+即$u_I$不能传输到输出端，传输门关闭
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181547247.png" alt="屏幕截图 2025-01-18 154637" style="zoom:80%;" />
+
+!!! tip "总结"
+	* $C=1$，$\overline C=0$时，传输门开通，$u_O=u_I$
+	* $C=0$，$\overline C=1$时，传输门关闭，信号不能传输
+
+符号为TG（Transmission Gate）
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181550162.png" alt="屏幕截图 2025-01-18 154930" style="zoom:67%;" />
+
+传输门是一个理想的**双向开关，可传输模拟信号**，也可传输**数字信号**
+
+#### CMOS三态门
+
+在反相器基础上串接了PMOS管$V_{P2}$和NMOS管$V_{N2}$，它们的栅极分别受$\overline{EN}$和$EN$控制
+
+工作原理
+
+* $\overline{EN}=0$时，$V_{P2}$和$V_{N2}$导通，呈现低电阻，不影响CMOS反相器工作，$Y=\overline A$
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181558575.png" alt="屏幕截图 2025-01-18 155704" style="zoom: 50%;" />
+
+* $\overline{EN}=1$时，$V_{P2}$和$V_{N2}$均截止，输出端Y呈现高阻态（Z）
+
+因此构成使能端低电平有效的三态门
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181601046.png" alt="屏幕截图 2025-01-18 160051" style="zoom:67%;" />
+
+---
+
+### CMOS集成门电路的使用注意事项
+
+#### 电源电压
+
+注意不同系列CMOS电路允许的电源电压范围不同，一般多用$+5V$。电源电压越高，抗干扰能力也越强
+
+CMOS电路的电源电压极性不能接反，否则可能会造成电路永久性失效
+
+在进行CMOS电路实验，或对CMOS数字系统进行调试、测量时，应先接入直流电源，后接入信号源；使用结束时，应先关信号源，后关直流电源
+
+#### 闲置输入端的处理
+
+**闲置输入端不允许悬空**（悬空使得电位不定，破坏正常的逻辑关系）
+
+* 与门和与非门
+
+闲置输入端应接**正电源或高电平**
+
+* 或门和或非门
+
+闲置输入端应接**地或者低电平**
+
+闲置输入端**不宜与使用输入端并联使用**，因为这样会增大输入电容，从而使电路的工作速度下降。但在工作速度很低的情况下，允许输入端并联使用
+
+#### 输出端的连接
+
+输出端不允许直接与电源$V_{DD}$或地（$V_{SS}$）相连
+
+为提高电路的驱动能力，可将同一集成芯片上相同门电路的输入端、输出端并联使用
+
+当CMOS电路输出端接大容量的负载电容时，为保证流过管子的电流不超过允许值，需在输出端和电容之间串接一个限流电阻
+
+---
+
+## 集成门电路的接口
+
+### 连接原则
+
+前级驱动门必须能为后级负载门提供复合要求的高、低电平和足够的输入电流，即**“电平匹配，电流足够”**
+
+| 条件  | 前级驱动门&后级负载门之间的关系 | 说明               |
+| ----- | ------------------------------- | ------------------ |
+| 条件1 | $U_{OH.min}\ge U_{IH.min}$      | 满足电平要求       |
+| 条件2 | $U_{OL.max}\le U_{IL.max}$      | 满足电平要求       |
+| 条件3 | $I_{OH.max}\ge nI_{IH.max}$     | 允许拉出足够的电流 |
+| 条件4 | $I_{OL.max}\ge mI_{IL.max}$     | 允许灌入足够的电流 |
+
+n和m均代表负载门的个数
+
+### TTL电路驱动CMOS门电路
+
+#### TTL电路驱动CMOS4000电路
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181638899.png" alt="屏幕截图 2025-01-18 163730" style="zoom:67%;" />
+
+提高TTL电路输出高电平下限值的方法
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181639460.png" alt="屏幕截图 2025-01-18 163952" style="zoom:67%;" />
+
+#### TTL电路驱动74HCT高速CMOS电路
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181641797.png" alt="屏幕截图 2025-01-18 164124" style="zoom:67%;" />
+
+### CMOS电路驱动TTL电路
+
+#### CMOS4000系列驱动TTL电路
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181643767.png" alt="屏幕截图 2025-01-18 164346" style="zoom:67%;" />
+
+提高CMOS4000系列电路输出低电平电流能力的方法
+
+* 左边电路：将同一芯片上的多个CMOS并联作驱动门
+* 右边电路：在CMOS电路输出端和TTL电路输入端之间接入CMOS驱动器
+* 还可以用一个三极管实现电流放大
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501181646382.png" alt="屏幕截图 2025-01-18 164647" style="zoom:67%;" />
+
+#### 高速CMOS电路驱动TTL电路
+
+高速CMOS电路的电源电压$V_{DD}=V_{CC}=5V$时，CC74HC和CC74HCT系列电路的输出端和TTL电路的输入端**可直接相连**
+
+所以选择两种不同类型的芯片，**最好就选择高速型的CMOS电路和TTL电路**
