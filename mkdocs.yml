@@ -11,6 +11,9 @@ nav:
       - 课程概览: SophomoreSpringSummer/Courses/index.md
       - 信号与系统:
           - 课程指北: SophomoreSpringSummer/SignalsSystems/CourseOverview/index.md
+          - Notes:
+              - 基本概念: SophomoreSpringSummer/SignalsSystems/Notes/Chapter1/index.md
+              - LTI: SophomoreSpringSummer/SignalsSystems/Notes/Chapter2/index.md
       - 数字系统设计:
           - 课程指北: SophomoreSpringSummer/DigitalSystem/CourseOverview/index.md
           - Notes:
