@@ -35,7 +35,7 @@
 
 <img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501191519749.png" alt="屏幕截图 2025-01-19 151906" style="zoom:67%;" />
 
-拿到很复杂的组合电路不要慌，不要一上来就写，去分析电路的结构，找到电路的特点，以下题为例
+遇到较为复杂的组合电路不要慌，不要一上来就写，去分析电路的结构，找到电路的特点，以下题为例
 
 <img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501191525278.png" alt="屏幕截图 2025-01-19 152510" style="zoom:67%;" />
 
@@ -76,7 +76,7 @@
 
 <img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501191618294.png" alt="屏幕截图 2025-01-19 161834" style="zoom:67%;" />
 
-多输出求解：就是屏蔽掉别的输出，单看我当前的输出和输入之间的关系，画卡诺图求解
+多输出求解：就是屏蔽掉别的输出，只看当前的输出和输入之间的关系，画卡诺图求解
 
 <img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501191623767.png" alt="屏幕截图 2025-01-19 162317" style="zoom:67%;" />
 
@@ -88,7 +88,7 @@
 
 ## 加法器
 
-数字系统中除进行逻辑运算外，还经常进行数值的算术运算，而在系统中加、减、乘、除均是利用加法来进行的，所以加法器便称为数字系统中最基本的运算单元
+数字系统中除进行逻辑运算外，还经常进行数值的算术运算，而在数字系统中**加、减、乘、除均是利用加法来进行的**，所以加法器便称为数字系统中最基本的运算单元
 
 ### 半加器
 
@@ -148,6 +148,20 @@
 <img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202501211421374.png" alt="屏幕截图 2025-01-21 142145" style="zoom:67%;" />
 
 内部电路结构比较复杂
+
+### 用加法器搭建五人表决器
+
+lp上课提到过，曾用作考题
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202503071113657.jpg" style="zoom:80%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202503071114643.jpg" style="zoom:80%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202503071114420.jpg" style="zoom:80%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202503071115824.jpg" style="zoom:80%;" />
+
+<img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202503071115091.jpg" style="zoom:80%;" />
 
 ---
 
