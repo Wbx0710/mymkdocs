@@ -1,0 +1,2617 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Wu Bixing">
+      
+      
+        <link rel="canonical" href="https://wbx0710.github.io/mymkdocs/SophomoreFallWinter/BasicElectronicCircuits/Exercise/index.html">
+      
+      
+        <link rel="prev" href="../CourseOverview/index.html">
+      
+      
+        <link rel="next" href="../../Physics/CourseOverview/index.html">
+      
+      
+      <link rel="icon" href="../../../images/logo.jpg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>电子电路基础习题集萃 - Bixing's Notebook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M1%207.775V2.75C1%201.784%201.784%201%202.75%201h5.025c.464%200%20.91.184%201.238.513l6.25%206.25a1.75%201.75%200%200%201%200%202.474l-5.026%205.026a1.75%201.75%200%200%201-2.474%200l-6.25-6.25A1.75%201.75%200%200%201%201%207.775m1.5%200c0%20.066.026.13.073.177l6.25%206.25a.25.25%200%200%200%20.354%200l5.025-5.025a.25.25%200%200%200%200-.354l-6.25-6.25a.25.25%200%200%200-.177-.073H2.75a.25.25%200%200%200-.25.25ZM6%205a1%201%200%201%201%200%202%201%201%200%200%201%200-2%22/%3E%3C/svg%3E');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M2.5%201.75v11.5c0%20.138.112.25.25.25h3.17a.75.75%200%200%201%200%201.5H2.75A1.75%201.75%200%200%201%201%2013.25V1.75C1%20.784%201.784%200%202.75%200h8.5C12.216%200%2013%20.784%2013%201.75v7.736a.75.75%200%200%201-1.5%200V1.75a.25.25%200%200%200-.25-.25h-8.5a.25.25%200%200%200-.25.25m13.274%209.537zl-4.557%204.45a.75.75%200%200%201-1.055-.008l-1.943-1.95a.75.75%200%200%201%201.062-1.058l1.419%201.425%204.026-3.932a.75.75%200%201%201%201.048%201.074M4.75%204h4.5a.75.75%200%200%201%200%201.5h-4.5a.75.75%200%200%201%200-1.5M4%207.75A.75.75%200%200%201%204.75%207h2a.75.75%200%200%201%200%201.5h-2A.75.75%200%200%201%204%207.75%22/%3E%3C/svg%3E');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M0%208a8%208%200%201%201%2016%200A8%208%200%200%201%200%208m8-6.5a6.5%206.5%200%201%200%200%2013%206.5%206.5%200%200%200%200-13M6.5%207.75A.75.75%200%200%201%207.25%207h1a.75.75%200%200%201%20.75.75v2.75h.25a.75.75%200%200%201%200%201.5h-2a.75.75%200%200%201%200-1.5h.25v-2h-.25a.75.75%200%200%201-.75-.75M8%206a1%201%200%201%201%200-2%201%201%200%200%201%200%202%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M3.499.75a.75.75%200%200%201%201.5%200v.996C5.9%202.903%206.793%203.65%207.662%204.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873%2010.794-.045%2012.622.26%2014.408.558%2016%201.94%2016%204.25c0%201.278-.954%202.575-2.44%202.734l.146.508.065.22c.203.701.412%201.455.476%202.226.142%201.707-.4%203.03-1.487%203.898C11.714%2014.671%2010.27%2015%208.75%2015h-6a.75.75%200%200%201%200-1.5h1.376a4.5%204.5%200%200%201-.563-1.191%203.84%203.84%200%200%201-.05-2.063%204.65%204.65%200%200%201-2.025-.293.75.75%200%200%201%20.525-1.406c1.357.507%202.376-.006%202.698-.318l.009-.01a.747.747%200%200%201%201.06%200%20.75.75%200%200%201-.012%201.074c-.912.92-.992%201.835-.768%202.586.221.74.745%201.337%201.196%201.621H8.75c1.343%200%202.398-.296%203.074-.836.635-.507%201.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.4%202.4%200%200%201-.507-.441%203.1%203.1%200%200%201-.633-1.248.75.75%200%200%201%201.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738%200%201.25-.615%201.25-1.25%200-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706%201.345-.46.92-.27%201.774.019%203.062l.042.19.01.05c.348.443.666.949.94%201.553a.75.75%200%201%201-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7%205.527c-.814-.68-1.75-1.462-2.692-2.619a3.7%203.7%200%200%200-1.023.88c-.406.495-.663%201.036-.722%201.508.116.122.306.21.591.239.388.038.797-.06%201.032-.19a.75.75%200%200%201%20.728%201.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75%205.677V5.5c0-.984.48-1.94%201.077-2.664.46-.559%201.05-1.055%201.673-1.353z%22/%3E%3C/svg%3E');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M13.78%204.22a.75.75%200%200%201%200%201.06l-7.25%207.25a.75.75%200%200%201-1.06%200L2.22%209.28a.75.75%200%200%201%20.018-1.042.75.75%200%200%201%201.042-.018L6%2010.94l6.72-6.72a.75.75%200%200%201%201.06%200%22/%3E%3C/svg%3E');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M0%208a8%208%200%201%201%2016%200A8%208%200%200%201%200%208m8-6.5a6.5%206.5%200%201%200%200%2013%206.5%206.5%200%200%200%200-13M6.92%206.085h.001a.749.749%200%201%201-1.342-.67c.169-.339.436-.701.849-.977C6.845%204.16%207.369%204%208%204a2.76%202.76%200%200%201%201.637.525c.503.377.863.965.863%201.725%200%20.448-.115.83-.329%201.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6%206%200%200%200-.26.16%201%201%200%200%200-.276.245.75.75%200%200%201-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1%201%200%200%200%20.277-.245C8.96%206.514%209%206.427%209%206.25a.61.61%200%200%200-.262-.525A1.27%201.27%200%200%200%208%205.5c-.369%200-.595.09-.74.187a1%201%200%200%200-.34.398M9%2011a1%201%200%201%201-2%200%201%201%200%200%201%202%200%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M6.457%201.047c.659-1.234%202.427-1.234%203.086%200l6.082%2011.378A1.75%201.75%200%200%201%2014.082%2015H1.918a1.75%201.75%200%200%201-1.543-2.575Zm1.763.707a.25.25%200%200%200-.44%200L1.698%2013.132a.25.25%200%200%200%20.22.368h12.164a.25.25%200%200%200%20.22-.368Zm.53%203.996v2.5a.75.75%200%200%201-1.5%200v-2.5a.75.75%200%200%201%201.5%200M9%2011a1%201%200%201%201-2%200%201%201%200%200%201%202%200%22/%3E%3C/svg%3E');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M2.344%202.343za8%208%200%200%201%2011.314%2011.314A8.002%208.002%200%200%201%20.234%2010.089a8%208%200%200%201%202.11-7.746m1.06%2010.253a6.5%206.5%200%201%200%209.108-9.275%206.5%206.5%200%200%200-9.108%209.275M6.03%204.97%208%206.94l1.97-1.97a.749.749%200%200%201%201.275.326.75.75%200%200%201-.215.734L9.06%208l1.97%201.97a.749.749%200%200%201-.326%201.275.75.75%200%200%201-.734-.215L8%209.06l-1.97%201.97a.749.749%200%200%201-1.275-.326.75.75%200%200%201%20.215-.734L6.94%208%204.97%206.03a.75.75%200%200%201%20.018-1.042.75.75%200%200%201%201.042-.018%22/%3E%3C/svg%3E');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M9.504.43a1.516%201.516%200%200%201%202.437%201.713L10.415%205.5h2.123c1.57%200%202.346%201.909%201.22%203.004l-7.34%207.142a1.25%201.25%200%200%201-.871.354h-.302a1.25%201.25%200%200%201-1.157-1.723L5.633%2010.5H3.462c-1.57%200-2.346-1.909-1.22-3.004zm1.047%201.074L3.286%208.571A.25.25%200%200%200%203.462%209H6.75a.75.75%200%200%201%20.694%201.034l-1.713%204.188%206.982-6.793A.25.25%200%200%200%2012.538%207H9.25a.75.75%200%200%201-.683-1.06l2.008-4.418.003-.006-.004-.009-.006-.006-.008-.001q-.005%200-.009.004%22/%3E%3C/svg%3E');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M4.72.22a.75.75%200%200%201%201.06%200l1%20.999a3.5%203.5%200%200%201%202.441%200l.999-1a.748.748%200%200%201%201.265.332.75.75%200%200%201-.205.729l-.775.776c.616.63.995%201.493.995%202.444v.327q0%20.15-.025.292c.408.14.764.392%201.029.722l1.968-.787a.75.75%200%200%201%20.556%201.392L13%207.258V9h2.25a.75.75%200%200%201%200%201.5H13v.5q-.002.615-.141%201.186l2.17.868a.75.75%200%200%201-.557%201.392l-2.184-.873A5%205%200%200%201%208%2016a5%205%200%200%201-4.288-2.427l-2.183.873a.75.75%200%200%201-.558-1.392l2.17-.868A5%205%200%200%201%203%2011v-.5H.75a.75.75%200%200%201%200-1.5H3V7.258L.971%206.446a.75.75%200%200%201%20.558-1.392l1.967.787c.265-.33.62-.583%201.03-.722a1.7%201.7%200%200%201-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72%201.28a.75.75%200%200%201%200-1.06m.53%206.28a.75.75%200%200%200-.75.75V11a3.5%203.5%200%201%200%207%200V7.25a.75.75%200%200%200-.75-.75ZM6.173%205h3.654A.17.17%200%200%200%2010%204.827V4.5a2%202%200%201%200-4%200v.327c0%20.096.077.173.173.173%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M5%205.782V2.5h-.25a.75.75%200%200%201%200-1.5h6.5a.75.75%200%200%201%200%201.5H11v3.282l3.666%205.76C15.619%2013.04%2014.543%2015%2012.767%2015H3.233c-1.776%200-2.852-1.96-1.899-3.458Zm-2.4%206.565a.75.75%200%200%200%20.633%201.153h9.534a.75.75%200%200%200%20.633-1.153L12.225%2010.5h-8.45ZM9.5%202.5h-3V6c0%20.143-.04.283-.117.403L4.73%209h6.54L9.617%206.403A.75.75%200%200%201%209.5%206Z%22/%3E%3C/svg%3E');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M1.75%202.5h10.5a.75.75%200%200%201%200%201.5H1.75a.75.75%200%200%201%200-1.5m4%205h8.5a.75.75%200%200%201%200%201.5h-8.5a.75.75%200%200%201%200-1.5m0%205h8.5a.75.75%200%200%201%200%201.5h-8.5a.75.75%200%200%201%200-1.5M2.5%207.75v6a.75.75%200%200%201-1.5%200v-6a.75.75%200%200%201%201.5%200%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/clock.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/glightbox.min.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/charging.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/card.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/tony.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/flink.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/neoteroi-mkdocs.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../../index.html" title="Bixing&#39;s Notebook" class="md-header__button md-logo" aria-label="Bixing's Notebook" data-md-component="logo">
+      
+  <img src="../../../images/logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Bixing's Notebook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              电子电路基础习题集萃
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Wbx0710/mymkdocs" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Bixing's Repositories
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../SophomoreSpringSummer/Courses/index.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  大二春夏
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Courses/index.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  大二秋冬
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Favorites/FavoritePages/index.html" class="md-tabs__link">
+          
+  
+  
+    
+  
+  收藏页
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../index.html" title="Bixing&#39;s Notebook" class="md-nav__button md-logo" aria-label="Bixing's Notebook" data-md-component="logo">
+      
+  <img src="../../../images/logo.jpg" alt="logo">
+
+    </a>
+    Bixing's Notebook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Wbx0710/mymkdocs" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Bixing's Repositories
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../SophomoreSpringSummer/Courses/index.html" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    大二春夏
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Courses/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    大二秋冬
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            大二秋冬
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../CourseOverview/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    电子电路基础
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            电子电路基础
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    电子电路基础习题集萃
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="index.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    电子电路基础习题集萃
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      电路的等效变换部分
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="电路的等效变换部分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心知识要点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      题目精选
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      电路分析方法部分
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="电路分析方法部分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心知识要点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      题目精选
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      动态电路的时域分析部分
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="动态电路的时域分析部分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      省流
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心知识要点
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      题目精选
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../Physics/CourseOverview/index.html" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    大学物理甲II
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../MathematicalModeling/CourseOverview/index.html" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    数学建模
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../SolidStatePhysics/CourseOverview/index.html" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    固体物理基础
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../Probability/CourseOverview/index.html" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    概率论与数理统计
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../NumericalAnalysis/CourseOverview/index.html" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    数值分析方法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../ComplexFunctions/CourseOverview/index.html" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    复变函数与积分变换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../PhysicalExperiment/CourseOverview/index.html" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    大学物理实验
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../EngineeringTraining/CourseOverview/index.html" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    工程训练
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../IntroductiontoEngineering/CourseOverview/index.html" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    工程导论
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../ElectronicCircuitDesign/CourseOverview/index.html" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    电子电路设计实验I
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../GeneralEducation/CourseOverview/index.html" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    通识课专栏
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../Favorites/FavoritePages/index.html" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    收藏页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      电路的等效变换部分
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="电路的等效变换部分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心知识要点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      题目精选
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      电路分析方法部分
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="电路分析方法部分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心知识要点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      题目精选
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      动态电路的时域分析部分
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="动态电路的时域分析部分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      省流
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心知识要点
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      题目精选
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">电子电路基础网站习题集萃<a class="headerlink" href="#_1" title="点击此处可置顶内容">&para;</a></h1>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 5554 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 57 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 28 分钟</p>
+</div>
+<h2 id="_2">电路的等效变换部分<a class="headerlink" href="#_2" title="点击此处可置顶内容">&para;</a></h2>
+<h3 id="_3">核心知识要点<a class="headerlink" href="#_3" title="点击此处可置顶内容">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">电路的等效计算</p>
+<p><mark>电路等效计算</mark>：即<strong>输入电阻/等效电阻</strong>计算（针对一端口网络）</p>
+<ul>
+<li>若仅含电阻，等效化简即可</li>
+<li>若==含受控源，但不含独立源==，施<strong>加电压求电流，或者施加电流求电压</strong></li>
+<li>若==含独立源==，则先将其 <strong>turn off（电压源短路，电流源开路）</strong>，再计算</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Y-Δ等效变换</p>
+<p><mark>Y-Δ等效变换</mark>
+* <span class="arithmatex">\(\Delta\)</span> to Y: <strong><span class="arithmatex">\(\Large \frac{相邻之积}{周长之和}\)</span></strong>
+* Y to <span class="arithmatex">\(\Delta\)</span>: <strong><span class="arithmatex">\(\Large \frac{两两相乘之和}{对面电阻}\)</span></strong>
+* <span class="arithmatex">\(\Delta\)</span> 阻值比较大，更像并联；Y 阻值比较小，更像串联；当阻值相等时，<strong><span class="arithmatex">\(\Large R_{\Delta} = 3R_Y\)</span></strong></p>
+</div>
+<h3 id="_4">题目精选<a class="headerlink" href="#_4" title="点击此处可置顶内容">&para;</a></h3>
+<hr />
+<p>下图所示电路的等效电路为 ________ 。</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211933708.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211933708.png" alt="2-1-5-0" style="zoom:50%;" /></a></p>
+<p>A. <a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211933189.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211933189.png" alt="2-1-5-A" style="zoom:33%;" /></a></p>
+<p>B. <a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211934918.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211934918.png" alt="2-1-5-B" style="zoom:33%;" /></a></p>
+<p>C. <a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211935801.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211935801.png" alt="2-1-5-C" style="zoom: 50%;" /></a></p>
+<p>D. <a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211934686.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211934686.png" alt="2-1-5-D" style="zoom:50%;" /></a></p>
+<blockquote>
+<p><strong>A</strong></p>
+<p><strong>与理想电压源并联的电阻无效</strong>（<mark>因为电压恒定，电流不定，所以并联无效</mark>），故第一步简化为理想电压源和理想电流源串联；<strong>与理想电流源串联的元件无效</strong>（<mark>因为电流恒定，电压不定，所以串联无效</mark>），故第二步简化为单个的理想电流源，所以答案为A</p>
+</blockquote>
+<hr />
+<p>下图所示电路中，电压 U 为 ________ 。</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211950884.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211950884.png" alt="2-2-3" style="zoom:67%;" /></a></p>
+<p>A. <span class="arithmatex">\(4V\)</span>     </p>
+<p>B.<span class="arithmatex">\(5V\)</span>      </p>
+<p>C. <span class="arithmatex">\(6V\)</span>     </p>
+<p>D. <span class="arithmatex">\(3V\)</span></p>
+<blockquote>
+<p><strong>C</strong></p>
+<p>对中间右边节点列<span class="arithmatex">\(KCL\)</span>，则(6-U)/5 + 6 = U/1，解得U= <span class="arithmatex">\(6V\)</span></p>
+<p>这题主要是如何找到合适的节点列<span class="arithmatex">\(KCL\)</span></p>
+</blockquote>
+<hr />
+<p>求下图所示电路中电流 <span class="arithmatex">\(I_1\)</span> 和 <span class="arithmatex">\(I_2\)</span> ，并计算各电源的功率，同时判断该电源是吸收还是发出功率。</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211955737.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211955737.png" alt="2-2-6" style="zoom:67%;" /></a></p>
+<blockquote>
+<p><mark>方法一：</mark>（<strong>暴力列<span class="arithmatex">\(KCL\)</span>与<span class="arithmatex">\(KVL\)</span>求解</strong>）</p>
+<p>根据各电流量之间的关系、18 V 和 20 V 电压源在负载上的电压降关系，以及左侧大回路的回路电压降关系，列方程组如下：
+$$
+\Large \begin{cases}
+I_1+I_3+I_4=0 (左上节点KCL)\
+I_1+2=I_2 (右上节点KCL)\
+I_4=I_5+I_6 (最左节点KCL)\
+I_5=\frac{18}{2} (欧姆定律)\
+(-I_3×3)+I_1×3+I_2×4=20 (中间loop KVL)\
+I_4×6+I_5×2=I_3×3 (最左loop KVL)
+\end{cases}
+$$
+解得：
+$$
+\Large \begin{cases}
+I_1=2A\
+I_2=4A\
+I_3=\frac{2}{3}A\
+I_4=-\frac{8}{3}A\
+I_5=9A\
+I_6=-\frac{35}{3}A
+\end{cases}
+$$</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211956764.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211956764.png" alt="image-20220830084233037" style="zoom: 67%;" /></a></p>
+<p>20 V 电压源的功率为： <span class="arithmatex">\(P=(2-I_2)×(20V)=-40W\)</span> ，发出功率（<mark>关联参考方向</mark>）</p>
+<p>2 A 电流源的功率为： <span class="arithmatex">\(P=(-2A)×U=(-2A)×(I_2×4Ω+5Ω×2A)=-52W\)</span> ，发出功率（<mark>关联参考方向</mark>）</p>
+<p>18 V 电压源的功率为：<span class="arithmatex">\(P=18V×I_6=-210W\)</span> ，发出功率（<mark>关联参考方向</mark>）</p>
+<p><mark>方法二：</mark>(<strong>等效电路法</strong>)</p>
+<p>(1) 等效电路（求==<span class="arithmatex">\(I_{1}\)</span>==，确保<span class="arithmatex">\(I_{1}\)</span>所在支路不被等效）</p>
+<ul>
+<li>第一步：电流源串联电阻无效</li>
+<li>第二步：电流源并联某个电阻等效于电压源串联某个电阻（<strong>电阻大小不变，<span class="arithmatex">\(U=IR\)</span></strong>）</li>
+<li>第三步：电阻并联等效</li>
+<li>第四步：电流源并联某个电阻等效于电压源串联某个电阻（<strong>电阻大小不变，<span class="arithmatex">\(U=IR\)</span></strong>）</li>
+</ul>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211956422.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211956422.png" alt="image-20220830074153522" style="zoom: 50%;" /></a></p>
+<p>得：<span class="arithmatex">\(I_1=\frac{6+20-8}{2+3+4}=2A\)</span> </p>
+<p>20 V 电压源的功率为 <span class="arithmatex">\(P=-20V×2A=-40W\)</span> ，发出功率</p>
+<p>(2) 等效电路（求==<span class="arithmatex">\(I_{2}\)</span>==，确保<span class="arithmatex">\(I_{2}\)</span>所在支路不被等效）</p>
+<ul>
+<li>第一步：电流源并联电阻无效</li>
+<li>第二步：电压源串联某个电阻等效于电流源并联某个电阻（<strong>电阻大小不变，<span class="arithmatex">\(U=IR\)</span></strong>）</li>
+<li>第三步：电阻并联等效</li>
+<li>第四步：电流源并联某个电阻等效于电压源串联某个电阻（<strong>电阻大小不变，<span class="arithmatex">\(U=IR\)</span></strong>）</li>
+<li>第五步：电压源串联等效</li>
+<li>第六步：电压源串联某个电阻等效于电流源并联某个电阻（<strong>电阻大小不变，<span class="arithmatex">\(U=IR\)</span></strong>）</li>
+</ul>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211957012.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410211957012.png" alt="image-20220830074219059" style="zoom: 67%;" /></a></p>
+<p>得：<span class="arithmatex">\(I_2=\frac{5}{5+4}×(5.2+2)=4A\)</span> </p>
+<p>原电路 <span class="arithmatex">\(U=5×2+4×4=26V\)</span> </p>
+<p>2 A 电流源的功率为 <span class="arithmatex">\(P=(-2A)×26V=-52W\)</span> ，发出功率</p>
+<p>(3) 18 V 电压源的功率为</p>
+<p><span class="arithmatex">\(∵3×2+4×4-20-3I_3=0,∴I_3=\frac{2}{3}A\)</span> （已知<span class="arithmatex">\(I_{1}\)</span><span class="arithmatex">\(I_{2}\)</span>求<span class="arithmatex">\(I_{3}\)</span>）</p>
+<p><span class="arithmatex">\(∵I_4=-(2+\frac{2}{3})=-\frac{8}{3}A ,I_5=\frac{18}{2}=9A\)</span> （<span class="arithmatex">\(I_{4}\)</span>由<span class="arithmatex">\(KCL\)</span>求得，<span class="arithmatex">\(I_{5}\)</span>由欧姆定律求得）</p>
+<p><span class="arithmatex">\(∴I_6=I_4-I_5=-\frac{8}{3}-9=\frac{-35}{3}A\)</span> </p>
+<p><span class="arithmatex">\(∴P=18V×I_6=18×(-\frac{35}{3})W=-210W\)</span> ，发出功率</p>
+</blockquote>
+<hr />
+<p>欲使下图所示电路中的支路电流 <span class="arithmatex">\(I\)</span> = 1 A，试求电流源的输出电流 <span class="arithmatex">\(I_S\)</span> 。</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212022742.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212022742.png" alt="2-2-7" style="zoom:67%;" /></a></p>
+<blockquote>
+<p><span class="arithmatex">\(V_{ca}=1Ω×1A=1V,V_{cb}=V_{ca}+V_{ab}=1+2=3V,I_{cb}=\frac{V_{cb}}{1Ω}=3A\)</span> </p>
+<p><span class="arithmatex">\(I_{dc}=I+I_{cb}=1+3=4A,V_{da}=V_{dc}+V_{ca}=(I_{dc}×1Ω-2V)+V_{ca}=3V\)</span> </p>
+<p><span class="arithmatex">\(I_{da}=\frac{V_{da}}{3Ω}=1A,I_s=I_{da}+I_{dc}=1A+4A=5A\)</span> </p>
+<p>由果索因，循序渐进</p>
+</blockquote>
+<hr />
+<p>如下图所示电路，支路电流 <span class="arithmatex">\(I\)</span> 的值为 ________ 。</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212024739.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212024739.png" alt="2-2-8" style="zoom:67%;" /></a></p>
+<blockquote>
+<p><strong>3 A</strong></p>
+<p>上方两个电阻分流，流过<span class="arithmatex">\(2\Omega\)</span>的电流为<span class="arithmatex">\(9A\)</span>；下方两个电阻分流，流过左边<span class="arithmatex">\(3\Omega\)</span>的电流为<span class="arithmatex">\(6A\)</span>，所以<span class="arithmatex">\(I=3A\)</span></p>
+<p>这个分流角度去考虑这种电流源的问题还是很有意思的</p>
+</blockquote>
+<hr />
+<p>下图所示的电路中的 <span class="arithmatex">\(i_a=4{\rm A}\)</span>，<span class="arithmatex">\(i_b=-2{\rm A}\)</span>，求：</p>
+<p>(1)  电流源的输出电流 <span class="arithmatex">\(i_g\)</span>；</p>
+<p>(2)  30 Ω 电阻上消耗的功率；</p>
+<p>(3)  100 V 电压源提供的功率。</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212029777.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212029777.png" alt="image-20221108121633988" style="zoom:67%;" /></a></p>
+<blockquote>
+<p>(1)</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212030863.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212030863.png" alt="image-20221108121801834" style="zoom:67%;" /></a></p>
+<p><span class="arithmatex">\(\Large v_2=100+4\times15=160{\rm V}\)</span>（基本的欧姆定律）</p>
+<p><span class="arithmatex">\(\Large v_1=160-(9+11+10)\times2=100{\rm V}\)</span> （绕那个大的loop）</p>
+<p><span class="arithmatex">\(\Large i_1=\frac{v_1}{4+16}=\frac{100}{20}=5{\rm A}\)</span>（大的求得电压即可求小的电流）</p>
+<p><span class="arithmatex">\(\Large i_3=i_1-2=5-2=3{\rm A}\)</span> （最右节点列<span class="arithmatex">\(KCL\)</span>）</p>
+<p><span class="arithmatex">\(\Large v_g=v_1+30i_3=100+30\times3=190{\rm V}\)</span> （求得<span class="arithmatex">\(I_{3}\)</span>即可求电压）</p>
+<p><span class="arithmatex">\(\Large i_4=2+4=6{\rm A}\)</span> （最左节点的<span class="arithmatex">\(KCL\)</span>）</p>
+<p><span class="arithmatex">\(\Large i_g=-i_4-i_3=-6-3=-9{\rm A}\)</span> （中间节点的<span class="arithmatex">\(KCL\)</span>）</p>
+<p>(2)<span class="arithmatex">\(\Large P_{30{\rm \Omega}}=30\times 3^2=270{\rm W}\)</span> </p>
+<p>(3)按==关联参考方向==，<span class="arithmatex">\(\Large P=100 \times 4=400{\rm W}\)</span>，所以电源==吸收功率 <span class="arithmatex">\(400 W\)</span>==</p>
+</blockquote>
+<hr />
+<p>求下图所示电路中的支路电流 <span class="arithmatex">\(I_1、I_2和I_3\)</span> 。</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212038140.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212038140.png" alt="2-3-3" style="zoom:67%;" /></a></p>
+<blockquote>
+<p><mark><span class="arithmatex">\(\Delta\)</span> 阻值比较大，更像并联；Y 阻值比较小，更像串联；当阻值相等时，<strong><span class="arithmatex">\(\Large R_{\Delta} = 3R_Y\)</span></strong></mark></p>
+<ul>
+<li>
+<p><span class="arithmatex">\(Z_Y=2Ω\)</span> 变换为 <span class="arithmatex">\(Z_Δ=6Ω\)</span> </p>
+</li>
+<li>
+<p><span class="arithmatex">\(6Ω\)</span> 与 <span class="arithmatex">\(1Ω\)</span> 并联得到 <span class="arithmatex">\(\Large \frac{6}{7}Ω\)</span> </p>
+</li>
+<li>
+<p>在 <span class="arithmatex">\(Δ→Y\)</span> 转换得到 <span class="arithmatex">\(\Large \frac{2}{7}Ω\)</span> </p>
+</li>
+</ul>
+<p>通过叠加定理或者网孔电流法可计算得到：
+$$
+\Large \begin{cases}\frac{2}{7}I_1+\frac{2}{7}I_3=12 \\frac{2}{7}I_2+\frac{2}{7}I_3=30 \I_1+I_2=I_3\end{cases}⇒\begin{cases}I_1=-7A \I_2=56A \I_3=49A\end{cases}
+$$</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212039360.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212039360.png" alt="image-20220830092323304" style="zoom:67%;" /></a></p>
+</blockquote>
+<hr />
+<p>求下图中每个电容两端的电压</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212044326.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212044326.png" alt="image-20221014142401350" style="zoom:67%;" /></a></p>
+<blockquote>
+<p>主要就是抓住串联电容的带电量Q是相等的</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212044184.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212044184.png" alt="image-20221014142422374" style="zoom:67%;" /></a></p>
+</blockquote>
+<hr />
+<h2 id="_5">电路分析方法部分<a class="headerlink" href="#_5" title="点击此处可置顶内容">&para;</a></h2>
+<h3 id="_6">核心知识要点<a class="headerlink" href="#_6" title="点击此处可置顶内容">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">电路的分析方法</p>
+<ul>
+<li><mark>网孔电流法</mark><ul>
+<li>以 l 个网孔电流为变量，对 l 个网孔列<span class="arithmatex">\(KVL\)</span>方程，求解线性方程组；</li>
+<li>若含电流源，因电流源两端电压不能确定，故采用超级网孔避开电流源，再列线性方程求解；</li>
+</ul>
+</li>
+<li><mark>节点电压法</mark><ul>
+<li>以 <em>n</em>-1 个节点电压为变量，对 <em>n</em>-1 个节点列 <em>n</em>-1 个<span class="arithmatex">\(KCL\)</span>方程，求解线性方程组；</li>
+<li>若含电压源，因流过电压源的电流不能确定，故采用广义节点把电压源包含进来，再列线性方程组求解；</li>
+</ul>
+</li>
+<li><mark>叠加定理</mark>（线性电路齐次性）<ul>
+<li>线性：齐次性、可加性</li>
+<li>功率不可直接叠加</li>
+<li>分别计算每个独立源的贡献（考虑一个独立源时，其他独立源均设为零/turn off），再线性叠加；适用于有多个独立源的线性电路</li>
+</ul>
+</li>
+<li>替代定理：保持接口电压或电流不变，用电压源或电流源替代</li>
+<li><mark>戴维南定理</mark>：开路电压 &amp; 等效电阻</li>
+<li>诺顿定理：短路电流 &amp; 等效电阻</li>
+<li>最大功率传递定理：<ul>
+<li>对于电阻网络，负载电阻 = 戴维南等效电阻</li>
+<li>最大功率传输时，效率并不一定等于50%</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="_7">题目精选<a class="headerlink" href="#_7" title="点击此处可置顶内容">&para;</a></h3>
+<hr />
+<p>使用网孔电流法求解下图中 <span class="arithmatex">\(i_1\)</span>、<span class="arithmatex">\(i_2\)</span>、<span class="arithmatex">\(i_3\)</span></p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212059136.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212059136.png" alt="image-20220913165141920.BLzr6xZt" style="zoom: 67%;" /></a></p>
+<blockquote>
+<p>考虑到独立电流源的存在，将 <span class="arithmatex">\(i_1\)</span> 和 <span class="arithmatex">\(i_2\)</span> 所在的网孔并作一个==<span class="arithmatex">\(supermesh\)</span>==看待。</p>
+<p>列网孔电流方程如下：</p>
+<p><span class="arithmatex">\(\Large \begin{cases} -8 +2(i_1-i_3)+4(i_2-i_3) + 8i_2 = 0 \\ 2(i_3-i_1)+2i_3+4(i_3-i_2)=0 \\     \end{cases}\)</span> </p>
+<p><mark>增补方程 <span class="arithmatex">\(\Large i_1-i_2=4\)</span></mark></p>
+<p>联立解得：</p>
+<p><span class="arithmatex">\(i_1=\frac{88}{19}{\rm A},i_2=\frac{12}{19}{\rm A},i_3=\frac{28}{19}{\rm A}\)</span> </p>
+</blockquote>
+<hr />
+<p>用节点电压法求下图所示电路中的电压<em>U</em> </p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212104106.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212104106.png" alt="2-5-1.BSvyzG3F" style="zoom:67%;" /></a></p>
+<blockquote>
+<p>最上方三个节点从左往右依次为<span class="arithmatex">\(n1\)</span>、<span class="arithmatex">\(n2\)</span>、<span class="arithmatex">\(n3\)</span>，节点4即为最下方的节点</p>
+<ul>
+<li>第一个方程：电压差</li>
+<li>第二个方程：<span class="arithmatex">\(n2\)</span>节点的<span class="arithmatex">\(KCL\)</span></li>
+<li>第三个方程：电压差（只不过是受控源）</li>
+<li>第四个增补方程：欧姆定律</li>
+</ul>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212105908.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="解-2-5-1.BvYfzfhb" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212105908.png" /></a></p>
+</blockquote>
+<hr />
+<p>求以下无源单口网络的输入电阻 <span class="arithmatex">\(R_i\)</span> 。已知 <span class="arithmatex">\(R_1\)</span> = <span class="arithmatex">\(R_2\)</span> = <span class="arithmatex">\(R_3\)</span> = <span class="arithmatex">\(R_4\)</span> = <span class="arithmatex">\(R_5\)</span> = 3Ω，<span class="arithmatex">\(R_6\)</span> = 1Ω。</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212150600.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212150600.png" alt="2-5-3.aDwYp8PU" style="zoom:67%;" /></a></p>
+<blockquote>
+<p><mark>方法1：</mark>（节点电压法）</p>
+<p>选取参考地，并对图中的节点电压进行标记如下：</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212150928.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212150928.png" alt="解-2-5-3.D6OTm7uM" style="zoom:67%;" /></a></p>
+<p>列节点电压方程如下：
+$$
+\Large \begin{cases}
+V_1/R_2+(V_1-V_2)/R_5+(V_1-V_3)/R_1=0 (对V_1节点的KCL)\
+V_2/R_4+(V_2-V_1)/R_5+(V_2-V_3)/R_3=0 (对V_2节点的KCL)\
+V_3=3I×R_6 (V_3节点对地电压)
+\end{cases}
+$$
+为简化计算过程，<mark>可取 <span class="arithmatex">\(I=1 A\)</span></mark>（由果索因） </p>
+<p>计算得到： <span class="arithmatex">\(\Large V_1=V_2=\frac{3}{2}V,V_3=3V,I_{in}=I+V_1/R_2+V_2/R_4=2A\)</span> </p>
+<p>故而输入电阻 <span class="arithmatex">\(\Large R_i=\frac{U}{I_{in}}=\frac{V_3}{I_{in}}=\frac{3}{2}Ω\)</span> </p>
+<p><mark>方法2：</mark>（简化电路）</p>
+<p>左边电路用Y-<span class="arithmatex">\(\Delta\)</span> 化简，等效为3Ω电阻（也可由电桥，<span class="arithmatex">\(R_{5}\)</span>不分流，直接是两个<span class="arithmatex">\(6\Omega\)</span>电阻并联）</p>
+<p>右边电路令<span class="arithmatex">\(I = 1A\)</span>, 电压<span class="arithmatex">\(=3V\)</span>，即右边等效为3Ω，故整体等效电阻为1.5Ω</p>
+</blockquote>
+<hr />
+<p>用节点电压法求下图所示电路的节点电压 <span class="arithmatex">\(V_{na}、V_{nb}、V_{nc}和i_x\)</span> 。</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212202755.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410212202755.png" alt="2-6-7.R-WN5Md-" style="zoom:67%;" /></a></p>
+<blockquote>
+<p><mark>方法1：</mark></p>
+<p>**设受控电压源流出的电流为 <span class="arithmatex">\(i\)</span> **
+$$
+\Large \begin{cases}
+\frac{1}{90}V_{na}-\frac{1}{90}V_{nb}=2+i (a点KCL)\
+-\frac{1}{90}V_{na}+(\frac{1}{90}+\frac{1}{60}+\frac{1}{180})V_{nb}-\frac{1}{60}V_{nc}=0 (b点KCL)\
+-\frac{1}{60}V_{nb}+(\frac{1}{90}+\frac{1}{60})V_{nc}=-i (c点KCL)\
+V_{na}-V_{nc}=30i_x (受控源列方程)\
+i_x=\frac{1}{90}(V_{na}-V_{nb})(i_x的表示
+)
+\end{cases}
+$$
+解得： <span class="arithmatex">\(\Large V_{na}=135V,V_{nb}=108V,V_{nc}=126V,i=-1.7A,i_x=0.3A\)</span> </p>
+<p><mark>方法2：</mark>
+$$
+\Large \begin{cases}
+\frac{1}{90}V_{na}-(\frac{1}{90}+\frac{1}{60})V_{nb}+(\frac{1}{90}+\frac{1}{60})V_{nc}=2 \
+对点b:-\frac{1}{90}V_{na}+(\frac{1}{90}+\frac{1}{60}+\frac{1}{180})V_{nb}-\frac{1}{60}V_{nc}=0 \
+另外,V_{na}-V_{nc}=30i_x=\frac{30}{90}(V_{na}-V_{nb})
+\end{cases}
+$$</p>
+<p>$$
+⇒
+\Large \begin{cases}
+2V_{na}-5V_{nb}+5V_{nc}=360 \
+-2V_{na}+6V_{nb}-3V_{nc}=0 \
+2V_{na}+V_{nb}-3V_{nc}=0
+\end{cases}
+⇒
+\Large \left(
+\begin{matrix}
+  2 &amp; -5 &amp; 5 \
+  -2 &amp; 6 &amp; -3 \
+  2 &amp; 1 &amp; -3
+  \end{matrix}
+\right)</p>
+<p>\left(
+\begin{matrix}
+  V_{na} \
+  V_{nb} \
+  V_{nc}
+  \end{matrix}
+\right)
+=
+\left(
+\begin{matrix}
+  360 \
+  0 \
+  0
+  \end{matrix}
+\right)
+$$</p>
+<p>解得：
+$$
+\Large \left(
+\begin{matrix}
+  V_{na} \
+  V_{nb} \
+  V_{nc}
+  \end{matrix}
+\right)
+=
+\left(
+\begin{matrix}
+  135 \
+  108 \
+  126
+  \end{matrix}
+\right)V,i_x = 0.3
+$$</p>
+</blockquote>
+<hr />
+<p>列出图示电路的节点电压方程,并求 <span class="arithmatex">\(I\)</span></p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410222307227.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410222307227.png" alt="2-4-9.9LvruaZ5" style="zoom:67%;" /></a></p>
+<blockquote>
+<p><mark>独立源 ⇒ <span class="arithmatex">\(supernode\)</span></mark></p>
+<p>考虑到独立电压源的存在，将独立电压源及上方节点看做一个 <span class="arithmatex">\(supernode\)</span> </p>
+<p>记 <span class="arithmatex">\(supernode\)</span> 上、下方电压分别为 <span class="arithmatex">\(v_a\)</span> 和 <span class="arithmatex">\(v_b\)</span> </p>
+<p>以底端节点为参考节点，<span class="arithmatex">\(supernode\)</span> 右侧的两个节点分别标记为 <span class="arithmatex">\(v_1\)</span> 和 <span class="arithmatex">\(v_2\)</span> </p>
+<p>列节点电压方程如下：</p>
+<p><span class="arithmatex">\(\Large \begin{cases} \frac{v_a-v_2}{10}+\frac{v_a-v_1}{5}+\frac{v_b}{5}=0 \\ \frac{v_1-v_a}{5}+\frac{v_1-v_2}{4}+\frac{v_1}{20}=0 \\ v_2=15I \end{cases}\)</span> </p>
+<p>增补方程 <span class="arithmatex">\(\Large v_a-v_b=25\)</span> ，<span class="arithmatex">\(\Large I=\frac{v_1}{20}\)</span> </p>
+<p>联立解得：</p>
+<p><span class="arithmatex">\(\Large v_a=\frac{1250}{81}{\rm V}\)</span></p>
+<p><span class="arithmatex">\(\Large v_b=\frac{-775}{81}{\rm V}\)</span></p>
+<p><span class="arithmatex">\(\Large v_1=\frac{800}{81}{\rm V}\)</span></p>
+<p><span class="arithmatex">\(\Large v_2=\frac{600}{81}{\rm V}\)</span></p>
+<p><span class="arithmatex">\(\Large I=\frac{40}{81}{\rm A}\)</span></p>
+</blockquote>
+<hr />
+<p>下图所示电路中，电压U为 ________ </p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410222320588.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410222320588.png" alt="2-6-2.DPHJCSH9" style="zoom:67%;" /></a></p>
+<p>A. <span class="arithmatex">\(4V\)</span> </p>
+<p>B. <span class="arithmatex">\(5V\)</span></p>
+<p>C. <span class="arithmatex">\(6V\)</span></p>
+<p>D. <span class="arithmatex">\(3V\)</span></p>
+<blockquote>
+<p>C</p>
+<p>只考虑<span class="arithmatex">\(6V\)</span>时，电流源开路，<span class="arithmatex">\(U= 1V\)</span></p>
+<p>只考虑<span class="arithmatex">\(6A\)</span>时，<span class="arithmatex">\(5\Omega\)</span>和<span class="arithmatex">\(1\Omega\)</span>并联，<span class="arithmatex">\(U\)</span>为<span class="arithmatex">\(5V\)</span></p>
+<p>故总的<span class="arithmatex">\(U\)</span>为<span class="arithmatex">\(1+5=6V\)</span></p>
+</blockquote>
+<hr />
+<p>将下图 (a) 电路等效为图 (b) 电路，可求得输出端短路电流 <span class="arithmatex">\(I\)</span> = ________ </p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231919377.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231919377.png" alt="2-7-3.-8HfI5ap" style="zoom:67%;" /></a></p>
+<blockquote>
+<p><span class="arithmatex">\(-0.5A\)</span> </p>
+<p>开路电压：<span class="arithmatex">\(\frac{-4}{15}V\)</span>，等效电阻：<span class="arithmatex">\(\frac{-8}{15}\ohm\)</span></p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231921844.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231921844.jpg" alt="微信图片_20241023192058" style="zoom: 33%;" /></a></p>
+<p>所以短路电流为 <span class="arithmatex">\(-0.5\)</span> A</p>
+</blockquote>
+<hr />
+<p>求下图所示电路的戴维南等效电路</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231923707.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="1" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231923707.png" /></a></p>
+<blockquote>
+<p>(1) 首先求开路电压 <span class="arithmatex">\(v_{OC}\)</span> 。采用节点分析法来求解</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231924031.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231924031.png" /></a></p>
+<p>$$
+\Large \begin{cases}
+(\frac{1}{1}+\frac{1}{2})v_{OC}-\frac{1}{1}×v_{n2}-\frac{1}{2}×v_{n3}=\frac{3}{4}v_{OC} \
+-(\frac{1}{1}+\frac{1}{2})v_{OC}+(\frac{1}{1}+\frac{1}{1})v_{n2}+(\frac{1}{1}+\frac{1}{2})v_{n3}=0 \
+v_{n2}-v_{n3}=1
+\end{cases}
+$$
+解得： <span class="arithmatex">\(\Large v_{OC}=\frac{4}{3}V≈1.33V\)</span> </p>
+<p>(2) 然后求等效电阻 <span class="arithmatex">\(R_o\)</span></p>
+<p>​  在端口施加一电压 <span class="arithmatex">\(v\)</span> ，独立电压源短路，与受控电流源串联的电阻可以视为短路，得到：</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231924010.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="3" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231924010.png" /></a></p>
+<p>​   则 <span class="arithmatex">\(\Large i=0.75v+\frac{-v}{1Ω||2Ω+1Ω||1Ω}=0.75v+\frac{-v}{\frac{2}{3}+\frac{1}{2}}⇒v=-\frac{28}{3}i\)</span> </p>
+<p>​      <span class="arithmatex">\(\Large R_o=-\frac{v}{i}=\frac{28}{3}Ω≈9.33Ω\)</span> </p>
+<p>​   因此，原电路的戴维南等效电路如下所示：</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231925558.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="4" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231925558.png" /></a></p>
+</blockquote>
+<hr />
+<p>如下图所示电路，当 <span class="arithmatex">\(R_x=20Ω\)</span> 时，求电流 <span class="arithmatex">\(I_x\)</span> </p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231927522.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="1" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231927522.png" /></a></p>
+<blockquote>
+<p>求出 <span class="arithmatex">\(I_x\)</span> 所在支路之外电路的戴维宁等效电路。
+$$
+\Large \begin{cases}
+u_{oc}=\frac{6}{3+6}×18-\frac{3}{3+6}×18=6V \
+R_{eq}=\frac{3×6}{3+6}+\frac{6×3}{6+3}=4Ω \
+∴I_x=\frac{U_{oc}}{R_{eq}+20}=\frac{6}{4+20}=0.25A
+\end{cases}
+$$
+等效电路：</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231927350.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231927350.png" /></a></p>
+</blockquote>
+<hr />
+<p>求下图中，ab端所见的戴维南等效电路</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231948993.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231948993.png" alt="1" style="zoom:67%;" /></a></p>
+<blockquote>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231949333.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231949333.png" /></a></p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231949873.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="3" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231949873.png" /></a></p>
+</blockquote>
+<hr />
+<p>计算并画出下图所示电路的戴维南等效电路</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231950994.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231950994.png" alt="1" style="zoom:67%;" /></a></p>
+<blockquote>
+<p>首先，根据==<span class="arithmatex">\(Y-\Delta\)</span> 变换关系==，且为了方便 <span class="arithmatex">\(I\)</span>计算，<strong>将<span class="arithmatex">\(10\Omega\)</span> 转化为<span class="arithmatex">\(\frac{10}{3}\Omega\)</span>，再与 <span class="arithmatex">\(5\Omega\)</span> 并联</strong>，得到：<span class="arithmatex">\({Z_Y}^{'}=2{\rm \Omega}\)</span></p>
+<p>整理得到变换后的电路图如下所示：</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231951374.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231951374.png" /></a></p>
+<p>求开路电压 <span class="arithmatex">\(\Large v_{oc}\)</span></p>
+<p>​      由流经 <span class="arithmatex">\(\Large R_4\)</span> 的电流为 <span class="arithmatex">\(\Large I\)</span>，可以得到节点2电压为 <span class="arithmatex">\(\Large v_2=2I\)</span></p>
+<p>​      因此，流经 <span class="arithmatex">\(\Large R_3\)</span>、<span class="arithmatex">\(\Large R_5\)</span> 的电流为 <span class="arithmatex">\(\Large 0.5I\)</span></p>
+<p>​      流经 <span class="arithmatex">\(\Large R_2\)</span> 的电流为 <span class="arithmatex">\(\Large I+0.5I=1.5I\)</span>；方向由左至右</p>
+<p>​      节点1处由 <span class="arithmatex">\(KCL\)</span> 可得，流经 <span class="arithmatex">\(\Large R_1\)</span> 的电流为 <span class="arithmatex">\(\Large 0.5I\)</span>，方向由左至右</p>
+<p>​      列网孔电流方程有：</p>
+<p>​      <span class="arithmatex">\(\Large R_1 \times 0.5I+R_2 \times 1.5I + R_4 \times I = 8{\rm V}\)</span>，代入解得：<span class="arithmatex">\(\Large I=1{\rm A}\)</span> </p>
+<p>​      开路电压 <span class="arithmatex">\(\Large v_{oc}=R_5 \times 0.5I=1{\rm V}\)</span></p>
+<p>求等效电阻 <span class="arithmatex">\(\Large R_o\)</span> </p>
+<p>​      在端口施加一电压 <span class="arithmatex">\(\Large v=1{\rm V}\)</span>，独立电压源短路</p>
+<p>​      则 <span class="arithmatex">\(\Large v_3=1{\rm V}\)</span>，<span class="arithmatex">\(\Large v_2=2I\)</span></p>
+<p>​      <span class="arithmatex">\(\Large I_{R_5}=\frac{v_3}{R_5}=0.5{\rm A}\)</span>，方向由上至下</p>
+<p>​      <span class="arithmatex">\(\Large I_{R_3}=\frac{v_3-v_2}{R_3}=\frac{1-2I}{2}=0.5-I\)</span>，方向由右至左</p>
+<p>​      <span class="arithmatex">\(\Large I_{R_2}=I_{R_3}-I_{R_4}=0.5-2I\)</span>，方向由右至左</p>
+<p>​      <span class="arithmatex">\(\Large I_{R_1}=I_{R_2}+I=0.5-I\)</span>，方向由右至左</p>
+<p>​      根据 <span class="arithmatex">\(\Large v_2=I_{R_2}R_2+I_{R_1}R_1=IR_4\)</span> 代入得到：</p>
+<p>​      <span class="arithmatex">\(\Large 2 \times (0.5-2I)+6 \times (0.5-I)=2 \times I\)</span> </p>
+<p>​      解得：<span class="arithmatex">\(\Large I=\frac{1}{3}{\rm A}\)</span> </p>
+<p>​      因此，<span class="arithmatex">\(\Large I_o=I_{R_3}+I_{R_5}=(0.5-\frac{1}{3})+\frac{1}{2}=\frac{2}{3}{\rm A}\)</span>，<span class="arithmatex">\(\Large R_o=\frac{v}{I_o}=1.5{\rm \Omega}\)</span> </p>
+<p>画出戴维南等效电路如下</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231951542.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="3" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410231951542.png" /></a></p>
+</blockquote>
+<hr />
+<p>求下列电路<span class="arithmatex">\(ab\)</span>端口的诺顿等效电路</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232014196.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="1" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232014196.png" /></a></p>
+<blockquote>
+<p>主要是知道一下诺顿等效怎么求</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232014814.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232014814.png" /></a></p>
+</blockquote>
+<hr />
+<p>下列电路中，<span class="arithmatex">\(R_L\)</span>取什么值时可以获得最大功率传输，并计算该最大功率</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232017818.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232017818.png" alt="1" style="zoom:67%;" /></a></p>
+<blockquote>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232017105.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232017105.png" /></a></p>
+</blockquote>
+<hr />
+<h2 id="_8">动态电路的时域分析部分<a class="headerlink" href="#_8" title="点击此处可置顶内容">&para;</a></h2>
+<h3 id="_9">省流<a class="headerlink" href="#_9" title="点击此处可置顶内容">&para;</a></h3>
+<ul>
+<li>零输入<span class="arithmatex">\(RC\)</span>电路</li>
+</ul>
+<div class="arithmatex">\[
+ \Large v(t)=V_{0}e^{-\frac{t}{\tau}}
+\]</div>
+<ul>
+<li><span class="arithmatex">\(\Large \tau=RC\)</span></li>
+<li><span class="arithmatex">\(R\)</span>为<span class="arithmatex">\(C\)</span>两端的等效电阻（即戴维南电阻）</li>
+<li><span class="arithmatex">\(V_{0}\)</span>为<span class="arithmatex">\(0+\)</span>时刻电容两端的初始电压</li>
+<li>零输入<span class="arithmatex">\(RL\)</span>电路</li>
+</ul>
+<div class="arithmatex">\[
+ \Large v(t)=I_{0}e^{-\frac{t}{\tau}}
+\]</div>
+<ul>
+<li><span class="arithmatex">\(\Large \tau=\frac{L}{R}\)</span></li>
+<li><span class="arithmatex">\(R\)</span>为<span class="arithmatex">\(L\)</span>两端的等效电阻（即戴维南电阻）</li>
+<li>
+<p>$ I_{0}<span class="arithmatex">\(为\)</span>0+$时刻流经电感的初始电流I</p>
+</li>
+<li>
+<p><span class="arithmatex">\(RC\)</span>电路的直流响应</p>
+</li>
+</ul>
+<div class="arithmatex">\[
+ \Large v_{c}=V_{s}(1-e^{-\frac{t}{\tau}})
+\]</div>
+<p>$$
+ \Large i_{c}=\frac{V_{s}}{R}e^{-\frac{t}{\tau}}
+$$
+ *  <span class="arithmatex">\(\Large \tau=RC\)</span>
+ *  <span class="arithmatex">\(V_{S}\)</span>电压源电压</p>
+<p>[!TIP]</p>
+<ul>
+<li><span class="arithmatex">\(RL\)</span>电路的直流响应</li>
+</ul>
+<div class="arithmatex">\[
+ \Large i_{L}=\frac{V_{s}}{R}(1-e^{-\frac{t}{\tau}})
+\]</div>
+<p>$$
+ \Large v_{L}=V_{s}e^{-\frac{t}{\tau}}
+$$
+ * <span class="arithmatex">\(\Large \tau=\frac{L}{R}\)</span>
+ *  <span class="arithmatex">\(V_{S}\)</span>电压源电压
+ [!TIP]</p>
+<ul>
+<li>一阶电路的全响应</li>
+</ul>
+<div class="arithmatex">\[
+ \Large v_{c}=V_{s}+(V_{0}-V_{s})e^{-\frac{t}{\tau}}
+\]</div>
+<ul>
+<li><span class="arithmatex">\(v_{c}(0+)=V_{0}\)</span></li>
+<li><span class="arithmatex">\(\Large \tau=RC\)</span></li>
+<li><span class="arithmatex">\(V_{S}\)</span>电压源电压</li>
+</ul>
+<p>也可写作：
+$$
+ \Large v_{c}=V_{s}(1-e<sup -_frac_t="-\frac{t">{-\frac{t}{\tau}})+V_{0}e</sup>
+$$
+ 其中
+$$
+ \Large V_{s}(1-e^{-\frac{t}{\tau}})
+$$
+ 为}{\tau}<strong>零状态响应</strong>
+$$
+ \Large V_{0}e^{-\frac{t}{\tau}}
+$$
+ 为<strong>零输入响应</strong></p>
+<ul>
+<li><mark>一阶电路的三要素法</mark></li>
+</ul>
+<div class="arithmatex">\[
+ \Large f(t)=f'(t)+[f(0_{+})-f'(0_{+})]e^{-\frac{t}{\tau}}
+\]</div>
+<p>直流激励时：
+$$
+ \Large f'(t)=f'(0_{+})=f(\infty )
+$$</p>
+<div class="arithmatex">\[
+ \Large f(t)=f(\infty)+[f(0_{+})-f(\infty)]e^{-\frac{t}{\tau}}
+\]</div>
+<ul>
+<li><span class="arithmatex">\(\Large f(\infty)\)</span>稳态解（用<span class="arithmatex">\(t\longrightarrow \infty\)</span>的稳态电路求解）</li>
+<li>
+<p><span class="arithmatex">\(\Large f(0_{+})\)</span>初始解（用<span class="arithmatex">\(0_{+}\)</span>等效电路求解）</p>
+</li>
+<li>
+<p><span class="arithmatex">\(RC\)</span>阶跃响应总结</p>
+</li>
+</ul>
+<div class="arithmatex">\[
+\Large v(t)=v(\infty)+[v(0)-v(\infty)]e^{-\frac{t}{\tau}}
+\]</div>
+<ul>
+<li>若电路是在<span class="arithmatex">\(\Large t=t_{0}\)</span>时刻切换</li>
+</ul>
+<div class="arithmatex">\[
+\Large v(t)=v(\infty)+[v(t_{0})-v(\infty)]e^{-\frac{t-t_{0}}{\tau}}
+\]</div>
+<ul>
+<li><span class="arithmatex">\(RL\)</span>阶跃响应总结</li>
+</ul>
+<div class="arithmatex">\[
+\Large i(t)=i(\infty)+[i(0)-i(\infty)]e^{-\frac{t}{\tau}}
+\]</div>
+<ul>
+<li>若电路是在<span class="arithmatex">\(\Large t=t_{0}\)</span>时刻切换</li>
+</ul>
+<div class="arithmatex">\[
+\Large i(t)=i(\infty)+[i(t_{0})-i(\infty)]e^{-\frac{t-t_{0}}{\tau}}
+\]</div>
+<h3 id="_10">核心知识要点<a class="headerlink" href="#_10" title="点击此处可置顶内容">&para;</a></h3>
+<ul>
+<li>
+<p>动态电路和过渡过程的概念</p>
+<ul>
+<li>
+<p>电感、电容的“电压电流约束关系”与时间 <em>t</em> 有关，所以电感、电容又称为<strong>动态元件</strong>，含电感、电容的电路也被称为<strong>动态电路</strong></p>
+</li>
+<li>
+<p>动态电路的一个<strong>特征</strong>是：当电路结构发生变化时（一般通过“开关”的切换来实现），可能使电路从原来的工作状态，转变到一个新的工作状态，这种转变往往需要一定的时间，这一过程被称为动态电路的<strong>过渡过程</strong></p>
+</li>
+<li>
+<p>开关切换的动作也被称为“<strong>换路</strong>”，一般认为换路是在 <span class="arithmatex">\(t=0\)</span> 时刻进行的，把换路前的最终时刻记为  <span class="arithmatex">\(t = 0^-\)</span>，把换路后的最初时刻记为 <span class="arithmatex">\(t = 0^+\)</span></p>
+</li>
+<li>
+<p>分析动态电路的方法：根据<span class="arithmatex">\(KCL\)</span>、<span class="arithmatex">\(KVL\)</span>、元件的电压电流约束关系，写出微分方程，并求解；这一方法在<strong>时域</strong>中进行，称为<strong>经典解法</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232029491.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20220905214609711.xX-b-DIV" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232029491.png" /></a>
+* <mark>一阶电路的响应</mark></p>
+<div class="language-text highlight"><pre><span></span><code>* 一阶电路：化简后的电路仅含一个储能元件
+
+* 解一阶微分方程需要知道变量初始值
+
+* $0^+$ 时刻的电路状态由 $0^-$ 时刻的电路状态获得，且基于
+    * 电感电流不能突变
+    * 电容电压不能突变
+
+* 一阶电路的衰减常数：$\Large \tau = RC$, 或 $\Large \tau = \frac{L}{R}$
+</code></pre></div>
+<ul>
+<li>
+<p>零输入响应、零状态响应、全响应及其分解方式、三要素法分析；</p>
+<ul>
+<li>
+<p><mark>输入==指 <span class="arithmatex">\(\Large t = 0^+\)</span> 时刻，电路中==有无电源</mark></p>
+</li>
+<li>
+<p><mark>状态==指 <span class="arithmatex">\(\Large t = 0^+\)</span> 时刻，电路中的==储能元件有无初始储能</mark></p>
+</li>
+<li>
+<p><mark>零输入响应</mark>：无<strong>外加激励</strong>电源（零<strong>输入</strong>），仅由动态元件初始储能所产生的响应</p>
+</li>
+<li>
+<p><mark>零状态响应</mark>：动态元件<strong>初始储能</strong>为零（零<strong>状态</strong>），由外加激励电源引起的响应</p>
+</li>
+<li>
+<p>实际情况往往是<span class="arithmatex">\(t = 0^+\)</span> 时刻==电源和初始储能都有的==，即==全响应==</p>
+</li>
+</ul>
+</li>
+<li>
+<p>三要素法：<strong>初始值、稳态值、时间常数</strong></p>
+</li>
+<li>
+<p><strong>初始与稳态的差值随时间常数的指数衰减</strong>，所以
+  $$
+  \Large v(t) = v(\infty) + [v(t_0) - v(\infty)] \cdot e^{-(t - t_0)/\tau}
+  $$</p>
+</li>
+<li>
+<p><mark>二阶电路的响应</mark></p>
+</li>
+<li>
+<p>二阶电路：化简后的电路含两个储能元件</p>
+</li>
+<li>
+<p>解二阶微分方程需要<strong>知道变量初始值，以及变量导数的初始值</strong></p>
+</li>
+<li>
+<p><strong>focus on 不能突变的量</strong>，即电感电流、电容电压，寻找变量初始值</p>
+<ul>
+<li>
+<p>变量导数的初始值由元件的外围电路决定</p>
+<ul>
+<li>如电感，求<strong>电流导数的初始值</strong>，因 <span class="arithmatex">\(\Large v = L \frac{di}{dt}\)</span> ，需经由<strong>电感两端电压初始值</strong>获得</li>
+<li>如电容，求<strong>电压导数的初始值</strong>，因 <span class="arithmatex">\(\Large i = C \frac{dv}{dt}\)</span>，需经由流经<strong>电容电流初始值</strong>获得</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>求解二阶微分方程，即获得二阶电路的解</p>
+<ul>
+<li>step 1: 求变量及变量导数的初始值</li>
+<li>step 2: 求微分方程的<strong>特解</strong>，即变量的稳态响应 <span class="arithmatex">\(x_{ss}(t) = x(\infty)\)</span></li>
+<li>step 3: <span class="arithmatex">\(0^+\)</span> 时刻，turn off 独立源，求<strong>齐次微分方程的通解</strong>，即变量的瞬态响应 <span class="arithmatex">\(x_t(t)\)</span></li>
+<li>step 4: 写出<strong>非齐次微分方程的通解</strong>，即稳态响应和瞬态响应相加 <span class="arithmatex">\(x(t) = x_t(t) + x_{ss}(t)\)</span></li>
+<li>step 5: 结合初始条件，求待定系数</li>
+</ul>
+</li>
+<li>
+<p>对于串联 RLC、并联 RLC 这两种特殊的二阶电路，可根据衰减常数和谐振频率直接写出解的表达式</p>
+<ul>
+<li>
+<p><strong>衰减常数</strong>，对于串联 <span class="arithmatex">\(RLC\)</span>，<span class="arithmatex">\(\alpha = \frac{R}{2L}\)</span> ；对于并联 <span class="arithmatex">\(RLC\)</span>，<span class="arithmatex">\(\alpha = \frac{1}{2RC}\)</span></p>
+</li>
+<li>
+<p><strong>谐振频率</strong>，<span class="arithmatex">\(\omega_0 = \frac{1}{\sqrt{LC}}\)</span></p>
+</li>
+<li>
+<p>典型的二阶电路有过阻尼（<span class="arithmatex">\(\alpha &gt; \omega_0\)</span>）、临界阻尼（<span class="arithmatex">\(\alpha = \omega_0\)</span>）、欠阻尼（<span class="arithmatex">\(\alpha &lt; \omega_0\)</span>）三个 cases；临界阻尼衰减最快；以下以电容电压为例</p>
+</li>
+</ul>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232039745.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20220905225258656.DiTDYyS5" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232039745.png" /></a></p>
+</li>
+</ul>
+<div class="arithmatex">\[
+\Large s_{1,2} = -\alpha \pm \sqrt{\alpha^2 - \omega_0^2}
+\]</div>
+<div class="arithmatex">\[
+\Large \omega_d = \sqrt{\omega_0^2 - \alpha^2}
+\]</div>
+<ul>
+<li>
+<p>Q：选取电感电流还是电容电压作为变量？A：都可以</p>
+<ul>
+<li>有激励时，取激励的量比较方便（即稳态时容易获得的是电压量还是电流量）</li>
+<li>无激励时，并联取电压比较方便，串联取电流比较方便</li>
+</ul>
+</li>
+<li>
+<p>阶跃响应、冲激响应。</p>
+</li>
+<li>
+<p>单位斜坡函数是单位阶跃函数的积分</p>
+</li>
+<li>单位冲激函数是单位阶跃函数的导数</li>
+<li>一阶电路：单位冲激响应可当作电容两端初始电压为1/C （或流经电感的初始电流为1/L）的零输入响应来处理</li>
+<li>二阶电路：冲激响应可以按阶跃激励的一阶导数求得</li>
+</ul>
+<h2 id="_11">题目精选<a class="headerlink" href="#_11" title="点击此处可置顶内容">&para;</a></h2>
+<hr />
+<p>求下左图所示电路中电流 <span class="arithmatex">\(i_c(t)\)</span> ，独立电压源的伏安特性曲线见下右图。</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232229602.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="1" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232229602.png" /></a></p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232229658.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232229658.png" alt="3" style="zoom:50%;" /></a></p>
+<blockquote>
+<p>对左侧电路进行戴维南等效，化简电路图如下所示：</p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232229697.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232229697.png" /></a></p>
+<div class="arithmatex">\[
+\Large v_s=10ε(t)-10ε(t-0.5)
+\]</div>
+<div class="arithmatex">\[
+\Large τ=RC=5×10^{3}×100×10^{-6}=0.5s
+\]</div>
+<p>该电路的单位阶跃响应为
+$$
+\Large v_C(t)=(1-e^{-2t})ε(t)
+$$</p>
+<div class="arithmatex">\[
+\Large i_C=C\frac{dv_C}{dt}=\frac{1}{5}e^{-2t}ε(t)(mA)
+\]</div>
+<p>由齐次性和叠加性得实际响应为：
+$$
+\Large i_C=5×[\frac{1}{5}e<sup -2_t-0.5_="-2(t-0.5)">{-2t}ε(t)-\frac{1}{5}e</sup>ε(t-0.5)]=e<sup -2_t-0.5_="-2(t-0.5)">{-2t}ε(t)-e</sup>ε(t-0.5)(mA)
+$$</p>
+<p>另外，也可以分段表示结果：</p>
+<p><span class="arithmatex">\(0&lt;t&lt;0.5,ε(t)=1,ε(t-0.5)=0\)</span> 
+$$
+\Large i_C=e^{-2t}(mA)
+$$
+<span class="arithmatex">\(t&gt;0.5,ε(t)=1,ε(t-0.5)=1\)</span> 
+$$
+\Large i_C=e<sup -2_t-0.5_="-2(t-0.5)">{-2t}-e</sup>=e<sup -1="-1">{-2(t-0.5)}(e</sup>(mA)
+$$
+}-1)=-0.632e^{-2(t-0.5)</p>
+</blockquote>
+<hr />
+<p>如下图所示电路，在 t = 0 时刻前，开关 S 在位置 1 时电路已达到稳定状态，t = 0 时开关由位置 1 向位置 2闭合，求 t ≥ 0 时的电压 <span class="arithmatex">\(v_L\)</span> </p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232248928.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232248928.png" alt="4-1-7.Cja6G81L" style="zoom:67%;" /></a></p>
+<blockquote>
+<p>开关在 1 位置时，<span class="arithmatex">\(\Large i_L(0^-)=-4A\)</span> </p>
+<p><span class="arithmatex">\(0^+\)</span> 时刻之后，将电感以外电路进行==戴维南等效==，求得：<span class="arithmatex">\(\Large v_{oc}=12V，R_{eq}=10Ω\)</span> </p>
+<p>时间常数为 <span class="arithmatex">\(\Large τ=\frac{L}{R_{eq}}=0.01s\)</span> </p>
+<p>边界条件为 <span class="arithmatex">\(\Large i_L(0^+)=i_L(0^-)=-4A,i_L(∞)=\frac{v_{oc}}{R_{eq}}=1.2A\)</span> </p>
+<p>应用==三要素法==，得到：</p>
+<p>​     <span class="arithmatex">\(\Large i_L(t)=1.2+(-4-1.2)e^{-\frac{1}{0.01}t}=(1.2-5.2e^{-100t})A\)</span> </p>
+<p>​     <span class="arithmatex">\(\Large v_L(t)=L\frac{di_L}{dt}=52e^{-100t}V\)</span> </p>
+</blockquote>
+<hr />
+<p>如图所示，若电感的初始电流 <span class="arithmatex">\(i(0)=12{\rm A}\)</span>，求 <span class="arithmatex">\(t&gt;0\)</span> 时刻的 <span class="arithmatex">\(i(t)\)</span> 和 <span class="arithmatex">\(v_x(t)\)</span></p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232302985.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232302985.png" alt="4-1-12.BtHLJ1Z8" style="zoom:67%;" /></a></p>
+<blockquote>
+<p>初始条件 <span class="arithmatex">\(\Large i(0^+)=12{\rm A}\)</span> </p>
+<p>边界条件 <span class="arithmatex">\(\Large i(\infty)=0\)</span> </p>
+<p>对除了电感外的部分电路外施加电压 <span class="arithmatex">\(U\)</span> 求等效电阻：</p>
+<p>​      <span class="arithmatex">\(\Large \frac{U-v_x}{6}+\frac{U-v_x-2v_x}{2}=\frac{v_x}{1}\)</span> </p>
+<p>不妨取 <span class="arithmatex">\(\Large U=1{\rm V}\)</span>，得：<span class="arithmatex">\(\Large v_x=0.25{\rm V}\)</span> </p>
+<p>​      <span class="arithmatex">\(\Large R_{eq}=\frac{U}{I}=\frac{1}{\frac{0.25}{1}}=4{\rm \Omega}\)</span> </p>
+<p>​      <span class="arithmatex">\(\Large \therefore \tau=\frac{L}{R_{eq}}=\frac{2}{4}=0.5{\rm s}\)</span> </p>
+<p>因此，<span class="arithmatex">\(\Large i(t)=i(\infty)+[i(0^+)-i(\infty)]e^{-\frac{t}{\tau}}=12e^{-2t}{\rm A}\)</span> </p>
+<p>​          <span class="arithmatex">\(\Large v_x(t)=-i \times 1=-12e^{-2t}{\rm A}\)</span> </p>
+</blockquote>
+<hr />
+<p>下图中，<span class="arithmatex">\(v(t) = 10[u(t)-u(t-2)]\)</span> V，求 <span class="arithmatex">\(v_C(t)\)</span></p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232315062.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232315062.png" alt="1" style="zoom:50%;" /></a></p>
+<blockquote>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232315792.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image-20221016173645552.ebzM6Tm1" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232315792.png" /></a></p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232315767.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="3" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232315767.png" /></a></p>
+</blockquote>
+<hr />
+<p>下图中，求 <span class="arithmatex">\(t&gt;0\)</span> 时刻的 <span class="arithmatex">\(v_o(t)\)</span></p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232320971.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232320971.png" alt="1" style="zoom:50%;" /></a></p>
+<blockquote>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232321513.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="2" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232321513.png" /></a></p>
+<p><a class="glightbox" href="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232321935.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="3" src="https://wbx-1328220477.cos.ap-shanghai.myqcloud.com/202410232321935.png" /></a></p>
+</blockquote>
+<hr />
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2025年4月11日 10:20:43">2025年4月11日 10:20:43</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../CourseOverview/index.html" class="md-footer__link md-footer__link--prev" aria-label="上一页: 课程指北">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                课程指北
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../Physics/CourseOverview/index.html" class="md-footer__link md-footer__link--next" aria-label="下一页: 课程指北">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                课程指北
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023~2025 WuBixing/All Rights Reserved.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/Wbx0710" target="_blank" rel="noopener" title="Bixing&#39;s Notebook" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://space.bilibili.com/442107458/favlist?fid=2473170958&ftype=create" target="_blank" rel="noopener" title="Bilibili" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92.02c-26.45-.8-48.21-9.8-65.28-27.2C9.682 419.4.767 396.5 0 368.2V169.8c.767-26 9.682-47.6 26.74-65.7C43.81 87.75 65.57 78.77 92.02 78h29.38L96.05 52.19c-5.75-5.73-8.63-13-8.63-21.79 0-8.8 2.88-16.06 8.63-21.797C101.8 2.868 109.1 0 117.9 0q13.2 0 21.9 8.603L213.1 78h88l74.5-69.397C381.7 2.868 389.2 0 398 0q13.2 0 21.9 8.603c5.7 5.737 8.6 12.997 8.6 21.797 0 8.79-2.9 16.06-8.6 21.79L394.6 78h29.3c26.4.77 48 9.75 64.7 26.1m-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96.05c-9.59.4-17.45 3.7-23.58 9.8-6.14 6.1-9.4 13.9-9.78 23.5v194.4c0 9.2 3.26 17 9.78 23.5s14.38 9.8 23.58 9.8H416.4c9.2 0 17-3.3 23.3-9.8s9.7-14.3 10.1-23.5zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5s-17.5-3.2-23.6-9.5-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2s13.2-9.6 23.3-10c9.2.4 17 3.7 23.3 10m191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2s-14 9.5-23.6 9.5-17.4-3.2-23.6-9.5c-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2s14.1-9.6 23.3-10c9.2.4 17 3.7 23.3 10"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.path", "navigation.prune", "navigation.tabs", "navigation.indexes", "navigation.top", "navigation.footer", "search.highlight", "search.suggest", "toc.follow", "content.code.annotate", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../assets/javascripts/katex.js"></script>
+      
+        <script src="../../../assets/javascripts/clock.js"></script>
+      
+        <script src="../../../assets/javascripts/mathjax.js"></script>
+      
+        <script src="../../../assets/javascripts/document.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../assets/javascripts/titlechange.js"></script>
+      
+        <script src="../../../assets/javascripts/glightbox.min.js"></script>
+      
+        <script src="../../../assets/javascripts/click.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

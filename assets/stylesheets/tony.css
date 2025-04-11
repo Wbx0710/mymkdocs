@@ -1,0 +1,370 @@
+a,
+a:active,
+a:focus {
+  text-decoration: none !important;
+  /* 强制去除下划线 */
+}
+
+/* 模拟 iOS 系统的悬停效果 */
+a:hover {
+  font-size: 1.02em;
+  /* 字体轻微变大 */
+  color: #f5f5dc;
+  /* 改为 iOS 系统常用的蓝色 */
+  text-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
+  /* 添加淡淡的蓝色阴影 */
+  transition: all 0.3s ease;
+  /* 添加平滑的过渡效果 */
+}
+
+/* 针对导航栏中的链接悬停效果 */
+.navbar-nav>li>a:hover {
+  font-size: 1.02em;
+  color: #f5f5dc;
+  text-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* 针对 Material 主题导航栏中的链接悬停效果 */
+.md-nav__link:hover {
+  font-size: 1.02em;
+  color: #f5f5dc;
+  text-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* 侧边栏链接悬停效果 */
+.md-sidebar__link:hover {
+  font-size: 1.02em;
+  color: #f5f5dc;
+  text-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
+  transition: all 0.3s ease;
+}
+
+
+:root,
+[data-md-color-scheme="default"] {
+  /* default color */
+  --md-default-fg-color: rgba(72, 52, 52, 0.78);
+  --md-default-fg-color--light: rgba(72, 52, 52, 0.54);
+  --md-default-fg-color--lighter: rgba(72, 52, 52, 0.32);
+  --md-default-fg-color--lightest: rgba(72, 52, 52, 0.27);
+  --md-default-bg-color: #f5f5dc;
+  /*大背景颜色*/
+  --md-default-bg-color--light: hsla(0, 0%, 100%, 0.7);
+  --md-default-bg-color--lighter: hsla(0, 0%, 100%, 0.3);
+  --md-default-bg-color--lightest: hsla(0, 0%, 100%, 0.12);
+
+  /* primary color */
+  --md-primary-fg-color: #788bb8;
+  /*上页顶颜色*/
+  --md-primary-fg-color--light: #7a8dbf;
+  /*下页顶颜色*/
+  --md-primary-fg-color--dark: #95b1ba;
+  --md-primary-bg-color: #f1f1f1;
+  /*页顶字体颜色*/
+  --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
+  --md-accent-fg-color: #3c5e91;
+  --md-accent-fg-color--light: #29202f;
+  --md-accent-fg-color--transparent: rgba(82, 108, 254, 0.1);
+  --md-accent-bg-color: #fffffc;
+  --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
+
+  /* code color */
+  --md-code-fg-color: #1c113f;
+  --md-code-bg-color: hsla(0, 0%, 100%, 0.7);
+
+  /* typeset color */
+  --md-typeset-color: var(--md-default-fg-color);
+  --md-typeset-a-color: var(--md-accent-fg-color--light);
+  --md-typeset-mark-color: #ffffb5;
+  /*高亮颜色*/
+  --md-typeset-del-color: rgba(245, 80, 61, 0.15);
+  --md-typeset-ins-color: rgba(228, 199, 235, 0.15);
+  --md-typeset-kbd-color: #fafafa;
+  --md-typeset-kbd-accent-color: #fff;
+  --md-typeset-kbd-border-color: #b8b8b8;
+  --md-typeset-table-color: rgba(0, 0, 0, 0.12);
+
+  /* admonition color */
+  /* --md-admonition-fg-color: var(--md-default-fg-color); */
+  /* --md-admonition-bg-color: #fbfaf5; */
+
+  /* footer color */
+  --md-footer-fg-color: #fff;
+  --md-footer-fg-color--light: hsla(0, 0%, 100%, 0.7);
+  --md-footer-fg-color--lighter: hsla(0, 0%, 100%, 0.3);
+  --md-footer-bg-color: rgba(0, 0, 0, 0.87);
+  --md-footer-bg-color--dark: rgba(0, 0, 0, 0.32);
+
+  /* shadow colod */
+  --md-shadow-z1: 1px 1px 2px #edeadc, 1px 1px 3px #e1d0c5;
+  --md-shadow-z2: 1px 1px 2px #edeadc, 1px 2px 5px #cebeb3;
+  --md-shadow-z3: 1px 1px 2px #edeadc, 1px 3px 7px #cebeb3;
+}
+
+.md-ellipsis,
+h1,
+.headerlink {
+  text-align: center;
+  font-size: larger;
+}
+
+.center-text {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* 居中且定义字体大小的文字 */
+.center-text-large {
+  text-align: center;
+  font-size: 1.5rem;
+  /* 你可以根据需要调整大小 */
+}
+
+center,
+p,
+li {
+  font-size: medium;
+}
+
+.md-nav__link {
+  font-size: small;
+}
+
+@media screen and (min-width: 960px) {
+  html {
+    font-size: 150%;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  html {
+    font-size: 150%;
+  }
+}
+
+@media screen and (min-width: 125em) {
+  html {
+    font-size: 150%;
+  }
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  font-weight: 600;
+}
+
+.md-typeset h3,
+.md-typeset h4 {
+  font-weight: 500;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  letter-spacing: 0;
+}
+
+.md-typeset {
+  font-size: 0.7rem;
+  line-height: 1.75;
+}
+
+.md-typeset code:not(pre code) {
+  font-size: inherit;
+}
+
+.md-copyright {
+  font-size: 0.55rem;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  box-shadow: var(--md-shadow-z2);
+}
+
+.md-typeset img,
+.md-typeset video {
+  box-shadow: var(--md-shadow-z1);
+  border-radius: 10px;
+}
+
+.md-tabs {
+  background-color: var(--md-primary-fg-color--light);
+}
+
+.general-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.katex {
+  -webkit-text-stroke-width: 0.3px;
+}
+
+@media screen and (max-width: 59.9375em) {
+  .md-nav__source {
+    background-color: var(--md-primary-fg-color);
+  }
+}
+
+@media screen and (max-width: 76.1875em) {
+  .md-nav--primary .md-nav__title {
+    background-color: var(--md-primary-fg-color);
+  }
+}
+
+center,
+p {
+  font-size: medium;
+}
+
+.reference ol {
+  counter-reset: li;
+}
+
+.reference li {
+  padding-left: 0.6em;
+  counter-increment: li;
+  word-break: break-all;
+}
+
+.reference li::marker {
+  content: "[" counter(li) "]";
+  font-size: 0.9em;
+}
+
+.md-typeset :is(.emojione, .twemoji, .gemoji) {
+  vertical-align: sub;
+}
+
+.markdown-source-view.mod-cm6 .cm-content>* {
+  margin: auto auto !important;
+}
+
+.toc-tag {
+  background-color: #3f6ec6b0;
+  border-radius: 3px;
+  font-size: 80%;
+  padding: 3px;
+}
+
+.toc-tag-classnotes {
+  background-color: #e6ad5bb0;
+}
+
+.reference ol {
+  counter-reset: li;
+}
+
+.reference li {
+  padding-left: 0.7em;
+  counter-increment: li;
+  word-break: break-all;
+}
+
+.reference li::marker {
+  content: "[" counter(li) "]";
+  font-size: 0.8em;
+}
+
+/* 给 <object> 元素添加圆角效果 */
+object {
+  border-radius: 8px;
+  overflow: hidden;
+  /* 确保内容也被裁剪以适应圆角 */
+}
+
+/* 给 <embed> 元素添加圆角效果 */
+embed {
+  border-radius: 8px;
+  overflow: hidden;
+  /* 确保内容也被裁剪以适应圆角 */
+}
+
+/* 右侧滚动条样式 */
+/* 针对基于 WebKit 内核的浏览器（Chrome、Safari、Edge等） */
+
+/* 整体滚动条尺寸及透明背景 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: transparent;
+}
+
+/* 滚动条轨道 - 使用米黄色背景并添加圆角和内阴影 */
+::-webkit-scrollbar-track {
+  background: #f5f5dc;
+  /* 米黄色背景 */
+  border-radius: 4px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  /* 添加轻微内阴影，增加立体感 */
+}
+
+/* 滚动条滑块 - 使用 iOS 蓝色及圆角效果 */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* 悬停时的滚动条滑块变化 */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* 针对 Firefox 浏览器的基本样式 */
+* {
+  scrollbar-width: thin;
+  /* 细型滚动条 */
+  scrollbar-color: rgba(0, 0, 0, 0.1) #f5f5dc;
+  /* 滑块为蓝色，轨道为米黄色 */
+}
+
+/* 放到你的 CSS 末尾，保证优先级 */
+.md-typeset p,
+.md-typeset li,
+.md-typeset blockquote,
+.md-typeset table,
+.md-typeset pre {
+  font-size: 0.8rem !important;
+  /* 或者别的想要的值 */
+}
+
+/* 在 .md-typeset 内部，对 h1~h6 设置字体大小 */
+.md-typeset h1 {
+  font-size: 1.6rem !important;
+  /* 如果你想让这一规则一定生效，可以加上 !important */
+  font-weight: 600;
+  /* 如果仍想保持较粗字体，可保留原先的数值 */
+}
+
+.md-typeset h2 {
+  font-size: 1.2rem !important;
+  font-weight: 600;
+}
+
+.md-typeset h3 {
+  font-size: 1rem !important;
+  font-weight: 500;
+}
+
+.md-typeset h4 {
+  font-size: 0.95rem !important;
+  font-weight: 500;
+}
+
+.md-typeset h5 {
+  font-size: 0.9rem !important;
+  font-weight: 500;
+}
+
+.md-typeset h6 {
+  font-size: 0.85rem !important;
+  font-weight: 500;
+}

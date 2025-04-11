@@ -1,0 +1,27 @@
+/* 导入 Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&display=swap');
+
+/* 时钟样式 */
+#clock {
+    text-align: center;
+    margin-top: 20px;
+    /* 调整时钟的位置 */
+    font-family: 'BioRhyme', serif;
+    /* 使用BioRhyme字体 */
+}
+
+#clock-time {
+    font-size: 2rem;
+    /* 时间的字体大小 */
+    font-family: 'BioRhyme', serif;
+    /* 使用BioRhyme字体 */
+}
+
+#clock-date {
+    font-size: 1.5rem;
+    /* 日期的字体大小 */
+    font-family: 'BioRhyme', serif;
+    /* 使用BioRhyme字体 */
+    margin-top: 10px;
+    /* 调整日期的位置 */
+}
